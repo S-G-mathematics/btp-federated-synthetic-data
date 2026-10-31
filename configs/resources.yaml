@@ -1,0 +1,15 @@
+# Conservative BTP defaults, not a claim about an AWS dollar budget.
+# Existing shared instance only. Never provision/resize/terminate AWS resources.
+max_workers: 1
+threads_per_worker: 1
+minimum_available_ram_gib: 8
+minimum_free_disk_gib: 5
+cell_timeout_seconds: 3600
+campaign_wall_seconds: 7200
+smoke_wall_seconds: 600
+ec2_hourly_rate_usd: null
+additional_spend_authorized_usd: null
+new_paid_services_allowed: false
+paid_llm_api_calls_allowed: false
+shared_compute_lease: ~/research-director/control/heavy-compute.lock
+# Honor stricter existing research-director limits and other running jobs.

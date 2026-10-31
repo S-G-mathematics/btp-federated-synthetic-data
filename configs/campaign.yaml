@@ -1,0 +1,65 @@
+# Fixed before scientific runs. Smoke is software validation, not evidence.
+title: A Statistical Framework for Weighted Distribution Aggregation in Heterogeneous Federated Synthetic Data Generation
+dataset: UCI Adult
+primary_metric: target_alpha_weighted_empirical_query_linf_D_R_test_vs_D_S
+selection_metric: validation_query_linf_then_deterministic_method_name
+development_seeds: [101, 202, 303]
+confirmation_seeds: [404, 505]
+partitions: [age, age_education, label_skew]
+clients: [5, 10]
+generators: [independent, chow_liu, copula, mixed_gmm, prototype_kde, latent_class]
+profiles:
+  smoke:
+    smoke: true
+    train_cap: 1500
+    reference_cap: 600
+    severity: 0.8
+    pilot_samples: 160
+    tune_samples: 160
+    synthetic_rows: 500
+    support_size: 48
+    barycenter_weight_trials: 2
+    kernel_features: 16
+    repeats: 1
+    sample_sizes: [100, 500]
+    conditional_pool: 2500
+    conditional_rows: 200
+    conditional_min_support: 25
+    conditional_min_mass: 0.01
+    privacy_epsilons: [1.0, 4.0]
+  pilot: &pilot
+    smoke: false
+    severity: 0.8
+    pilot_samples: 1500
+    tune_samples: 1000
+    synthetic_rows: 10000
+    support_size: 192
+    barycenter_weight_trials: 8
+    kernel_features: 48
+    repeats: 3
+    sample_sizes: [500, 2000, 10000]
+    conditional_pool: 30000
+    conditional_rows: 2000
+    conditional_min_support: 300
+    conditional_min_mass: 0.01
+    privacy_epsilons: [0.5, 1.0, 2.0, 4.0, 8.0]
+  projected_pilot:
+    <<: *pilot
+    structural_projection: true
+    repeats: 5
+  full:
+    smoke: false
+    severity: 0.9
+    pilot_samples: 5000
+    tune_samples: 2500
+    synthetic_rows: 30000
+    support_size: 512
+    barycenter_weight_trials: 24
+    kernel_features: 96
+    repeats: 5
+    sample_sizes: [500, 2000, 10000, 30000, 60000]
+    conditional_pool: 150000
+    conditional_rows: 5000
+    conditional_min_support: 1500
+    conditional_min_mass: 0.01
+    privacy_epsilons: [0.5, 1.0, 2.0, 4.0, 8.0]

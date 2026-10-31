@@ -1,0 +1,77 @@
+{
+  "cells": [
+    {
+      "generator": "copula",
+      "partition": "age_education",
+      "k": 5,
+      "seed": 611
+    },
+    {
+      "generator": "copula",
+      "partition": "age_education",
+      "k": 5,
+      "seed": 622
+    },
+    {
+      "generator": "copula",
+      "partition": "age_education",
+      "k": 5,
+      "seed": 633
+    },
+    {
+      "generator": "copula",
+      "partition": "label_skew",
+      "k": 5,
+      "seed": 611
+    },
+    {
+      "generator": "copula",
+      "partition": "label_skew",
+      "k": 5,
+      "seed": 622
+    },
+    {
+      "generator": "copula",
+      "partition": "label_skew",
+      "k": 5,
+      "seed": 633
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "age_education",
+      "k": 5,
+      "seed": 611
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "age_education",
+      "k": 5,
+      "seed": 622
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "age_education",
+      "k": 5,
+      "seed": 633
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "label_skew",
+      "k": 5,
+      "seed": 611
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "label_skew",
+      "k": 5,
+      "seed": 622
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "label_skew",
+      "k": 5,
+      "seed": 633
+    }
+  ],
+  "freeze_sha256": "87514e14f0f7131d4e3b425db78133c4abd7164168424420278c556369fb6949"
+}

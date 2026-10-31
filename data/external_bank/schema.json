@@ -1,0 +1,220 @@
+{
+  "source": "official UCI bank-additional-full.csv",
+  "outcome": "y",
+  "predictors": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "contact",
+    "month",
+    "day_of_week",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed"
+  ],
+  "duration_dropped_before_all_fitting": true,
+  "numeric_scale": {
+    "age": 1,
+    "campaign": 1,
+    "previous": 1,
+    "emp.var.rate": 1000,
+    "cons.price.idx": 1000,
+    "cons.conf.idx": 1000,
+    "euribor3m": 1000,
+    "nr.employed": 1000
+  },
+  "pdays_type": "explicit categorical; 999=no previous contact",
+  "numeric_observed_extrema_training_only": {
+    "age": [
+      17,
+      94
+    ],
+    "campaign": [
+      1,
+      43
+    ],
+    "previous": [
+      0,
+      6
+    ],
+    "emp.var.rate": [
+      -3400,
+      1400
+    ],
+    "cons.price.idx": [
+      92201,
+      94767
+    ],
+    "cons.conf.idx": [
+      -50800,
+      -26900
+    ],
+    "euribor3m": [
+      634,
+      5045
+    ],
+    "nr.employed": [
+      4963600,
+      5228100
+    ]
+  },
+  "numeric_bounds_training_only": {
+    "age": [
+      9,
+      102
+    ],
+    "campaign": [
+      0,
+      48
+    ],
+    "previous": [
+      0,
+      7
+    ],
+    "emp.var.rate": [
+      -3880,
+      1880
+    ],
+    "cons.price.idx": [
+      91944,
+      95024
+    ],
+    "cons.conf.idx": [
+      -53190,
+      -24510
+    ],
+    "euribor3m": [
+      192,
+      5487
+    ],
+    "nr.employed": [
+      4937150,
+      5254550
+    ]
+  },
+  "numeric_bound_rule": "train minimum/maximum extended by ceil(10% of observed range), at least one unit; age/campaign/previous lower bound at zero",
+  "category_vocab_training_only": {
+    "job": [
+      "admin.",
+      "blue-collar",
+      "entrepreneur",
+      "housemaid",
+      "management",
+      "retired",
+      "self-employed",
+      "services",
+      "student",
+      "technician",
+      "unemployed",
+      "unknown"
+    ],
+    "marital": [
+      "divorced",
+      "married",
+      "single",
+      "unknown"
+    ],
+    "education": [
+      "basic.4y",
+      "basic.6y",
+      "basic.9y",
+      "high.school",
+      "illiterate",
+      "professional.course",
+      "university.degree",
+      "unknown"
+    ],
+    "default": [
+      "no",
+      "unknown"
+    ],
+    "housing": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "loan": [
+      "no",
+      "unknown",
+      "yes"
+    ],
+    "contact": [
+      "cellular",
+      "telephone"
+    ],
+    "month": [
+      "apr",
+      "aug",
+      "dec",
+      "jul",
+      "jun",
+      "mar",
+      "may",
+      "nov",
+      "oct",
+      "sep"
+    ],
+    "day_of_week": [
+      "fri",
+      "mon",
+      "thu",
+      "tue",
+      "wed"
+    ],
+    "pdays": [
+      "0",
+      "1",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "2",
+      "21",
+      "22",
+      "25",
+      "26",
+      "27",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "999"
+    ],
+    "poutcome": [
+      "failure",
+      "nonexistent",
+      "success"
+    ],
+    "y": [
+      "no",
+      "yes"
+    ]
+  },
+  "split_seed": 7171,
+  "split_fractions": {
+    "train": 0.55,
+    "tune": 0.15,
+    "calibration": 0.1,
+    "validation": 0.1,
+    "assessment": 0.1
+  }
+}

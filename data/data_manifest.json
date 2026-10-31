@@ -1,0 +1,80 @@
+{
+  "categorical_question_mark_counts": {
+    "education": 0,
+    "marital-status": 0,
+    "native-country": 857,
+    "occupation": 2809,
+    "race": 0,
+    "relationship": 0,
+    "sex": 0,
+    "workclass": 2799
+  },
+  "client_partition_k": 5,
+  "client_partition_manifest": "client_partition_manifest.json",
+  "columns": [
+    "age",
+    "workclass",
+    "fnlwgt",
+    "education",
+    "education-num",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital-gain",
+    "capital-loss",
+    "hours-per-week",
+    "native-country",
+    "income"
+  ],
+  "dataset": "UCI Adult (Census Income)",
+  "duplicate_groups": {
+    "count": 48790,
+    "development_cross_split_groups": 0,
+    "multirow_groups": 49,
+    "train_test_overlap_groups_quarantined": 23
+  },
+  "labels": {
+    "<=50K": 37155,
+    ">50K": 11687
+  },
+  "provenance": {
+    "changes": "Whitespace normalized; test label period removed; '?' retained as categorical missing value; exact train records overlapping official test quarantined; remaining official train duplicate groups split into development subsets.",
+    "citation": "Becker, B. & Kohavi, R. (1996). Adult [Dataset]. UCI Machine Learning Repository.",
+    "doi": "10.24432/C5XW20",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "url": "https://archive.ics.uci.edu/dataset/2/adult"
+  },
+  "raw_sha256": {
+    "adult.data": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d",
+    "adult.names": "c248284c0b5de30c9e1958d6cdd168a34a654758b620e68f46aefa83fc0a576a",
+    "adult.test": "a2a9044bc167a35b2361efbabec64e89d69ce82d9790d2980119aac5fd7e9c05",
+    "adult.zip": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+    "old.adult.names": "43cca99f2bdbff47fc2f7e29a27a5c85e7f69dbcf56b99db8cf4f5b68d639408"
+  },
+  "source_rows": {
+    "official_test": 16281,
+    "official_train": 32561,
+    "total": 48842
+  },
+  "split_manifest_csv": "split_manifest.csv",
+  "split_row_id_sha256": {
+    "calibration": "8de1aa0b0fe9ba4e4bec9c7f2e179bfce180629f2765e4d2e86d457f4fb02ba9",
+    "quarantine": "881fe3a165bb5188968aaea0cfedcb0f78c15dd33d1794dc58c1b8887389735a",
+    "test": "d9f0328c4dfafc6e5e9056b06285e829b4949b266679c8e76dc604261be11346",
+    "train": "e521171b7915c3c70e135dc85900997a2cd50842bc1d0f501373418a8d3a3537",
+    "tune": "c4d409635ffe33b57969d0fed0e2b9f3f4fe9a166c1c0090c4617783db44190c",
+    "validation": "baaf862a1befd20777f24c59c359844c24dcee450294d4024403505054286160"
+  },
+  "split_rows": {
+    "calibration": 3254,
+    "quarantine": 25,
+    "test": 16281,
+    "train": 21148,
+    "tune": 4880,
+    "validation": 3254
+  },
+  "split_seed": 42
+}

@@ -1,0 +1,26 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip",
+  "archive_path": "data/external_bank/bank_marketing_uci.zip",
+  "archive_sha256": "e0bf5f5de5b846e2f18e9d90606637267d46dfa260e0f17bb12e605db5efbeb4",
+  "nested_member": "bank-additional.zip",
+  "inner_archive_sha256": "a607b5edab6c6c75ce09c39142a77702c38123bd5aa7ae89a63503bbe17d65cd",
+  "csv_member": "bank-additional/bank-additional-full.csv",
+  "csv_member_sha256": "74adfc578bf77a7ff4bb1ba4a9f8709d9e3c6907342959c2c8416847e0afb4d8",
+  "license": "CC BY 4.0; cite UCI Bank Marketing and Moro et al. (2014)",
+  "rows": 41188,
+  "source_row_id_first": "bank:000000",
+  "source_row_id_last": "bank:041187",
+  "cleaned_csv_sha256": "bb566645f15b66fddc6183c1fb1fc3d113e30751d9fea6be89ecc7803e54d7bb",
+  "split_manifest_sha256": "c1678925b01a51c39331909ddd57f4a5988e76ea19bdb78a3107c93ebc3877a1",
+  "schema_sha256": "a4b172d1eb99e42fca125733e03040a146598ca17be5e76a2fc1a5dbfd7bce94",
+  "split_counts": {
+    "train": 22653,
+    "tune": 6178,
+    "calibration": 4119,
+    "validation": 4119,
+    "assessment": 4119
+  },
+  "record_duplicate_groups": 1784,
+  "person_identity_available": false,
+  "chronology_note": "Source is date ordered; registered primary split is random by full record, not person or time."
+}
