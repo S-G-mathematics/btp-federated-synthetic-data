@@ -1,33 +1,37 @@
-# Statement locator
+# Formal statement and interpretation register
 
-The items below locate topics in the preserved [original LaTeX](BTP_Theoretical_Framework.tex); their exact assumptions/proofs must be read there. This index is not a claim that each statement is a novel theorem or prospectively registered.
+The [29-section original framework](BTP_Theoretical_Framework.tex) is a dated research framework. A displayed identity or programme there is not automatically a proved new theorem. `D_R` and `D_S` are observed datasets; an unknown population law in the framework is conceptual and was not measured. The finite-query statement in [`docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md`](../docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md) is explicitly dated after development. Chronology of any other later addition that cannot be proven from source timestamps is labelled **later/uncertain**, never retrospectively prospective. The [theory-only backlog](../AUTHOR_READY/THEORY_ONLY_BACKLOG.md) contains unproved targets.
 
-- non-IID assignment and mixture targets
-- empirical workload loss
-- representation bounds
-- error decomposition
-- convex-hull expressivity
-- subset collapse
-- identifiability
-- model-only information limitation
-- finite-pilot oracle inequality
-- regularization stability
-- pilot and calibration uncertainty
-- stratified synthetic sampling
-- sufficient fallback certificate
-- projection and preimage probabilities
-- conditional routing
-- conditional transfer
-- support and rejection cost
-- conditional student filtering
-- joint-implied prediction
-- bounded-loss transfer
-- Brier decomposition
-- finite-support pooling
-- geometric-score perturbation
-- finite entropic-transport bounds
-- scoped differential privacy and composition
-- exact-model size-weight optimality
-- imperfect-model counterexample
-- approximate size optimality
-- sufficient convex optimality certificate
+| ID | Object and statement | Assumptions and mathematical basis | Proof/derivation location; status | Related package and empirical certification | Does **not** guarantee |
+| --- | --- | --- | --- | --- | --- |
+| T01 | Non-IID assignment induces client laws and a fixed mixture target with masses `alpha`. | Shared schema; declared assignment rule; law of total probability. | Original §3–4; model definition. | Exp1/10; achieved skews measured, population law unknown. | Independent people or deployment routing. |
+| T02 | Measured workload loss is `max_l |b_S,l-b_R,l|` on existing empirical datasets. | Fixed bounded finite queries and fixed alpha. | Original §7; empirical definition clarified later in `THEORY_CLARIFICATIONS.txt`. | Exp1/8; named answers saved. | Population TV or arbitrary-query fidelity. |
+| T03 | For `H in [0,1]^(L×K)`, `||H(w-alpha)||_infty <= ||w-alpha||_1/2`. | Both weights in simplex; positive and negative mass balance. | Later elementary bound: write `d=w-alpha`; each row's dot product lies between sums over positive and negative entries, each `||d||_1/2`. | Exp1/9/10; weight shifts observed, assumptions hold for bounded pilot queries. | That L1 shift equals observable subgroup error. |
+| T04 | Empirical query residual can be telescoped into local-model, weighting, pilot and finite-reference terms. | Same query and compatible empirical/model objects in each term. | Original §20 and `docs/EXP10_MECHANISM_CLOSURE.md`; algebraic decomposition. | Exp10; sample-estimated terms reported. | Population-TV components or causal attribution. |
+| T05 | Mixture query vectors form `conv{H_·i}`; weighting cannot reach a target outside that hull. | Fixed local models and fixed query matrix. | Original §10; finite convex-hull identity. | Exp2; fixed-pilot LP certificates. | A population optimum or performance of nonlinear operators. |
+| T06 | Mixtures of subset mixtures collapse to effective `omega_i=sum_{B contains i} rho_B w_i^(B)`. | Each inside-subset operator is itself a linear mixture. | Original §16; exchange of finite sums is the proof. | Exp3; saved numerical identity check. | Extra expressivity from regrouping or an unimplemented inside-subset estimator. |
+| T07 | Weight identifiability can fail when client query columns are dependent. | Fixed finite workload and indistinguishable mixture answers. | Original §9/11; conceptual counterexample/identification discussion. | Exp1/2; nonunique weights can coexist with query fit. | Recovery of true population masses from query fit. |
+| T08 | Released models alone cannot universally recover a target-dependent oracle weight. | Same releases compatible with different real targets. | Original §11, Proposition 1 binary counterexample; proof by two compatible worlds. | Exp1; access classes documented. | A model-only general oracle rule. |
+| T09 | Fixed-query matrix perturbations yield an oracle inequality with pilot/reference error plus optimization tolerance and regularization. | Uniform `r_H,r_b` bounds, fixed feasible set, certified solver tolerance. | Original §13; displayed deterministic inequality and derivation. | Exp2; finite pilot and empirical target, not certified population radii. | A useful guarantee without valid error radii or release information. |
+| T10 | Strong convex regularization can stabilize the estimated weight solution. | Chosen strongly convex penalty and measurement perturbation model. | Original §15; regularized optimization derivation. | Exp1/9; no universal stability certificate reported. | Identifiability of underlying population weights. |
+| T11 | Finite pilot/calibration summaries have sampling and possibly privacy-noise uncertainty. | Bounded fixed queries; declared sampling/independence and release assumptions. | Original §14; concentration programme with indexing correction in `THEORY_CLARIFICATIONS.txt`. | Exp2/8/12; observed sensitivity, not population coverage proof. | A validated Adult confidence interval without sampling assumptions. |
+| T12 | Largest-remainder allocation produces exactly `m` rows with client counts near `m w_i`. | Nonnegative simplex weights and deterministic tie rule. | Original §8; integer allocation definition; implementation in `btp/evaluation.py`. | Exp1/4; counts tested. | Removal of generator bias by increasing `m`. |
+| T13 | A finite-sample size-weight fallback certificate should account jointly for pilot, calibration, privacy and selection uncertainty. | Prospective uncertainty model and fixed feasible weights required. | **Open later proof target** in `AUTHOR_READY/THEORY_ONLY_BACKLOG.md`. | Exp1/2/12 motivate it; no empirical certification. | A theorem already established by the 0/18 result. |
+| T14 | A deterministic projection changes a discrete mass to `Q_T(z)=sum_{u:T(u)=z}Q(u)`. | Exact discrete preimages and declared map. | Later exact preimage audit in `docs/INTEGRITY_AND_PROJECTION_AUDIT.md`; pushforward identity. | Exp7/9; finite spot checks. | Raw-model density at projected row as exact emitted mass for copula/GMM. |
+| T15 | A mixture conditional routes through client `i` with mass proportional to `w_i Q_i(A)`. | Supported condition `A`, known client conditional masses. | Original §18; Bayes conditioning identity. | Exp5; teacher rejection route audited. | A newly learned adaptive gate or fidelity to real conditional data. |
+| T16 | `|E_S[q|A]-E_R[q|A]| <= (|E_S[1_Aq]-E_R[1_Aq]|+|S(A)-R(A)|)/R(A)` for bounded `q`. | Fixed empirical measures; `R(A),S(A)>0`; same query and condition. | Explicit later proof and counterexample in `docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md`. | Exp11; 48 bounds/5,112 triangles, rare support can make bound vacuous. | Arbitrary-condition accuracy or population transfer. |
+| T17 | Rejection sampling has expected `1/Q(A)` proposals per accepted row under independent draws. | Fixed teacher probability and independent proposals. | Original §17–18; geometric expectation. | Exp5; proposal counts/support gate observed. | A finite worst-case proposal budget without abstention. |
+| T18 | Filtering a student with acceptance `a` changes a bounded query expectation by at most `1-a`; a triangle separates student/teacher/real discrepancies. | Fixed condition, bounded query, positive acceptance. | Later derivation in `docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md`. | Exp5/11; violations and conditional errors separate. | Within-condition correctness from zero filter violations. |
+| T19 | Exact joint-implied `P(Y|X)` needs normalized supported emitted-row masses; off-support values require abstention. | Exact projected discrete joint and positive denominator. | Original §19 plus later `docs/INTEGRITY_AND_PROJECTION_AUDIT.md`. | Exp7; exact Chow–Liu route distinguished from approximate scores. | Exact mixed continuous posterior from rounded/clipped scores. |
+| T20 | Bounded predictive loss can transfer only under a compatible discrepancy class that controls that loss. | Loss belongs to or is approximated by the controlled query class. | Original §22; conditional proposition/derivation. | Exp6/11; needed richness not generally certified. | AUROC or all classifier risks from a 152-query maximum. |
+| T21 | Brier score decomposes into calibration/refinement terms under its usual probability assumptions. | Binary labels and probabilistic predictions. | Standard proper-score identity discussed in original §19/22; no novel proof claimed. | Exp6/7; Brier and calibration saved. | Equal-budget synthetic/real superiority. |
+| T22 | Finite-support geometric and transport pools differ from linear mixtures. | Chosen support, smoothing and finite operator definitions. | `docs/WEIGHT_METHODS.md` and original §8/10; operator definitions, not new theorems. | Exp1/2; best-found finite searches. | Exact continuous log pool or Wasserstein barycenter. |
+| T23 | Geometric-score perturbation under smoothing is a possible quantitative error target. | Positive floor and compatible score units would be needed. | **Open/later programme**, see `AUTHOR_READY/THEORY_ONLY_BACKLOG.md`. | Exp1/2 operator diagnostics only. | A certified bound for current mixed-model scores. |
+| T24 | Finite entropic-transport approximation requires explicit support, regularization and projection errors. | Finite support and declared cost/regularization. | **Open/later programme**, see `AUTHOR_READY/THEORY_ONLY_BACKLOG.md`. | Exp1/2 best-found finite barycenter only. | Exact unregularized population barycenter. |
+| T25 | Basic sequential approximate-DP composition adds both epsilon and delta for valid per-fit mechanisms. | Common adjacency/trust; valid conditional per-fit accountant. | Standard Dwork–Roth Theorem 3.16; scoped ledger in `docs/FINAL_RELEASE_AND_PRIVACY_LEDGER.md`. | Exp12; four adapted FLAIM fits conditionally `(16,4e-6)` and separate pure histogram epsilon13. | Whole BTP pipeline DP or privacy from attack AUC. |
+| T26 | If all local models equal their true client laws, size weights recover the declared target mixture. | Perfect local models and correct alpha. | Original §4/10; law-of-total-probability identity. | Exp1/10; assumption not certified in Adult. | That size weights minimize every finite-sample realization. |
+| T27 | Imperfect models can make other weights improve selected queries, possibly with target-mass shift. | Fixed error pattern and selected workload. | Original §10/11 counterexample logic; later representation analysis. | Exp1; favourable unconstrained slices and shifts observed. | General superiority or acceptable representation. |
+| T28 | Approximate size optimality needs explicit local-error bounds on the declared query class. | Bounds for every client model/query and target mixture. | Original §10/13 framework; **not a certified deployment theorem**. | Exp1/2 local errors observed, universal bounds absent. | A claim that a small empirical gap proves optimality. |
+| T29 | A sufficient convex optimality/fallback certificate could rule out material constrained improvement under measured uncertainty. | Convex objective, feasible set, honest simultaneous error/selection accounting. | **Open later proof target** in `AUTHOR_READY/THEORY_ONLY_BACKLOG.md`. | Exp1/2 motivate, no complete certificate. | A prospective selection guarantee from the historical freeze. |
+
+The table distinguishes definitions, proved elementary identities, conditional derivations, counterexamples and open targets. Nothing in the count of rows is a novelty claim.

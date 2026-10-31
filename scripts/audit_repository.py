@@ -77,7 +77,8 @@ def audit() -> dict:
                 raise ValueError(f"Missing claim evidence: {evidence}")
     link_count = 0
     guides = [ROOT / "README.md", *ROOT.glob("experiments/exp*/README.md"),
-              ROOT / "REPRODUCIBILITY.md", ROOT / "ARTIFACTS.md", ROOT / "theory/README.md"]
+              ROOT / "REPRODUCIBILITY.md", ROOT / "ARTIFACTS.md", ROOT / "theory/README.md",
+              ROOT / "theory/statements.md"]
     for guide in guides:
         content = guide.read_text(encoding="utf-8")
         for href in re.findall(r"\[[^\]]+\]\(([^)]+)\)", content):

@@ -1,30 +1,30 @@
-topic,proof_location,associated_experiments,empirical_certification,chronology_note
-non-IID assignment and mixture targets,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-empirical workload loss,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-representation bounds,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-error decomposition,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-convex-hull expressivity,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-subset collapse,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-identifiability,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-model-only information limitation,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-finite-pilot oracle inequality,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-regularization stability,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-pilot and calibration uncertainty,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-stratified synthetic sampling,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-sufficient fallback certificate,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-projection and preimage probabilities,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-conditional routing,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-conditional transfer,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-support and rejection cost,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-conditional student filtering,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-joint-implied prediction,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-bounded-loss transfer,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-Brier decomposition,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-finite-support pooling,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-geometric-score perturbation,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-finite entropic-transport bounds,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-scoped differential privacy and composition,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-exact-model size-weight optimality,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-imperfect-model counterexample,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-approximate size optimality,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
-sufficient convex optimality certificate,theory/BTP_Theoretical_Framework.tex,see twelve-package closure,assumptions not universally certified,some additions postdate selection
+statement_id,proof_or_derivation,associated_experiments,status
+T01,theory/BTP_Theoretical_Framework.tex section 3-4,1;10,definition
+T02,theory/BTP_Theoretical_Framework.tex section 7 and docs/THEORY_CLARIFICATIONS.txt,1;8,empirical definition
+T03,theory/statements.md T03,1;9;10,elementary proved bound
+T04,theory/BTP_Theoretical_Framework.tex section 20 and docs/EXP10_MECHANISM_CLOSURE.md,10,algebraic decomposition
+T05,theory/BTP_Theoretical_Framework.tex section 10,2,finite convex-hull identity
+T06,theory/BTP_Theoretical_Framework.tex section 16,3,proved finite-sum identity
+T07,theory/BTP_Theoretical_Framework.tex sections 9 and 11,1;2,identifiability counterexample discussion
+T08,theory/BTP_Theoretical_Framework.tex section 11 Proposition 1,1,proved counterexample
+T09,theory/BTP_Theoretical_Framework.tex section 13,2,conditional deterministic inequality
+T10,theory/BTP_Theoretical_Framework.tex section 15,1;9,conditional derivation
+T11,theory/BTP_Theoretical_Framework.tex section 14 and docs/THEORY_CLARIFICATIONS.txt,2;8;12,conditional concentration programme
+T12,theory/BTP_Theoretical_Framework.tex section 8 and btp/evaluation.py,1;4,integer allocation construction
+T13,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2;12,open later proof target
+T14,docs/INTEGRITY_AND_PROJECTION_AUDIT.md,7;9,exact pushforward identity
+T15,theory/BTP_Theoretical_Framework.tex section 18,5,conditional Bayes identity
+T16,docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md,11,proved later finite-query proposition
+T17,theory/BTP_Theoretical_Framework.tex sections 17-18,5,geometric expectation
+T18,docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md,5;11,proved later filtering/triangle bounds
+T19,theory/BTP_Theoretical_Framework.tex section 19 and docs/INTEGRITY_AND_PROJECTION_AUDIT.md,7,conditional normalized-mass route
+T20,theory/BTP_Theoretical_Framework.tex section 22,6;11,conditional transfer discussion
+T21,theory/BTP_Theoretical_Framework.tex sections 19 and 22,6;7,standard proper-score identity
+T22,docs/WEIGHT_METHODS.md,1;2,finite operator definitions
+T23,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2,open later proof target
+T24,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2,open later proof target
+T25,docs/FINAL_RELEASE_AND_PRIVACY_LEDGER.md and Dwork-Roth Theorem 3.16,12,standard conditional DP composition
+T26,theory/BTP_Theoretical_Framework.tex sections 4 and 10,1;10,exact-model mixture identity
+T27,theory/BTP_Theoretical_Framework.tex sections 10-11,1,imperfect-model counterexample logic
+T28,theory/BTP_Theoretical_Framework.tex sections 10 and 13,1;2,conditional framework without empirical certification
+T29,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2,open later proof target
