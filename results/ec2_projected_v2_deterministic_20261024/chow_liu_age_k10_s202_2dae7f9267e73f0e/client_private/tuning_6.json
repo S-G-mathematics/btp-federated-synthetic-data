@@ -1,0 +1,99 @@
+{
+  "selected": {
+    "bins": 32,
+    "alpha": 0.1
+  },
+  "trials": [
+    {
+      "parameters": {
+        "bins": 8,
+        "alpha": 0.1
+      },
+      "local_tune_query_mae": 0.013348944247971707,
+      "wall_seconds": 0.16160724399378523,
+      "train_rows": 2402,
+      "tune_rows": 506,
+      "finite_tune_score_fraction": 1.0,
+      "invalid_income_rate": 0.0,
+      "likelihood_kind": "exact_discretized",
+      "diagnostics": {},
+      "status": "eligible"
+    },
+    {
+      "parameters": {
+        "bins": 8,
+        "alpha": 1.0
+      },
+      "local_tune_query_mae": 0.014991964842937381,
+      "wall_seconds": 0.1591167850419879,
+      "train_rows": 2402,
+      "tune_rows": 506,
+      "finite_tune_score_fraction": 1.0,
+      "invalid_income_rate": 0.0,
+      "likelihood_kind": "exact_discretized",
+      "diagnostics": {},
+      "status": "eligible"
+    },
+    {
+      "parameters": {
+        "bins": 16,
+        "alpha": 0.1
+      },
+      "local_tune_query_mae": 0.009849594341585189,
+      "wall_seconds": 0.15952097898116335,
+      "train_rows": 2402,
+      "tune_rows": 506,
+      "finite_tune_score_fraction": 1.0,
+      "invalid_income_rate": 0.0,
+      "likelihood_kind": "exact_discretized",
+      "diagnostics": {},
+      "status": "eligible"
+    },
+    {
+      "parameters": {
+        "bins": 16,
+        "alpha": 1.0
+      },
+      "local_tune_query_mae": 0.01257569690035365,
+      "wall_seconds": 0.15951487800339237,
+      "train_rows": 2402,
+      "tune_rows": 506,
+      "finite_tune_score_fraction": 1.0,
+      "invalid_income_rate": 0.0,
+      "likelihood_kind": "exact_discretized",
+      "diagnostics": {},
+      "status": "eligible"
+    },
+    {
+      "parameters": {
+        "bins": 32,
+        "alpha": 0.1
+      },
+      "local_tune_query_mae": 0.008551019346785938,
+      "wall_seconds": 0.15986711799632758,
+      "train_rows": 2402,
+      "tune_rows": 506,
+      "finite_tune_score_fraction": 1.0,
+      "invalid_income_rate": 0.0,
+      "likelihood_kind": "exact_discretized",
+      "diagnostics": {},
+      "status": "eligible"
+    },
+    {
+      "parameters": {
+        "bins": 32,
+        "alpha": 1.0
+      },
+      "local_tune_query_mae": 0.01259951633035157,
+      "wall_seconds": 0.1603342840098776,
+      "train_rows": 2402,
+      "tune_rows": 506,
+      "finite_tune_score_fraction": 1.0,
+      "invalid_income_rate": 0.0,
+      "likelihood_kind": "exact_discretized",
+      "diagnostics": {},
+      "status": "eligible"
+    }
+  ],
+  "used_split": "local tune only"
+}

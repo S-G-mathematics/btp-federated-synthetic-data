@@ -1,0 +1,59 @@
+{
+  "weights": {
+    "size": [
+      0.12625307357669757,
+      0.21841308870815207,
+      0.260923018725175,
+      0.24252884433516173,
+      0.1518819746548137
+    ],
+    "uniform": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "constrained": [
+      0.1414759503700749,
+      0.2433655410108329,
+      0.16585939567825148,
+      0.2228237078043795,
+      0.2264754051364613
+    ]
+  },
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.021339763078577073,
+    "actual_weight_l1": 0.2295375191554115,
+    "minimum_weight_alpha_ratio": 0.6356640992757633,
+    "effective_client_count": 4.814796815606089,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "finite_pilot_validation_lp_oracle": {
+    "weights": [
+      0.2875065666655494,
+      0.07466211451175069,
+      0.15958216042070988,
+      0.2211119868036492,
+      0.25713717159834093
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.020867436060055228,
+    "actual_weight_l1": 0.5330173800647581,
+    "minimum_weight_alpha_ratio": 0.34183901227419433,
+    "effective_client_count": 4.372330932206357,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "pilot_rows_per_client": 1500,
+  "pilot_access": "released models and aggregate unnoised calibration means only",
+  "validation_oracle_access": "privileged, diagnostic only, not method selection"
+}

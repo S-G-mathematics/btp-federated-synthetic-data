@@ -1,0 +1,68 @@
+{
+  "size": {
+    "weights": [
+      0.013429165878570078,
+      0.12521278607906186,
+      0.130792509930017,
+      0.028276905617552486,
+      0.019954605636466807,
+      0.03683563457537356,
+      0.2979950822772839,
+      0.21585965575940988,
+      0.10374503499148856,
+      0.027898619254775867
+    ],
+    "success": true,
+    "delta": 0.0,
+    "floor_ratio": 1.0,
+    "actual_weight_l1": 0.0
+  },
+  "constrained": {
+    "weights": [
+      0.013429165878570078,
+      0.22829705338688674,
+      0.10789955661343134,
+      0.014138452808776243,
+      0.019954605636466807,
+      0.03683563457537356,
+      0.2979950822772839,
+      0.12789106188477178,
+      0.1256607676836637,
+      0.027898619254775867
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.015319081249231654,
+    "actual_weight_l1": 0.25,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 5.329828387876493,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "unconstrained": {
+    "weights": [
+      0.044094471861615726,
+      0.2243490720382761,
+      0.02239450829667027,
+      0.0,
+      0.0,
+      0.0,
+      0.44479991389805595,
+      0.08423236939838838,
+      0.15989259190441285,
+      0.020237072602580754
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.014060705230066875,
+    "actual_weight_l1": 0.6655079609519123,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 3.524905135090048,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "minimum_before_subsampling": {
+    "0.25": {
+      "train": 4034,
+      "tune": 932,
+      "calibration": 596,
+      "validation": 279,
+      "assessment": 308
+    },
+    "0.85": {
+      "train": 3648,
+      "tune": 850,
+      "calibration": 553,
+      "validation": 244,
+      "assessment": 268
+    }
+  },
+  "train_age_means": [
+    28.081,
+    31.909,
+    37.988,
+    44.949,
+    49.881
+  ],
+  "train_education_num_means": [
+    9.798,
+    9.993,
+    10.269,
+    10.196,
+    10.011
+  ],
+  "counts_after_subsampling": {
+    "train": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "tune": [
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "calibration": [
+      553,
+      720,
+      683,
+      720,
+      578
+    ],
+    "validation": [
+      244,
+      385,
+      354,
+      342,
+      315
+    ],
+    "assessment": [
+      288,
+      342,
+      370,
+      346,
+      268
+    ]
+  }
+}

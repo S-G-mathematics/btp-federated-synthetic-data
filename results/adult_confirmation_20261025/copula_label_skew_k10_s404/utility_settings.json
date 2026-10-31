@@ -1,0 +1,162 @@
+{
+  "trtr_privileged_logistic": {
+    "selected_parameter": 0.1,
+    "trials": [
+      {
+        "parameter": 0.1,
+        "tune_brier": 0.10195749396553941
+      },
+      {
+        "parameter": 1.0,
+        "tune_brier": 0.1020369452855222
+      },
+      {
+        "parameter": 10.0,
+        "tune_brier": 0.10212138558802167
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 21148,
+    "tune_rows": 4880,
+    "calibration_rows": 3254,
+    "clip": 1e-06
+  },
+  "trtr_privileged_extra_trees": {
+    "selected_parameter": 3.0,
+    "trials": [
+      {
+        "parameter": 3.0,
+        "tune_brier": 0.10713722597741883
+      },
+      {
+        "parameter": 8.0,
+        "tune_brier": 0.1095343032794189
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 21148,
+    "tune_rows": 4880,
+    "calibration_rows": 3254,
+    "clip": 1e-06
+  },
+  "size_logistic": {
+    "selected_parameter": 0.1,
+    "trials": [
+      {
+        "parameter": 0.1,
+        "tune_brier": 0.1624426205187558
+      },
+      {
+        "parameter": 1.0,
+        "tune_brier": 0.16282147434482425
+      },
+      {
+        "parameter": 10.0,
+        "tune_brier": 0.1631996319934095
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "calibration_rows": 2000,
+    "clip": 1e-06
+  },
+  "size_extra_trees": {
+    "selected_parameter": 8.0,
+    "trials": [
+      {
+        "parameter": 3.0,
+        "tune_brier": 0.16582541154210476
+      },
+      {
+        "parameter": 8.0,
+        "tune_brier": 0.16512489030498945
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "calibration_rows": 2000,
+    "clip": 1e-06
+  },
+  "uniform_logistic": {
+    "selected_parameter": 1.0,
+    "trials": [
+      {
+        "parameter": 0.1,
+        "tune_brier": 0.16861521434119647
+      },
+      {
+        "parameter": 1.0,
+        "tune_brier": 0.16809253636030244
+      },
+      {
+        "parameter": 10.0,
+        "tune_brier": 0.16835677694667803
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "calibration_rows": 2000,
+    "clip": 1e-06
+  },
+  "uniform_extra_trees": {
+    "selected_parameter": 3.0,
+    "trials": [
+      {
+        "parameter": 3.0,
+        "tune_brier": 0.17400881424077944
+      },
+      {
+        "parameter": 8.0,
+        "tune_brier": 0.17574740082119528
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "calibration_rows": 2000,
+    "clip": 1e-06
+  },
+  "constrained_logistic": {
+    "selected_parameter": 0.1,
+    "trials": [
+      {
+        "parameter": 0.1,
+        "tune_brier": 0.1571279247640618
+      },
+      {
+        "parameter": 1.0,
+        "tune_brier": 0.1573450904025139
+      },
+      {
+        "parameter": 10.0,
+        "tune_brier": 0.15767135373849342
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "calibration_rows": 2000,
+    "clip": 1e-06
+  },
+  "constrained_extra_trees": {
+    "selected_parameter": 3.0,
+    "trials": [
+      {
+        "parameter": 3.0,
+        "tune_brier": 0.1605907636802424
+      },
+      {
+        "parameter": 8.0,
+        "tune_brier": 0.16092506515311164
+      }
+    ],
+    "calibration": "Platt sigmoid on separate real or synthetic calibration rows",
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "calibration_rows": 2000,
+    "clip": 1e-06
+  }
+}

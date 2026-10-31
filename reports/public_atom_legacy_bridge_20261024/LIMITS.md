@@ -1,0 +1,1 @@
+Postpilot structural bridge; old and atom histograms use the same train partitions, alpha, workload, 10,000 rows and public sample seeds. The comparison changes both zero atoms and education projection, so the query error difference is not an isolated zero-atom effect. All methods are nonprivate here; no official Adult test was evaluated.

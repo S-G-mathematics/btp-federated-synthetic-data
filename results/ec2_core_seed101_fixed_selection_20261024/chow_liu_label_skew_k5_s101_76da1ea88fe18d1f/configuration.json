@@ -1,0 +1,38 @@
+{
+  "profile_name": "pilot",
+  "profile": {
+    "smoke": false,
+    "severity": 0.8,
+    "pilot_samples": 1500,
+    "tune_samples": 1000,
+    "synthetic_rows": 10000,
+    "support_size": 192,
+    "barycenter_weight_trials": 8,
+    "kernel_features": 48,
+    "repeats": 3,
+    "sample_sizes": [
+      500,
+      2000,
+      10000
+    ],
+    "conditional_pool": 30000,
+    "conditional_rows": 2000,
+    "conditional_min_support": 300,
+    "conditional_min_mass": 0.01,
+    "privacy_epsilons": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ]
+  },
+  "generator": "chow_liu",
+  "partition": "label_skew",
+  "k": 5,
+  "seed": 101,
+  "code_hash": "984177ee25c08e5e41b7d830b850f1060563c2f882e2c618bff38b2f298ba351",
+  "raw_sha256": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+  "reference_role": "development_assessment",
+  "frozen_selection": null
+}

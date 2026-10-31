@@ -1,0 +1,25 @@
+{
+  "seed": 722,
+  "severity": 0.25,
+  "generator": "copula",
+  "k": 5,
+  "train_per_client": 1000,
+  "tune_per_client": 200,
+  "alpha": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "age_edges_training_only": [
+    26.0,
+    33.0,
+    41.0,
+    51.0
+  ],
+  "source_code_hash": "2d7a7598b43865d969dacbb8c91f06ac046b38670e9ef98169c3815dd8b2bb24",
+  "raw_sha256": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+  "reference_role": "development_assessment",
+  "created_at_utc": "2026-10-25T04:57:43.866343+00:00"
+}

@@ -1,0 +1,89 @@
+{
+  "selected": {
+    "alpha": 0.1,
+    "bins": 32
+  },
+  "trials": [
+    {
+      "parameters": {
+        "alpha": 0.1,
+        "bins": 8
+      },
+      "local_tune_query_mae": 0.0228449632854065,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.38506021501962095,
+      "status": "eligible",
+      "likelihood_kind": "approximate"
+    },
+    {
+      "parameters": {
+        "alpha": 1.0,
+        "bins": 8
+      },
+      "local_tune_query_mae": 0.021820428263641556,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.38128759199753404,
+      "status": "eligible",
+      "likelihood_kind": "approximate"
+    },
+    {
+      "parameters": {
+        "alpha": 0.1,
+        "bins": 16
+      },
+      "local_tune_query_mae": 0.021360814316492987,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.3804469989845529,
+      "status": "eligible",
+      "likelihood_kind": "approximate"
+    },
+    {
+      "parameters": {
+        "alpha": 1.0,
+        "bins": 16
+      },
+      "local_tune_query_mae": 0.022639537440091454,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.37741550197824836,
+      "status": "eligible",
+      "likelihood_kind": "approximate"
+    },
+    {
+      "parameters": {
+        "alpha": 0.1,
+        "bins": 32
+      },
+      "local_tune_query_mae": 0.019734907444048714,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.38146543299080804,
+      "status": "eligible",
+      "likelihood_kind": "approximate"
+    },
+    {
+      "parameters": {
+        "alpha": 1.0,
+        "bins": 32
+      },
+      "local_tune_query_mae": 0.02037844611528822,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.3795185670023784,
+      "status": "eligible",
+      "likelihood_kind": "approximate"
+    }
+  ],
+  "train_rows": 665,
+  "tune_rows": 171,
+  "used_split": "train/local tune only"
+}

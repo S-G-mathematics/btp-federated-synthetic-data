@@ -1,0 +1,79 @@
+{
+  "weights": {
+    "size": [
+      0.2430017022886325,
+      0.10119160204274635,
+      0.04061849820313978,
+      0.18937961036504633,
+      0.19661433705314924,
+      0.02255532438055608,
+      0.08152071117836202,
+      0.02742576130130509,
+      0.0635048231511254,
+      0.0341876300359372
+    ],
+    "uniform": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "constrained": [
+      0.22053425288739156,
+      0.08115441827323949,
+      0.09227386442222657,
+      0.2627242441459595,
+      0.19661433705314924,
+      0.01127766219027804,
+      0.04076035558918101,
+      0.02742576130130509,
+      0.05014128911930088,
+      0.0170938150179686
+    ]
+  },
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.015164984523540537,
+    "actual_weight_l1": 0.24999999999999994,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 5.6572541152224805,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "finite_pilot_validation_lp_oracle": {
+    "weights": [
+      0.12310511249655505,
+      0.02088941702994073,
+      0.1820624245998265,
+      0.14080167695811924,
+      0.3747646212490601,
+      0.029857697717181504,
+      0.0,
+      0.09550913359887878,
+      0.0,
+      0.03300991635043814
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.015225048338678132,
+    "actual_weight_l1": 0.7899599124535933,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 4.543085372210309,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "pilot_rows_per_client": 1500,
+  "pilot_access": "released models and aggregate unnoised calibration means only",
+  "validation_oracle_access": "privileged, diagnostic only, not method selection"
+}

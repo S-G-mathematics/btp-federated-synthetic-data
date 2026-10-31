@@ -1,0 +1,28 @@
+{
+  "reference_cell": "results/ec2_development_k10_stacking_fixed_20261024/copula_age_k10_s101_2910ec6141d23c0c",
+  "reference_role": "development_assessment",
+  "generator": "copula",
+  "partition": "age",
+  "k": 10,
+  "seed": 101,
+  "budget_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    2.0
+  ],
+  "selected_budget_on_validation": 0.75,
+  "selection_metric": "validation query_linf then unseen_query_mae",
+  "official_test_used": false,
+  "assessment_not_used_for_selection": true,
+  "rows": 10000,
+  "repeats": 3,
+  "manifest_sha256": "2eedd41b5f31022db7b92e64212b19860b7a1cc35d02e33658defa400ba98169",
+  "script_sha256": "41bf3f7b911dbe35a154e8d27d878fd37e1c84ce1cb4bb0f7c72945e5274554e",
+  "host": "ip-172-31-11-178",
+  "ended_utc": "2026-10-24T06:19:45.893873+00:00",
+  "wall_seconds": 4.0271830770070665,
+  "status": "completed"
+}

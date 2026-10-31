@@ -1,0 +1,70 @@
+diff --git a/synth_fl/generators/central/__init__.py b/synth_fl/generators/central/__init__.py
+index 52d6aa4..5584915 100644
+--- a/synth_fl/generators/central/__init__.py
++++ b/synth_fl/generators/central/__init__.py
+@@ -6,7 +6,8 @@ from .random_aim import RandomAIM
+ from .base_aim import BaseAIM
+ from .baseline import ZeroGenerator, RealDataGenerator
+ from .mwem import MWEM
+-from .ctgan import CTGAN
++# CTGAN import disabled for the non-neural FLAIM reference; upstream
++# FederatedDLConfig is absent in this pinned source.
+ 
+ FACTORY_MAP = {
+     "aim": AIM,
+@@ -15,7 +16,6 @@ FACTORY_MAP = {
+     "zero_gen": ZeroGenerator,
+     "real_data": RealDataGenerator,
+     "base_aim": BaseAIM,
+-    "ctgan": CTGAN,
+ }
+ 
+ 
+diff --git a/synth_fl/generators/federated/__init__.py b/synth_fl/generators/federated/__init__.py
+index 0fa4e72..613c492 100644
+--- a/synth_fl/generators/federated/__init__.py
++++ b/synth_fl/generators/federated/__init__.py
+@@ -6,7 +6,8 @@ from synth_fl.generators.federated.distributed_aim_mpc import DistributedAIMMPC
+ from synth_fl.generators.federated.naive_hfl import NaiveHFLGenerator
+ from synth_fl.generators.federated.flaim import FLAIM
+ from synth_fl.generators.federated.flaim_init import FLAIMInit
+-from synth_fl.generators.federated.fed_ctgan import FedCTGAN
++# FedCTGAN import disabled for the non-neural FLAIM reference; upstream
++# FederatedDLConfig is absent in this pinned source.
+ 
+ FACTORY_MAP = {
+     "naivehfl": NaiveHFLGenerator,
+@@ -14,7 +15,6 @@ FACTORY_MAP = {
+     "flaim_init": FLAIMInit,
+     "distributedaim": DistributedAIM,
+     "distributedaimmpc": DistributedAIMMPC,
+-    "fedctgan": FedCTGAN,
+ }
+ 
+ 
+diff --git a/synth_fl/utils/__init__.py b/synth_fl/utils/__init__.py
+index f211598..61f3a11 100644
+--- a/synth_fl/utils/__init__.py
++++ b/synth_fl/utils/__init__.py
+@@ -45,6 +45,8 @@ class PathManager:
+ 
+ 
+ path_manager = PathManager()
++DEFAULT_DATA_ROOT = path_manager.DEFAULT_DATA_ROOT
++WANDB_PROJECT_NAME = path_manager.WANDB_PROJECT_NAME
+ 
+ 
+ class AttrDict(dict):
+diff --git a/synth_fl/utils/dataloaders/core.py b/synth_fl/utils/dataloaders/core.py
+index 4a4dc07..fa29e9e 100644
+--- a/synth_fl/utils/dataloaders/core.py
++++ b/synth_fl/utils/dataloaders/core.py
+@@ -14,7 +14,7 @@ from sdv.datasets.demo import download_demo, get_available_demos
+ 
+ from synth_fl.libs.private_pgm.mbi import Dataset as PGMDataset
+ from synth_fl.libs.private_pgm.mbi import Domain as PGMDomain
+-from synth_fl.utils import logger
++from synth_fl.utils import logger, path_manager
+ from scipy.stats import zipfian
+ 
+ from collections import Counter, defaultdict

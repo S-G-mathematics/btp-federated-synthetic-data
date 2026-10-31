@@ -1,0 +1,19 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_label_skew_k10_s202_3b84653b11377b5f",
+  "source_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "source_manifest_sha256": "3da5d152d7c736d733c924511048b7d95714c332e25a7f42df26fe27ea89db63",
+  "source_workloads_sha256": "c3afc3385c6b37cc61dd9b8b143513483e04949e963eb95c165ac33c74879a6c",
+  "script_sha256": "f32b91025367b1b96dacb5a2f719c8ae3368be5839aec9ce384d3c28d9f92bac",
+  "prior_conditional_config_sha256": "7a78f7c83fd5d2b1c3f513e689f25a96fd91d01570208f95ef08282dfe5b86f0",
+  "teacher_rows": 30000,
+  "teacher_seed_offset": 71000,
+  "methods": [
+    "size",
+    "constrained"
+  ],
+  "reference_role": "development_assessment",
+  "official_test_used": false,
+  "elapsed_seconds": 6.6281948639662005,
+  "ended_utc": "2026-10-24T19:37:11.917412+00:00",
+  "status": "complete"
+}

@@ -1,0 +1,8 @@
+{
+  "method": "entropy_calibration",
+  "selection_split": "validation",
+  "selection_metric": "primary validation query_linf; deterministic method-name tie break",
+  "audit_used_for_selection": false,
+  "test_used": false,
+  "scope": "within this cell; campaign-wide confirmatory selection must use development cases only"
+}

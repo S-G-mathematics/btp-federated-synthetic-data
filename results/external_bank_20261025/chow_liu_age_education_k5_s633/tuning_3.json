@@ -1,0 +1,89 @@
+{
+  "selected": {
+    "alpha": 1.0,
+    "bins": 16
+  },
+  "trials": [
+    {
+      "parameters": {
+        "alpha": 0.1,
+        "bins": 8
+      },
+      "local_tune_query_mae": 0.012306636155606404,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.3043431539554149,
+      "status": "eligible",
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "alpha": 1.0,
+        "bins": 8
+      },
+      "local_tune_query_mae": 0.01152051323962079,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.24087894900003448,
+      "status": "eligible",
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "alpha": 0.1,
+        "bins": 16
+      },
+      "local_tune_query_mae": 0.01026021575678326,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.2399784279987216,
+      "status": "eligible",
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "alpha": 1.0,
+        "bins": 16
+      },
+      "local_tune_query_mae": 0.008962324288983331,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.2397804629872553,
+      "status": "eligible",
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "alpha": 0.1,
+        "bins": 32
+      },
+      "local_tune_query_mae": 0.011851994115724096,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.2371202789945528,
+      "status": "eligible",
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "alpha": 1.0,
+        "bins": 32
+      },
+      "local_tune_query_mae": 0.008988394900294216,
+      "finite_tune_score_fraction": 1.0,
+      "valid_outcome": true,
+      "converged": true,
+      "wall_seconds": 0.23526696301996708,
+      "status": "eligible",
+      "likelihood_kind": "exact_discretized"
+    }
+  ],
+  "train_rows": 5475,
+  "tune_rows": 1472,
+  "used_split": "train/local tune only"
+}

@@ -1,0 +1,104 @@
+{
+  "reference_commit": "3e698da752b4af928a040f645f7e08fa306db4cd",
+  "autodp_commit": "06489ea485653909397937cf5e3c31d06a677ffe",
+  "epsilon": 4.0,
+  "delta": 1e-06,
+  "rounds": 4,
+  "clients_per_round": 1.0,
+  "accounting_method": "distributed",
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/copula_age_education_k5_s101_8072a0aa0e591a84",
+  "train_counts": [
+    2605,
+    4632,
+    5563,
+    5153,
+    3195
+  ],
+  "train_total": 21148,
+  "workload_cliques": [
+    [
+      "age"
+    ],
+    [
+      "fnlwgt"
+    ],
+    [
+      "education-num"
+    ],
+    [
+      "capital-gain"
+    ],
+    [
+      "capital-loss"
+    ],
+    [
+      "hours-per-week"
+    ],
+    [
+      "workclass"
+    ],
+    [
+      "education"
+    ],
+    [
+      "marital-status"
+    ],
+    [
+      "occupation"
+    ],
+    [
+      "relationship"
+    ],
+    [
+      "race"
+    ],
+    [
+      "sex"
+    ],
+    [
+      "native-country"
+    ],
+    [
+      "income"
+    ],
+    [
+      "sex",
+      "income"
+    ],
+    [
+      "education",
+      "income"
+    ],
+    [
+      "workclass",
+      "income"
+    ],
+    [
+      "education",
+      "education-num"
+    ]
+  ],
+  "domain_shape": {
+    "age": 10,
+    "workclass": 10,
+    "fnlwgt": 4,
+    "education": 18,
+    "education-num": 17,
+    "marital-status": 9,
+    "occupation": 16,
+    "relationship": 8,
+    "race": 7,
+    "sex": 4,
+    "capital-gain": 5,
+    "capital-loss": 4,
+    "hours-per-week": 6,
+    "native-country": 43,
+    "income": 2
+  },
+  "source_config_sha256": "4364d9791fe768d2933ce1337e77696f86f9f83d6e29ee38ce54708381de1755",
+  "source_membership_sha256": "53f4e44472bb270aaff856778c5ff088894a2464f8fcf6fda1311c9e49f0c017",
+  "created_at_utc": "2026-10-25T05:29:34.829537+00:00",
+  "private_noise_seed_recorded": false,
+  "reference_access": "client_raw_train_rows_and_interactive_noisy_marginal_rounds",
+  "access_matched_to_btp_summary_rule": false
+}

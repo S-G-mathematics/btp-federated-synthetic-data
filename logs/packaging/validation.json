@@ -1,0 +1,56 @@
+{
+  "environment": "provenance/software_versions.json",
+  "commands": [
+    {
+      "name": "data_sources",
+      "command": [
+        "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/.venv/bin/python",
+        "scripts/verify_data_sources.py"
+      ],
+      "started_at_utc": "2026-10-31T00:40:28.868109+00:00",
+      "ended_at_utc": "2026-10-31T00:40:28.919551+00:00",
+      "exit_status": 0,
+      "log": "logs/packaging/data_sources.log",
+      "test_result": null
+    },
+    {
+      "name": "saved_reports",
+      "command": [
+        "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/.venv/bin/python",
+        "scripts/reproduce_repository.py",
+        "--tables"
+      ],
+      "started_at_utc": "2026-10-31T00:40:28.919909+00:00",
+      "ended_at_utc": "2026-10-31T00:40:31.624936+00:00",
+      "exit_status": 0,
+      "log": "logs/packaging/saved_reports.log",
+      "test_result": null
+    },
+    {
+      "name": "repository_audit",
+      "command": [
+        "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/.venv/bin/python",
+        "scripts/audit_repository.py"
+      ],
+      "started_at_utc": "2026-10-31T00:40:31.625132+00:00",
+      "ended_at_utc": "2026-10-31T00:40:31.992910+00:00",
+      "exit_status": 0,
+      "log": "logs/packaging/repository_audit.log",
+      "test_result": null
+    },
+    {
+      "name": "scientific_tests",
+      "command": [
+        "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "started_at_utc": "2026-10-31T00:40:31.993115+00:00",
+      "ended_at_utc": "2026-10-31T00:40:37.182494+00:00",
+      "exit_status": 0,
+      "log": "logs/packaging/scientific_tests.log",
+      "test_result": "91 passed in 4.81s"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "weights": {
+    "size": [
+      0.1169381538869024,
+      0.21794022866728469,
+      0.2745331744139849,
+      0.24107182271663796,
+      0.14951662031519003
+    ],
+    "uniform": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "constrained_query_minimax": [
+      0.11247406524522151,
+      0.317455415621137,
+      0.2745331744139849,
+      0.12053591135831898,
+      0.1750014333613379
+    ]
+  },
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.04595159413031946,
+    "actual_weight_l1": 0.25000000000000006,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 4.2743951794937,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "fixed_pilot_validation_oracle": {
+    "weights": [
+      0.3417467640086631,
+      0.07493357031055305,
+      0.0,
+      0.5833196656807836,
+      0.0
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.04052871692133575,
+    "actual_weight_l1": 1.134112906171813,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 2.161378350384586,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "access": "nonprivate released models, train-derived schema/counts, aggregate calibration query vector, synthetic pilots; no real per-record scores to weighting server"
+}

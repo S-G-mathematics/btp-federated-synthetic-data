@@ -1,0 +1,24 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_k5_s202_930c4f378ec6b732",
+  "source_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "source_manifest_sha256": "16e35acec39cf2d18014e7de24c2dd2bca915330d51b1dbba5aa69b5325dfaf5",
+  "script_sha256": "2a11ec9bb4580a3ad52d2304aa0ae33b7a05116122ec25cdea6e72b640eded5a",
+  "histogram_script_sha256": "5c48597433ee48ce4e37fb552883269c477542788728dc8b61b9f9dd2e5b4b3b",
+  "rows_per_synthetic_draw": 10000,
+  "replicates": 5,
+  "epsilon_settings": [
+    1.0,
+    4.0,
+    8.0
+  ],
+  "bins": 8,
+  "zero_atom_columns": [
+    "capital-gain",
+    "capital-loss"
+  ],
+  "official_test_used": false,
+  "reference_role": "development_assessment",
+  "elapsed_seconds": 3.7164546709973365,
+  "ended_utc": "2026-10-24T18:54:04.452547+00:00",
+  "status": "complete"
+}

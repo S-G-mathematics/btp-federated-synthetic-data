@@ -1,0 +1,79 @@
+{
+  "weights": {
+    "size": [
+      0.05494609419330433,
+      0.06383582371855495,
+      0.06865897484395687,
+      0.07546812937393607,
+      0.0858237185549461,
+      0.097928882163798,
+      0.11263476451673918,
+      0.12880650652543976,
+      0.1444108189899754,
+      0.16748628711934935
+    ],
+    "uniform": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "constrained": [
+      0.05494609419330433,
+      0.06383582371855495,
+      0.12804246932532873,
+      0.037734064686968036,
+      0.0858237185549461,
+      0.097928882163798,
+      0.05631738225836959,
+      0.16787790042497874,
+      0.17095593060906453,
+      0.13653773406468694
+    ]
+  },
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.022740172719861007,
+    "actual_weight_l1": 0.24999999999999997,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 8.258203234945912,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "finite_pilot_validation_lp_oracle": {
+    "weights": [
+      0.0,
+      0.30138150647310535,
+      0.07605812429448189,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.3135976362301026,
+      0.30896273300231014,
+      0.0
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.026563557260426918,
+    "actual_weight_l1": 1.1885757518441462,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 3.4433234303275695,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "pilot_rows_per_client": 1500,
+  "pilot_access": "released models and aggregate unnoised calibration means only",
+  "validation_oracle_access": "privileged, diagnostic only, not method selection"
+}

@@ -1,0 +1,32 @@
+{
+  "formal_dp": false,
+  "messages": [
+    "fitted local models",
+    "public schema and counts",
+    "calibration query means and covariance",
+    "kernel feature means"
+  ],
+  "public_education_number_map": {
+    "Preschool": 1,
+    "1st-4th": 2,
+    "5th-6th": 3,
+    "7th-8th": 4,
+    "9th": 5,
+    "10th": 6,
+    "11th": 7,
+    "12th": 8,
+    "HS-grad": 9,
+    "Some-college": 10,
+    "Assoc-voc": 11,
+    "Assoc-acdm": 12,
+    "Bachelors": 13,
+    "Masters": 14,
+    "Prof-school": 15,
+    "Doctorate": 16
+  },
+  "projected_sampler_and_score": true,
+  "projected_score_kind": "exact_discretized",
+  "workload_version": "projected_v2",
+  "warning": "these unnoised extra summaries are not private; DP baseline is separate",
+  "raw_row_access": "client-side training and privileged evaluator only"
+}

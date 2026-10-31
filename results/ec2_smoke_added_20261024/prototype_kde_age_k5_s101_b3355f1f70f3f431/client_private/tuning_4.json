@@ -1,0 +1,42 @@
+{
+  "selected": {
+    "centers": 8,
+    "bandwidth_multiplier": 1.0,
+    "alpha": 0.2,
+    "minimum_center_support": 5,
+    "n_init": 1
+  },
+  "trials": [
+    {
+      "parameters": {
+        "centers": 8,
+        "bandwidth_multiplier": 1.0,
+        "alpha": 0.2,
+        "minimum_center_support": 5,
+        "n_init": 1
+      },
+      "local_tune_query_mae": 0.025466586393738715,
+      "wall_seconds": 0.021879698033444583,
+      "train_rows": 255,
+      "tune_rows": 110,
+      "finite_tune_score_fraction": 1.0,
+      "invalid_income_rate": 0.0,
+      "likelihood_kind": "approximate",
+      "diagnostics": {
+        "centers": 8,
+        "minimum_center_count": 13,
+        "bandwidth": [
+          0.44162650826202543,
+          0.3865818735456204,
+          0.37076102428219,
+          0.06628915936293323,
+          0.06,
+          0.41749692284140316
+        ],
+        "kmeans_iterations": 9
+      },
+      "status": "eligible"
+    }
+  ],
+  "used_split": "local tune only"
+}

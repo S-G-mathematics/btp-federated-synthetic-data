@@ -1,0 +1,69 @@
+{
+  "alpha": [
+    0.16512199735199545,
+    0.2109419330433138,
+    0.2262152449404199,
+    0.22626253073576696,
+    0.17145829392850387
+  ],
+  "training_counts": [
+    3492,
+    4461,
+    4784,
+    4785,
+    3626
+  ],
+  "split_client_counts": {
+    "train": [
+      3492,
+      4461,
+      4784,
+      4785,
+      3626
+    ],
+    "tune": [
+      785,
+      1028,
+      1132,
+      1086,
+      849
+    ],
+    "calibration": [
+      547,
+      708,
+      708,
+      712,
+      579
+    ],
+    "validation": [
+      503,
+      702,
+      734,
+      717,
+      598
+    ],
+    "test": [
+      2772,
+      3402,
+      3678,
+      3518,
+      2911
+    ]
+  },
+  "rule": {
+    "kind": "age",
+    "k": 5,
+    "seed": 505,
+    "severity": 0.8,
+    "age_edges": [
+      26.0,
+      33.0,
+      41.0,
+      51.0
+    ],
+    "education_edges": [],
+    "label_probs": []
+  },
+  "label_skew_test_assignment_uses_label_in_privileged_evaluator": false,
+  "target": "fixed training-mass alpha; test query means standardized by client"
+}

@@ -1,0 +1,35 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_k5_s202_930c4f378ec6b732",
+  "source_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "source_manifest_sha256": "16e35acec39cf2d18014e7de24c2dd2bca915330d51b1dbba5aa69b5325dfaf5",
+  "source_workloads_sha256": "c3afc3385c6b37cc61dd9b8b143513483e04949e963eb95c165ac33c74879a6c",
+  "script_sha256": "49d30908a54137699adb7ab1b4c87b533be5df7dbced6d2863399deaee263fe6",
+  "source_H_reproduced_exactly": true,
+  "pilot_sizes_per_client": [
+    500,
+    1500,
+    5000,
+    15000
+  ],
+  "pilot_replicates": 5,
+  "independent_synthetic_reference_rows_per_client": 30000,
+  "fresh_synthetic_rows": 10000,
+  "empirical_oracle_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.022753174891533,
+    "actual_weight_l1": 0.14687333376328565,
+    "minimum_weight_alpha_ratio": 0.7273579741236693,
+    "effective_client_count": 4.924070410896457,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "oracle_scope": "privileged fixed-finite-H reference and development validation only",
+  "official_test_used": false,
+  "reference_role": "development_assessment",
+  "elapsed_seconds": 125.09543325897539,
+  "ended_utc": "2026-10-24T18:26:28.085186+00:00",
+  "status": "complete"
+}

@@ -1,0 +1,434 @@
+{
+  "methods": [
+    {
+      "method": "uniform",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "objective": 0.0,
+      "details": {
+        "method": "uniform",
+        "family_fixed": true,
+        "message": "optimized",
+        "simplex_valid": true
+      }
+    },
+    {
+      "method": "size",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        0.253641006241725,
+        0.1769434461887649,
+        0.013476451673917155,
+        0.16947229052392662,
+        0.15793455645923965,
+        0.023264611310762247,
+        0.05811424248155854,
+        0.03182334026858332,
+        0.010733875543786646,
+        0.10459617930773596
+      ],
+      "objective": 0.0,
+      "details": {
+        "method": "size",
+        "family_fixed": true,
+        "message": "optimized",
+        "simplex_valid": true
+      }
+    },
+    {
+      "method": "moment_l2",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        4.0642156994409375e-17,
+        0.12776067351193912,
+        8.951266305836986e-18,
+        0.17389919706062407,
+        0.07073873576231013,
+        0.02512586169311109,
+        0.07152200940483035,
+        0.08313030643545195,
+        0.05051939784202109,
+        0.39730381828971223
+      ],
+      "objective": 0.01126802268979183,
+      "details": {
+        "method": "moment_l2",
+        "family_fixed": true,
+        "message": "Optimization terminated successfully",
+        "simplex_valid": true,
+        "residual_linf": 0.051944464774548726
+      }
+    },
+    {
+      "method": "query_minimax",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.07017963554665302,
+        0.0,
+        0.0,
+        0.3265893282207232,
+        0.6032310362326239
+      ],
+      "objective": 0.0351516668950812,
+      "details": {
+        "method": "query_minimax",
+        "family_fixed": true,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "simplex_valid": true,
+        "residual_linf": 0.0351516668950812
+      }
+    },
+    {
+      "method": "entropy_calibration",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        0.17322357273686517,
+        0.15757338264738435,
+        0.013364004656377146,
+        0.16596817124741026,
+        0.13017324963474358,
+        0.030873595900508727,
+        0.06529093169304077,
+        0.044147507133442565,
+        0.020337842179597863,
+        0.1990477421706296
+      ],
+      "objective": 1.3149269186724941,
+      "details": {
+        "method": "entropy_calibration",
+        "family_fixed": true,
+        "penalty": 100.0,
+        "exact_balance": false,
+        "message": "Optimization terminated successfully",
+        "simplex_valid": true,
+        "residual_linf": 0.05858045980150628
+      }
+    },
+    {
+      "method": "uncertainty_gls",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        0.15570675960172953,
+        0.2125950856793958,
+        0.0,
+        0.18175505036746342,
+        0.032332463190583846,
+        9.381471564363633e-17,
+        0.05132537188225768,
+        0.01650511188757748,
+        0.0,
+        0.34978015739099216
+      ],
+      "objective": 199.39624120285856,
+      "details": {
+        "method": "uncertainty_gls",
+        "family_fixed": true,
+        "optimizer": "SLSQP_analytic_gradient_scaled",
+        "objective_scale": 219.92501804286445,
+        "message": "Optimization terminated successfully",
+        "simplex_valid": true,
+        "residual_linf": 0.05503626758412106
+      }
+    },
+    {
+      "method": "pseudo_bma_logscore",
+      "access": "privileged_real_calibration_scores",
+      "success": true,
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": -82628.04761767716,
+      "details": {
+        "method": "pseudo_bma_logscore",
+        "family_fixed": true,
+        "sample_weighted_scores": true,
+        "validation_scores": true,
+        "privileged": true,
+        "temperature": 1.0,
+        "interpretation": "softmax common-reference scores; not Bayesian model evidence",
+        "message": "optimized",
+        "simplex_valid": true
+      }
+    },
+    {
+      "method": "predictive_evidence_bma",
+      "access": "privileged_real_calibration_scores",
+      "success": true,
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objective": -82628.04761767716,
+      "details": {
+        "method": "predictive_evidence_bma",
+        "family_fixed": true,
+        "sample_weighted_scores": true,
+        "validation_scores": true,
+        "privileged": true,
+        "method_family": "conditional fixed-model predictive evidence BMA",
+        "model_prior": [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        "interpretation": "power predictive evidence from normalized per-reference weights, conditional on supplied fitted models; not integrated training-model evidence",
+        "message": "optimized",
+        "simplex_valid": true
+      }
+    },
+    {
+      "method": "stacking_logscore",
+      "access": "privileged_real_calibration_scores",
+      "success": true,
+      "weights": [
+        0.3121127568318222,
+        0.23542471652780628,
+        1.0000300032654107e-12,
+        0.01139043016595121,
+        0.16071156112404322,
+        9.999999999999998e-13,
+        1.0000645505629486e-12,
+        9.999999999999998e-13,
+        9.999999999999998e-13,
+        0.28036053534537697
+      ],
+      "objective": -81283.92158859245,
+      "details": {
+        "method": "stacking_logscore",
+        "family_fixed": true,
+        "sample_weighted_scores": true,
+        "validation_scores": true,
+        "privileged": true,
+        "optimizer": "SLSQP_mean_score_analytic_gradient",
+        "iterations": 10,
+        "duality_gap": 7.678132798449866e-07,
+        "score_scale": 3254.0,
+        "message": "Optimization terminated successfully",
+        "simplex_valid": true
+      }
+    },
+    {
+      "method": "kernel_mean_matching",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        0.0,
+        0.07192566829721564,
+        0.0,
+        0.0,
+        0.0,
+        0.024530962127955934,
+        0.1481386870515998,
+        0.3088910117763843,
+        0.13662141798093103,
+        0.30989225276591326
+      ],
+      "objective": 0.0004172733557950286,
+      "details": {
+        "method": "kernel_mean_matching",
+        "family_fixed": true,
+        "method_family": "KMM-style kernel mean matching",
+        "kernel_embedding_input": true,
+        "implementation": "simplex-constrained squared kernel-mean discrepancy",
+        "message": "Optimization terminated successfully",
+        "simplex_valid": true,
+        "residual_linf": 0.0104618316843067
+      }
+    },
+    {
+      "method": "robust_query_calibration",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        1.9208646269800406e-15,
+        1.1264502134421269e-15,
+        1.6664414662333868e-16,
+        3.3575342750971207e-16,
+        6.950762386797732e-16,
+        0.0770573535780309,
+        0.0,
+        0.0,
+        0.32137872154801533,
+        0.6015639248739496
+      ],
+      "objective": 0.043119709184877245,
+      "details": {
+        "method": "robust_query_calibration",
+        "family_fixed": true,
+        "method_family": "robust query calibration",
+        "interpretation": "uncertainty-set-inspired robust objective; not a faithful AFL implementation",
+        "radius": 1.0,
+        "robust_epigraph": 0.043119709184877245,
+        "message": "Optimization terminated successfully",
+        "simplex_valid": true,
+        "residual_linf": 0.03546743860806695
+      }
+    },
+    {
+      "method": "logpool",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        6.1533038681453416e-15,
+        6.045794421604315e-15,
+        5.647653059919568e-16,
+        0.0,
+        3.657082687847063e-15,
+        1.8363423225949687e-15,
+        1.6540150310032166e-15,
+        0.9999999999999722,
+        6.039735642331172e-15,
+        2.0234589450886137e-15
+      ],
+      "details": {
+        "operator": "logpool",
+        "candidate_count": 192,
+        "pilot_per_model": 500,
+        "support_is_synthetic_only": true,
+        "finite_pool_restricted": true,
+        "query_loss": "l2",
+        "prior_weights": [
+          0.253641006241725,
+          0.1769434461887649,
+          0.013476451673917155,
+          0.16947229052392662,
+          0.15793455645923965,
+          0.023264611310762247,
+          0.05811424248155854,
+          0.03182334026858332,
+          0.010733875543786646,
+          0.10459617930773596
+        ],
+        "logscore_smoothed_count": 0,
+        "logscore_floor": -60.0,
+        "interpretation": "normalized geometric pool restricted to finite synthetic candidates",
+        "optimizer_success": true,
+        "optimizer_message": "Optimization terminated successfully",
+        "query_loss_value": 0.9089461940882293,
+        "ridge": 0.001,
+        "weights": [
+          6.1533038681453416e-15,
+          6.045794421604315e-15,
+          5.647653059919568e-16,
+          0.0,
+          3.657082687847063e-15,
+          1.8363423225949687e-15,
+          1.6540150310032166e-15,
+          0.9999999999999722,
+          6.039735642331172e-15,
+          2.0234589450886137e-15
+        ],
+        "normalization_error": 2.220446049250313e-16,
+        "posterior_bandwidth": 1.0,
+        "posterior_kind": "kernel_smoothed_approximation"
+      }
+    },
+    {
+      "method": "barycenter",
+      "access": "released_models_and_permitted_summaries",
+      "success": true,
+      "weights": [
+        0.253641006241725,
+        0.1769434461887649,
+        0.013476451673917155,
+        0.16947229052392662,
+        0.15793455645923965,
+        0.023264611310762247,
+        0.05811424248155854,
+        0.03182334026858332,
+        0.010733875543786646,
+        0.10459617930773596
+      ],
+      "details": {
+        "operator": "entropic_barycenter",
+        "candidate_count": 192,
+        "pilot_per_model": 500,
+        "support_is_synthetic_only": true,
+        "finite_pool_restricted": true,
+        "query_loss": "l2",
+        "prior_weights": [
+          0.253641006241725,
+          0.1769434461887649,
+          0.013476451673917155,
+          0.16947229052392662,
+          0.15793455645923965,
+          0.023264611310762247,
+          0.05811424248155854,
+          0.03182334026858332,
+          0.010733875543786646,
+          0.10459617930773596
+        ],
+        "regularization": 0.05,
+        "iterations": 198,
+        "marginal_error": 9.90242881061267e-10,
+        "converged": true,
+        "weight_candidate_count": 10,
+        "interpretation": "finite-support entropic transport barycenter (regularized W2 analogue); not unregularized W2",
+        "weights": [
+          0.253641006241725,
+          0.1769434461887649,
+          0.013476451673917155,
+          0.16947229052392662,
+          0.15793455645923965,
+          0.023264611310762247,
+          0.05811424248155854,
+          0.03182334026858332,
+          0.010733875543786646,
+          0.10459617930773596
+        ],
+        "normalization_error": 0.0,
+        "posterior_bandwidth": 1.0,
+        "posterior_kind": "kernel_smoothed_approximation"
+      }
+    }
+  ],
+  "likelihood_floor_count": 0,
+  "likelihood_kind": "approximate",
+  "eight_families": "see docs/WEIGHT_METHODS.md; auxiliary baselines do not add novel families"
+}

@@ -1,0 +1,68 @@
+{
+  "subsets": [
+    {
+      "clients": [
+        0,
+        1
+      ],
+      "rho": 0.04611150459073869,
+      "within_weights": [
+        0.9999999999999984,
+        1.460797685007877e-15
+      ]
+    },
+    {
+      "clients": [
+        1,
+        2
+      ],
+      "rho": 0.2400942466555886,
+      "within_weights": [
+        2.805547408847636e-16,
+        0.9999999999999998
+      ]
+    },
+    {
+      "clients": [
+        2,
+        3
+      ],
+      "rho": 0.45388849540926124,
+      "within_weights": [
+        0.5289718710299119,
+        0.47102812897008806
+      ]
+    },
+    {
+      "clients": [
+        3,
+        4
+      ],
+      "rho": 0.21379424875367273,
+      "within_weights": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "clients": [
+        4,
+        0
+      ],
+      "rho": 0.04611150459073862,
+      "within_weights": [
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "effective_weights": [
+    0.09222300918147724,
+    1.3471915831676235e-16,
+    0.4801884933111771,
+    0.42758849750734546,
+    0.0
+  ],
+  "max_identity_error": 0.0,
+  "applies_to": "pure mixture construction only; does not claim nonlinear operator equivalence"
+}

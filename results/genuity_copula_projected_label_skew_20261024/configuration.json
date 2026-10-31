@@ -1,0 +1,39 @@
+{
+  "method": "copula",
+  "rows": 10000,
+  "repeats": 3,
+  "train_cap": 0,
+  "numeric_projection": "declared_public_integer_rounding",
+  "reference_cell": "results/ec2_development_skew_20261024/independent_label_skew_k5_s101_4e98d858991e786b",
+  "reference_role": "development_assessment",
+  "partition": "label_skew",
+  "clients": 5,
+  "seed": 101,
+  "target_alpha": [
+    0.33525628901078114,
+    0.16110270474749386,
+    0.048751655002837145,
+    0.12176092301872518,
+    0.33312842822016264
+  ],
+  "synthetic_client_counts": [
+    3353,
+    1611,
+    487,
+    1218,
+    3331
+  ],
+  "genuity_version": "2.0.2",
+  "genuity_package_source": "published PyPI wheel",
+  "model_release": "none; fit objects stay client-private in this simulated process",
+  "comparison_access": "sample-only client-private model, no privileged real calibration scores",
+  "training_rows_source": "client train only; no tune/calibration/validation/test fit",
+  "manifest_sha256": "d657ea1b33be4c6891ab6d0aa9932fccf2e2594fec7bb3594afed511f69f252e",
+  "script_sha256": "0bbc5fbe67de92c63b151415899bc626b7dd5a3dd07f9ed83823e40297ed80f6",
+  "host": "ip-172-31-11-178",
+  "started_utc": "2026-10-24T05:27:28.714237+00:00",
+  "ended_utc": "2026-10-24T05:27:29.953825+00:00",
+  "wall_seconds": 3.261911748966668,
+  "status": "completed",
+  "repetitions_are_synthetic_only": true
+}

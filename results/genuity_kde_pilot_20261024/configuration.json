@@ -1,0 +1,38 @@
+{
+  "method": "kde",
+  "rows": 10000,
+  "repeats": 3,
+  "train_cap": 0,
+  "reference_cell": "results/ec2_pilot_extended_grid_20261024/independent_age_k5_s101_48d36efe8aeb655b",
+  "reference_role": "development_assessment",
+  "partition": "age",
+  "clients": 5,
+  "seed": 101,
+  "target_alpha": [
+    0.16814828825420844,
+    0.20720635521089464,
+    0.22427652733118972,
+    0.22607338755437867,
+    0.17429544164932853
+  ],
+  "synthetic_client_counts": [
+    1681,
+    2072,
+    2243,
+    2261,
+    1743
+  ],
+  "genuity_version": "2.0.2",
+  "genuity_package_source": "published PyPI wheel",
+  "model_release": "none; fit objects stay client-private in this simulated process",
+  "comparison_access": "sample-only client-private model, no privileged real calibration scores",
+  "training_rows_source": "client train only; no tune/calibration/validation/test fit",
+  "manifest_sha256": "5897317e116ce6a5e03448ef53a3ee4d17bfc5d54b0395049c7d0df24e29cc48",
+  "script_sha256": "d1b9918ab5e3902c297401a2b6f8121f83c586fecdd90eb5733839617d005eb4",
+  "host": "ip-172-31-11-178",
+  "started_utc": "2026-10-24T05:25:57.447554+00:00",
+  "ended_utc": "2026-10-24T05:25:58.470948+00:00",
+  "wall_seconds": 3.138891404028982,
+  "status": "completed",
+  "repetitions_are_synthetic_only": true
+}

@@ -1,0 +1,25 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_label_skew_k10_s101_887c210b5e6f34b6",
+  "source_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "source_manifest_sha256": "32aed19720d9e55fccc29a78de00d30c8640585e940b71341a0e72acd2ff9d39",
+  "script_sha256": "1e2a5883fccb4186371bae0462459022fa68afe83b56311195e0dccedaa7cc84",
+  "official_test_used": false,
+  "reference_role": "development_assessment",
+  "methods": [
+    "size",
+    "constrained",
+    "TRTR_privileged"
+  ],
+  "learners": [
+    "logistic",
+    "extra_trees"
+  ],
+  "synthetic_train_rows": 10000,
+  "synthetic_tune_rows": 3000,
+  "synthetic_calibration_rows": 3000,
+  "subgroup_min_real_mass": 0.01,
+  "independent_subgroup_draws": 5,
+  "elapsed_seconds": 18.375929898989853,
+  "ended_utc": "2026-10-24T18:05:12.518897+00:00",
+  "status": "complete"
+}

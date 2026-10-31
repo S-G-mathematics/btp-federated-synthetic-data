@@ -1,0 +1,28 @@
+{
+  "reference_cell": "results/ec2_development_k10_stacking_fixed_20261024/copula_label_skew_k10_s101_ff4e70c739247f4d",
+  "reference_role": "development_assessment",
+  "generator": "copula",
+  "partition": "label_skew",
+  "k": 10,
+  "seed": 101,
+  "budget_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    2.0
+  ],
+  "selected_budget_on_validation": 0.0,
+  "selection_metric": "validation query_linf then unseen_query_mae",
+  "official_test_used": false,
+  "assessment_not_used_for_selection": true,
+  "rows": 10000,
+  "repeats": 3,
+  "manifest_sha256": "32aed19720d9e55fccc29a78de00d30c8640585e940b71341a0e72acd2ff9d39",
+  "script_sha256": "41bf3f7b911dbe35a154e8d27d878fd37e1c84ce1cb4bb0f7c72945e5274554e",
+  "host": "ip-172-31-11-178",
+  "ended_utc": "2026-10-24T06:19:30.663650+00:00",
+  "wall_seconds": 4.288197721994948,
+  "status": "completed"
+}

@@ -1,0 +1,25 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_label_skew_k10_s101_887c210b5e6f34b6",
+  "source_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "source_manifest_sha256": "32aed19720d9e55fccc29a78de00d30c8640585e940b71341a0e72acd2ff9d39",
+  "script_sha256": "5ab1af2f11ff22ca48ca95a0c064c821e1d225279859105062848dca5f89dd38",
+  "methods": [
+    "size",
+    "constrained"
+  ],
+  "condition_names": [
+    "age25-45",
+    "female",
+    "bachelors_age30-60",
+    "rare_doctorate_age60-90"
+  ],
+  "teacher_rows": 30000,
+  "requested_student_rows": 2000,
+  "minimum_teacher_rows": 300,
+  "minimum_teacher_mass": 0.01,
+  "official_test_used": false,
+  "reference_role": "development_assessment",
+  "elapsed_seconds": 13.534621990984306,
+  "ended_utc": "2026-10-24T18:45:02.712394+00:00",
+  "status": "complete"
+}

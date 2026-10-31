@@ -1,0 +1,24 @@
+{
+  "selected": {
+    "bins": 8,
+    "alpha": 0.2,
+    "components": 2,
+    "max_iter": 60,
+    "n_init": 1
+  },
+  "trials": [
+    {
+      "parameters": {
+        "bins": 8,
+        "alpha": 0.2,
+        "components": 2,
+        "max_iter": 60,
+        "n_init": 1
+      },
+      "local_tune_query_mae": 0.02446877504534526,
+      "wall_seconds": 0.03925382799934596,
+      "likelihood_kind": "exact_discretized"
+    }
+  ],
+  "used_split": "local tune only"
+}

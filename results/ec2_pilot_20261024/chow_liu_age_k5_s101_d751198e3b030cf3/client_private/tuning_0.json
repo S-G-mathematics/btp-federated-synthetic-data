@@ -1,0 +1,63 @@
+{
+  "selected": {
+    "bins": 32,
+    "alpha": 0.1
+  },
+  "trials": [
+    {
+      "parameters": {
+        "bins": 8,
+        "alpha": 0.1
+      },
+      "local_tune_query_mae": 0.011500412313290093,
+      "wall_seconds": 0.1535177430487238,
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "bins": 8,
+        "alpha": 1.0
+      },
+      "local_tune_query_mae": 0.01191107635021976,
+      "wall_seconds": 0.15219840599456802,
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "bins": 16,
+        "alpha": 0.1
+      },
+      "local_tune_query_mae": 0.007963520900458222,
+      "wall_seconds": 0.15217038994887844,
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "bins": 16,
+        "alpha": 1.0
+      },
+      "local_tune_query_mae": 0.010436371983099409,
+      "wall_seconds": 0.15219046000856906,
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "bins": 32,
+        "alpha": 0.1
+      },
+      "local_tune_query_mae": 0.007401261593654626,
+      "wall_seconds": 0.1526566289830953,
+      "likelihood_kind": "exact_discretized"
+    },
+    {
+      "parameters": {
+        "bins": 32,
+        "alpha": 1.0
+      },
+      "local_tune_query_mae": 0.009989951457548735,
+      "wall_seconds": 0.15405767102492973,
+      "likelihood_kind": "exact_discretized"
+    }
+  ],
+  "used_split": "local tune only"
+}

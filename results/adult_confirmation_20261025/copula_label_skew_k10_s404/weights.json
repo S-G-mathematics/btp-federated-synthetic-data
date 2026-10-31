@@ -1,0 +1,79 @@
+{
+  "weights": {
+    "size": [
+      0.042320786835634575,
+      0.042509930017022884,
+      0.07088140722526953,
+      0.047758653300548515,
+      0.011254019292604502,
+      0.06567996973709098,
+      0.5793455645923964,
+      0.005721581236996406,
+      0.07527898619254776,
+      0.059249101569888406
+    ],
+    "uniform": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "constrained": [
+      0.042320786835634575,
+      0.021254965008511442,
+      0.08602226983105525,
+      0.0686473393106788,
+      0.005627009646302251,
+      0.06567996973709098,
+      0.518867032343484,
+      0.010160169381690953,
+      0.03763949309627388,
+      0.14378096480927793
+    ]
+  },
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.018463326862276197,
+    "actual_weight_l1": 0.25000000000000006,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 3.224594047145795,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "finite_pilot_validation_lp_oracle": {
+    "weights": [
+      0.07837839298807257,
+      0.0,
+      0.3968087862926177,
+      0.12964476890907742,
+      0.0,
+      0.0,
+      0.3600541657951487,
+      0.035113886015083605,
+      0.0,
+      0.0
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.02095759931833685,
+    "actual_weight_l1": 0.9465268112128045,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 3.212540330884206,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "pilot_rows_per_client": 1500,
+  "pilot_access": "released models and aggregate unnoised calibration means only",
+  "validation_oracle_access": "privileged, diagnostic only, not method selection"
+}

@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "finished_utc": "2026-10-25T05:09:33.328163+00:00",
+  "fit_seconds": 57.84281009703409,
+  "total_elapsed_seconds": 59.459514104004484,
+  "model_checkpoint_sha256": "58d9dc1843f2ec6e8ad1b0b34926028031c40676695324dda2fe20c55421735e",
+  "draws": [
+    {
+      "replicate": 0,
+      "seed": 5301,
+      "path": "discrete_draw_0.npz",
+      "sha256": "f574311076b793a8cc21453975536641fde23bb04e4c63364379a153a2f20a2b",
+      "rows": 10000
+    },
+    {
+      "replicate": 1,
+      "seed": 5302,
+      "path": "discrete_draw_1.npz",
+      "sha256": "6be1e657e24f8118fcd3155d8c82bc83539c8ef365e28894045c6b5b9fef9473",
+      "rows": 10000
+    },
+    {
+      "replicate": 2,
+      "seed": 5303,
+      "path": "discrete_draw_2.npz",
+      "sha256": "1f1b0e129281cd4272385dee90009ac650f20bb69f901181d8eadd71844310d9",
+      "rows": 10000
+    },
+    {
+      "replicate": 3,
+      "seed": 5304,
+      "path": "discrete_draw_3.npz",
+      "sha256": "f5b945518b7ceef9c844024709f73da9d2eb68f77157a3459d1877847e6c2124",
+      "rows": 10000
+    },
+    {
+      "replicate": 4,
+      "seed": 5305,
+      "path": "discrete_draw_4.npz",
+      "sha256": "126ddf152e6eec6941c22ba529f9d1e4fe71d304afbdd97d3a1a359d48c33fee",
+      "rows": 10000
+    }
+  ],
+  "query_linf_calibration": 5.37023379686874e-05,
+  "query_mae_calibration": 5.707387131447369e-06,
+  "mbi_commit": "9429881f0f21ef413424f6011b9d6ae20728176d",
+  "mbi_version": "2.0.0",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "jax_version": "0.12.0.1",
+  "native_thread_env": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "XLA_FLAGS": "--xla_cpu_multi_thread_eigen=false"
+  }
+}

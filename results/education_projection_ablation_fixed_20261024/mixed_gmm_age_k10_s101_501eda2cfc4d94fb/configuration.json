@@ -1,0 +1,32 @@
+{
+  "source_cell": "results/ec2_core_seed101_fixed_selection_20261024/mixed_gmm_age_k10_s101_501eda2cfc4d94fb",
+  "source_code_hash": "984177ee25c08e5e41b7d830b850f1060563c2f882e2c618bff38b2f298ba351",
+  "source_manifest_sha256": "2eedd41b5f31022db7b92e64212b19860b7a1cc35d02e33658defa400ba98169",
+  "script_sha256": "bbbadf9dba31c16231fcafae854e7dd292cf044ed769cc1034a7b3f798a3c35e",
+  "mapping": {
+    "Preschool": 1,
+    "1st-4th": 2,
+    "5th-6th": 3,
+    "7th-8th": 4,
+    "9th": 5,
+    "10th": 6,
+    "11th": 7,
+    "12th": 8,
+    "HS-grad": 9,
+    "Some-college": 10,
+    "Assoc-voc": 11,
+    "Assoc-acdm": 12,
+    "Bachelors": 13,
+    "Masters": 14,
+    "Prof-school": 15,
+    "Doctorate": 16
+  },
+  "mapping_role": "fixed postpilot declaration verified on development TRAIN only; unknown education stays unprojected and is counted unsupported",
+  "projected_score_claim": "none; original generator scores describe preprojection rows",
+  "rows": 10000,
+  "repeats": 5,
+  "reference_role": "development_assessment",
+  "official_test_used": false,
+  "status": "complete",
+  "ended_utc": "2026-10-24T09:31:02.336602+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "current_code_hash": "984177ee25c08e5e41b7d830b850f1060563c2f882e2c618bff38b2f298ba351",
+  "pilot_profile_exp12_keys": [
+    "smoke",
+    "severity",
+    "pilot_samples",
+    "tune_samples",
+    "synthetic_rows",
+    "support_size",
+    "barycenter_weight_trials",
+    "kernel_features",
+    "repeats"
+  ],
+  "counts": {
+    "complete_exact": 28,
+    "reuse_with_selection_bridge": 26
+  },
+  "measured_median_cell_seconds": {
+    "copula_k5": 58.5,
+    "copula_k10": 65.4,
+    "chow_liu_k5": 76.6,
+    "chow_liu_k10": 87.8,
+    "mixed_gmm_k5": 85.2,
+    "mixed_gmm_k10": 96.5
+  },
+  "estimated_remaining_sequential_seconds": 0,
+  "estimate_scope": "median completed-cell wall durations; not a resource guarantee",
+  "bridge_scope": "old per-method Exp1/2 results; recompute the selection-policy summary, do not reuse old selected downstream stages",
+  "official_test_used": false
+}

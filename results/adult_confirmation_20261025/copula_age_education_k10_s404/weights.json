@@ -1,0 +1,79 @@
+{
+  "weights": {
+    "size": [
+      0.06151881974654814,
+      0.07882542084357859,
+      0.09684130887081521,
+      0.11230376394930963,
+      0.12365235483260828,
+      0.12729336107433328,
+      0.12265935313031966,
+      0.10762247020994893,
+      0.09466616228484963,
+      0.07461698505768867
+    ],
+    "uniform": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "constrained": [
+      0.10479413775018256,
+      0.07882542084357859,
+      0.09684130887081521,
+      0.11045961793077357,
+      0.06182617741630414,
+      0.12729336107433328,
+      0.06132967656515983,
+      0.18934715220631446,
+      0.09466616228484963,
+      0.07461698505768867
+    ]
+  },
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.01921634493885238,
+    "actual_weight_l1": 0.24999999999999997,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 8.853949192202585,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "finite_pilot_validation_lp_oracle": {
+    "weights": [
+      0.2494797854691613,
+      0.0,
+      0.04748086836986897,
+      0.07701476514764934,
+      0.0,
+      0.235636078966567,
+      0.0,
+      0.25554856932519854,
+      0.0,
+      0.1348399327215548
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.022068321714762584,
+    "actual_weight_l1": 1.0089054607879253,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 4.774702995844249,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "pilot_rows_per_client": 1500,
+  "pilot_access": "released models and aggregate unnoised calibration means only",
+  "validation_oracle_access": "privileged, diagnostic only, not method selection"
+}

@@ -1,0 +1,54 @@
+{
+  "size": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "constrained": [
+    0.28061086260121637,
+    0.18664881456017707,
+    0.1,
+    0.18835118543982293,
+    0.24438913739878354
+  ],
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.028500630371294244,
+    "actual_weight_l1": 0.24999999999999992,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 4.570750413700344,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "fixed_pilot_validation_oracle": {
+    "weights": [
+      0.3121157214727837,
+      0.07961224205633095,
+      0.0,
+      0.457576642263519,
+      0.15069539420736633
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.028410072961170714,
+    "actual_weight_l1": 0.7393847274726055,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 2.977609998087575,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "local_tune_mae": [
+    0.011434210526315792,
+    0.012967105263157896,
+    0.011605263157894738,
+    0.011032894736842106,
+    0.011723684210526317
+  ]
+}

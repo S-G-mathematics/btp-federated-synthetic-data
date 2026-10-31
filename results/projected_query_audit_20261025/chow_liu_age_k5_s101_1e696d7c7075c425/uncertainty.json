@@ -1,0 +1,9 @@
+{
+  "confidence_nominal": 0.95,
+  "L_queries_primary_and_audit": 175,
+  "alpha_weighted_real_n_term": 0.0006076958451799141,
+  "synthetic_n_term": 0.0001,
+  "simultaneous_hoeffding_union_radius": 0.05597187793006033,
+  "assumptions": "independent bounded real records within clients and independent synthetic rows; not verified for Adult",
+  "interpretation": "conditional radius around expected two-sample query differences, not measured population distance or validated Adult confidence interval"
+}

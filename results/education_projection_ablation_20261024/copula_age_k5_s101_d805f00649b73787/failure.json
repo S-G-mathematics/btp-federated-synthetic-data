@@ -1,0 +1,6 @@
+{
+  "source_cell": "results/ec2_copula_seed101_current_code_20261024/copula_age_k5_s101_d805f00649b73787",
+  "error": "ValueError: Synthetic education outside declared map",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/education_projection_ablation.py\", line 196, in main\n    run_cell(cell, output)\n  File \"/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/education_projection_ablation.py\", line 91, in run_cell\n    raise ValueError(\"Synthetic education outside declared map\")\nValueError: Synthetic education outside declared map\n",
+  "failed_utc": "2026-10-24T09:23:43.706990+00:00"
+}

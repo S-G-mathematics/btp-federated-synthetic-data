@@ -1,0 +1,51 @@
+{
+  "cell": "copula_age_education_k10_s101_d3f211485e990731",
+  "rows": 3254,
+  "k": 10,
+  "likelihood_floor_count": 0,
+  "old_slsqp": {
+    "success": false,
+    "message": "Positive directional derivative for linesearch",
+    "mean_negative_log_score": 34.17252618054332,
+    "duality_gap": 5.635224993083554e-06
+  },
+  "analytic_slsqp": {
+    "success": true,
+    "message": "Optimization terminated successfully",
+    "iterations": 14,
+    "mean_negative_log_score": 34.172526179509916,
+    "duality_gap": 2.950811223145777e-07,
+    "wall_seconds": 0.0203839159803465,
+    "weights": [
+      0.038515874170773935,
+      0.10632322788784603,
+      0.2782044361695344,
+      0.09836343622990396,
+      0.05512331636525575,
+      1e-12,
+      0.3238866869331841,
+      0.06699983249625162,
+      1.000028966720136e-12,
+      0.032583189745250235
+    ]
+  },
+  "em": {
+    "iterations": 528,
+    "mean_negative_log_score": 34.172526183427124,
+    "duality_gap": 9.906737119536047e-08,
+    "wall_seconds": 1.4088681819848716,
+    "weights": [
+      0.03851595270920666,
+      0.10632302780870802,
+      0.27820437332914416,
+      0.0983637778953851,
+      0.05512342761768298,
+      1.0000000000000003e-15,
+      0.32388639633409494,
+      0.06699983171085443,
+      2.0327392883564578e-07,
+      0.0325830093209939
+    ]
+  },
+  "interpretation": "privileged evaluator reproduction; row-level likelihoods not serialized"
+}

@@ -1,0 +1,18 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_age_k10_s303_f21cb0f5f83a741e",
+  "source_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "workload_version": "projected_v2",
+  "source_workloads_sha256": "c3afc3385c6b37cc61dd9b8b143513483e04949e963eb95c165ac33c74879a6c",
+  "source_manifest_sha256": "31f343042df55afc5b6b552071926e03e826ec639207e3447272b0854a9d9b09",
+  "script_sha256": "2a9cec652c21d8e92a9fa2b0b9573b4099baa0b8bb6d3f79c338dc5fda80c764",
+  "delta": 0.25,
+  "floor_ratio": 0.5,
+  "rows": 10000,
+  "assessment_repeats": 5,
+  "primary_reference": "alpha-standardized client held-out query means",
+  "pooled_reference": "secondary unweighted pooled held-out query means",
+  "assessment_target_gap_query_linf": 0.0023321700443931226,
+  "official_test_used": false,
+  "status": "complete",
+  "ended_utc": "2026-10-24T12:05:23.075859+00:00"
+}

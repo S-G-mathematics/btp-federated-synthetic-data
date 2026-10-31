@@ -1,0 +1,17 @@
+condition,teacher_support,teacher_pool,real_mass,real_reference_count,raw_violation,accepted_rows,status,conditional_query_linf,conditional_query_mae,postfilter_violation,generator,partition,k,seed,profile_name,source_file
+age25-45,1260,2500,0.5486567414835034,330,0.0,200.0,completed,0.2302127039666133,0.0225447926762574,0.0,chow_liu,age,5,101,smoke,results/ec2_smoke_20261024/chow_liu_age_k5_s101_10aab5bc419ab62a/exp05_conditionals.csv
+female,854,2500,0.3016045741222451,180,0.0,200.0,completed,0.2159859098741732,0.0310733111920126,0.0,chow_liu,age,5,101,smoke,results/ec2_smoke_20261024/chow_liu_age_k5_s101_10aab5bc419ab62a/exp05_conditionals.csv
+bachelors_age30-60,246,2500,0.1009534610880732,61,0.0,200.0,completed,0.39,0.0388074805636804,0.0,chow_liu,age,5,101,smoke,results/ec2_smoke_20261024/chow_liu_age_k5_s101_10aab5bc419ab62a/exp05_conditionals.csv
+rare_doctorate_age60-90,5,2500,0.0030503737682636,2,,,abstain_insufficient_support,,,,chow_liu,age,5,101,smoke,results/ec2_smoke_20261024/chow_liu_age_k5_s101_10aab5bc419ab62a/exp05_conditionals.csv
+age25-45,1288,2500,0.5486567414835034,330,0.0,200.0,completed,0.2652127039666133,0.0169991067074975,0.0,copula,age,5,101,smoke,results/ec2_smoke_20261024/copula_age_k5_s101_c83addd2b209bed7/exp05_conditionals.csv
+female,800,2500,0.3016045741222451,180,0.0,200.0,completed,0.255,0.0215555458463871,0.0,copula,age,5,101,smoke,results/ec2_smoke_20261024/copula_age_k5_s101_c83addd2b209bed7/exp05_conditionals.csv
+bachelors_age30-60,230,2500,0.1009534610880732,61,0.0,200.0,completed,0.7,0.030140660007403,0.0,copula,age,5,101,smoke,results/ec2_smoke_20261024/copula_age_k5_s101_c83addd2b209bed7/exp05_conditionals.csv
+rare_doctorate_age60-90,9,2500,0.0030503737682636,2,,,abstain_insufficient_support,,,,copula,age,5,101,smoke,results/ec2_smoke_20261024/copula_age_k5_s101_c83addd2b209bed7/exp05_conditionals.csv
+age25-45,1239,2500,0.5486567414835034,330,0.0,200.0,completed,0.2202127039666133,0.0162676308396641,0.0,independent,age,5,101,smoke,results/ec2_smoke_20261024/independent_age_k5_s101_950f27b35441b104/exp05_conditionals.csv
+female,780,2500,0.3016045741222451,180,0.0,200.0,completed,0.465,0.0335168550548181,0.0,independent,age,5,101,smoke,results/ec2_smoke_20261024/independent_age_k5_s101_950f27b35441b104/exp05_conditionals.csv
+bachelors_age30-60,244,2500,0.1009534610880732,61,0.0,200.0,completed,0.825,0.0387301330606232,0.0,independent,age,5,101,smoke,results/ec2_smoke_20261024/independent_age_k5_s101_950f27b35441b104/exp05_conditionals.csv
+rare_doctorate_age60-90,1,2500,0.0030503737682636,2,,,abstain_insufficient_support,,,,independent,age,5,101,smoke,results/ec2_smoke_20261024/independent_age_k5_s101_950f27b35441b104/exp05_conditionals.csv
+age25-45,1266,2500,0.5486567414835034,330,0.0,200.0,completed,0.2167739282230159,0.0213355628374504,0.0,mixed_gmm,age,5,101,smoke,results/ec2_smoke_20261024/mixed_gmm_age_k5_s101_18225b8b80f350dd/exp05_conditionals.csv
+female,769,2500,0.3016045741222451,180,0.0,200.0,completed,0.425,0.038836612028816,0.0,mixed_gmm,age,5,101,smoke,results/ec2_smoke_20261024/mixed_gmm_age_k5_s101_18225b8b80f350dd/exp05_conditionals.csv
+bachelors_age30-60,241,2500,0.1009534610880732,61,0.0,200.0,completed,0.76,0.0429650134264754,0.0,mixed_gmm,age,5,101,smoke,results/ec2_smoke_20261024/mixed_gmm_age_k5_s101_18225b8b80f350dd/exp05_conditionals.csv
+rare_doctorate_age60-90,3,2500,0.0030503737682636,2,,,abstain_insufficient_support,,,,mixed_gmm,age,5,101,smoke,results/ec2_smoke_20261024/mixed_gmm_age_k5_s101_18225b8b80f350dd/exp05_conditionals.csv

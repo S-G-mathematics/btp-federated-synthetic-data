@@ -1,0 +1,79 @@
+{
+  "weights": {
+    "size": [
+      0.06047853224891243,
+      0.07991299413656137,
+      0.10071874408927559,
+      0.11329676565159826,
+      0.11878191791185928,
+      0.12473992812559108,
+      0.12497635710232646,
+      0.11159447701910347,
+      0.09480801967089086,
+      0.07069226404388122
+    ],
+    "uniform": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "constrained": [
+      0.06435539626294363,
+      0.07991299413656137,
+      0.14974695205740543,
+      0.06175559742546853,
+      0.11878191791185928,
+      0.12473992812559108,
+      0.06248817855116323,
+      0.10062382379639638,
+      0.09480801967089086,
+      0.14278719206172014
+    ]
+  },
+  "constrained_certificate": {
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.023241178106447324,
+    "actual_weight_l1": 0.25,
+    "minimum_weight_alpha_ratio": 0.5,
+    "effective_client_count": 9.104029652890194,
+    "delta": 0.25,
+    "floor_ratio": 0.5
+  },
+  "finite_pilot_validation_lp_oracle": {
+    "weights": [
+      0.13304250565840847,
+      0.0,
+      0.34057455365275324,
+      0.0,
+      0.1440944401921273,
+      0.0,
+      0.0,
+      0.0,
+      0.06959068340634143,
+      0.31269781709036953
+    ],
+    "solver": "HiGHS",
+    "success": true,
+    "status": 0,
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_calibration_query_linf": 0.02101515248553415,
+    "actual_weight_l1": 1.1594757165994602,
+    "minimum_weight_alpha_ratio": 0.0,
+    "effective_client_count": 3.889880128837994,
+    "delta": 2.0,
+    "floor_ratio": 0.0
+  },
+  "pilot_rows_per_client": 1500,
+  "pilot_access": "released models and aggregate unnoised calibration means only",
+  "validation_oracle_access": "privileged, diagnostic only, not method selection"
+}

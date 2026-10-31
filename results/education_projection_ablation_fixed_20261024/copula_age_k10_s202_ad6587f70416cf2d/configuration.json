@@ -1,0 +1,32 @@
+{
+  "source_cell": "results/ec2_copula_replication_20261024/copula_age_k10_s202_ad6587f70416cf2d",
+  "source_code_hash": "ff7cd479d1514308ccf6d777f194f251e682aa5b508c0ae9cbe49535995268a0",
+  "source_manifest_sha256": "b85bb7ea97b44855652bcfc6ce0bfc4cd0b8c6050175854cd2fb967904fc0520",
+  "script_sha256": "bbbadf9dba31c16231fcafae854e7dd292cf044ed769cc1034a7b3f798a3c35e",
+  "mapping": {
+    "Preschool": 1,
+    "1st-4th": 2,
+    "5th-6th": 3,
+    "7th-8th": 4,
+    "9th": 5,
+    "10th": 6,
+    "11th": 7,
+    "12th": 8,
+    "HS-grad": 9,
+    "Some-college": 10,
+    "Assoc-voc": 11,
+    "Assoc-acdm": 12,
+    "Bachelors": 13,
+    "Masters": 14,
+    "Prof-school": 15,
+    "Doctorate": 16
+  },
+  "mapping_role": "fixed postpilot declaration verified on development TRAIN only; unknown education stays unprojected and is counted unsupported",
+  "projected_score_claim": "none; original generator scores describe preprojection rows",
+  "rows": 10000,
+  "repeats": 5,
+  "reference_role": "development_assessment",
+  "official_test_used": false,
+  "status": "complete",
+  "ended_utc": "2026-10-24T09:25:22.660418+00:00"
+}

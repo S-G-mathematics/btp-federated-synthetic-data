@@ -1,0 +1,90 @@
+[
+  {
+    "method": "size",
+    "teacher_seed": 71101,
+    "teacher_client_counts": [
+      5045,
+      6216,
+      6728,
+      6782,
+      5229
+    ],
+    "direct_seed": 74101,
+    "direct_client_counts": [
+      5045,
+      6216,
+      6728,
+      6782,
+      5229
+    ],
+    "weight_l1_from_alpha": 0.0
+  },
+  {
+    "method": "size",
+    "condition": "age25-45",
+    "student_train_seed": 72101,
+    "student_sample_seed": 73101,
+    "student_training_rows": 15382,
+    "estimator": "per-registered-condition projected Chow-Liu, no cross-condition generalization"
+  },
+  {
+    "method": "size",
+    "condition": "female",
+    "student_train_seed": 72102,
+    "student_sample_seed": 73102,
+    "student_training_rows": 9870,
+    "estimator": "per-registered-condition projected Chow-Liu, no cross-condition generalization"
+  },
+  {
+    "method": "size",
+    "condition": "bachelors_age30-60",
+    "student_train_seed": 72103,
+    "student_sample_seed": 73103,
+    "student_training_rows": 3357,
+    "estimator": "per-registered-condition projected Chow-Liu, no cross-condition generalization"
+  },
+  {
+    "method": "constrained",
+    "teacher_seed": 71101,
+    "teacher_client_counts": [
+      3213,
+      5793,
+      10069,
+      5287,
+      5638
+    ],
+    "direct_seed": 74101,
+    "direct_client_counts": [
+      3213,
+      5793,
+      10069,
+      5287,
+      5638
+    ],
+    "weight_l1_from_alpha": 0.25
+  },
+  {
+    "method": "constrained",
+    "condition": "age25-45",
+    "student_train_seed": 72101,
+    "student_sample_seed": 73101,
+    "student_training_rows": 15970,
+    "estimator": "per-registered-condition projected Chow-Liu, no cross-condition generalization"
+  },
+  {
+    "method": "constrained",
+    "condition": "female",
+    "student_train_seed": 72102,
+    "student_sample_seed": 73102,
+    "student_training_rows": 9836,
+    "estimator": "per-registered-condition projected Chow-Liu, no cross-condition generalization"
+  },
+  {
+    "method": "constrained",
+    "condition": "bachelors_age30-60",
+    "student_train_seed": 72103,
+    "student_sample_seed": 73103,
+    "student_training_rows": 3473,
+    "estimator": "per-registered-condition projected Chow-Liu, no cross-condition generalization"
+  }
+]

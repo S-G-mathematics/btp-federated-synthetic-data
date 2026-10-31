@@ -1,0 +1,32 @@
+{
+  "source_cell": "results/ec2_core_skew_fixed_selection_20261024/chow_liu_label_skew_k5_s202_28aeb0f7a207b2d7",
+  "source_code_hash": "984177ee25c08e5e41b7d830b850f1060563c2f882e2c618bff38b2f298ba351",
+  "source_manifest_sha256": "91857b81ae6275b839eb857c7f546860458a33bab97291bd10b5154bd98b45db",
+  "script_sha256": "bbbadf9dba31c16231fcafae854e7dd292cf044ed769cc1034a7b3f798a3c35e",
+  "mapping": {
+    "Preschool": 1,
+    "1st-4th": 2,
+    "5th-6th": 3,
+    "7th-8th": 4,
+    "9th": 5,
+    "10th": 6,
+    "11th": 7,
+    "12th": 8,
+    "HS-grad": 9,
+    "Some-college": 10,
+    "Assoc-voc": 11,
+    "Assoc-acdm": 12,
+    "Bachelors": 13,
+    "Masters": 14,
+    "Prof-school": 15,
+    "Doctorate": 16
+  },
+  "mapping_role": "fixed postpilot declaration verified on development TRAIN only; unknown education stays unprojected and is counted unsupported",
+  "projected_score_claim": "none; original generator scores describe preprojection rows",
+  "rows": 10000,
+  "repeats": 5,
+  "reference_role": "development_assessment",
+  "official_test_used": false,
+  "status": "complete",
+  "ended_utc": "2026-10-24T09:29:18.198897+00:00"
+}

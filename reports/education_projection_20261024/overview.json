@@ -1,0 +1,21 @@
+{
+  "complete_cells": 54,
+  "raw_size_relation_mismatch_by_generator": {
+    "chow_liu": 0.2539955555555556,
+    "copula": 0.7757622222222222,
+    "mixed_gmm": 0.6123555555555557
+  },
+  "projected_size_relation_mismatch_by_generator": {
+    "chow_liu": 0.00139,
+    "copula": 0.0003111111111111111,
+    "mixed_gmm": 0.0010233333333333333
+  },
+  "repair_size_primary_delta_by_generator": {
+    "chow_liu": -0.06879995852922953,
+    "copula": -2.809322383799623e-05,
+    "mixed_gmm": -0.009825331181083361
+  },
+  "repair_changes_primary_max_cells": 36,
+  "initial_unknown_category_failure_retained": true,
+  "scope": "postpilot TRAIN-verified projection; scores refer to raw model; no global selection or official test"
+}

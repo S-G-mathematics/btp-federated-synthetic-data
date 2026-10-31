@@ -1,0 +1,90 @@
+{
+  "trtr_privileged": {
+    "selected_C": 0.1,
+    "trials": [
+      {
+        "C": 0.1,
+        "tune_brier": 0.07984573957496843
+      },
+      {
+        "C": 1.0,
+        "tune_brier": 0.07986759508036975
+      },
+      {
+        "C": 10.0,
+        "tune_brier": 0.08003316601281958
+      }
+    ],
+    "calibration": "Platt sigmoid on separate source-specific set",
+    "calibration_rows": 4119,
+    "train_rows": 22653,
+    "tune_rows": 6178,
+    "clip": 1e-06
+  },
+  "size": {
+    "selected_C": 1.0,
+    "trials": [
+      {
+        "C": 0.1,
+        "tune_brier": 0.0995776089416111
+      },
+      {
+        "C": 1.0,
+        "tune_brier": 0.09954206283858744
+      },
+      {
+        "C": 10.0,
+        "tune_brier": 0.09970511814117688
+      }
+    ],
+    "calibration": "Platt sigmoid on separate source-specific set",
+    "calibration_rows": 2000,
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "clip": 1e-06
+  },
+  "uniform": {
+    "selected_C": 0.1,
+    "trials": [
+      {
+        "C": 0.1,
+        "tune_brier": 0.09849123061781108
+      },
+      {
+        "C": 1.0,
+        "tune_brier": 0.09858856321105028
+      },
+      {
+        "C": 10.0,
+        "tune_brier": 0.09875638032310716
+      }
+    ],
+    "calibration": "Platt sigmoid on separate source-specific set",
+    "calibration_rows": 2000,
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "clip": 1e-06
+  },
+  "constrained_query_minimax": {
+    "selected_C": 0.1,
+    "trials": [
+      {
+        "C": 0.1,
+        "tune_brier": 0.0981385947083479
+      },
+      {
+        "C": 1.0,
+        "tune_brier": 0.0982004356674461
+      },
+      {
+        "C": 10.0,
+        "tune_brier": 0.09823519369447488
+      }
+    ],
+    "calibration": "Platt sigmoid on separate source-specific set",
+    "calibration_rows": 2000,
+    "train_rows": 10000,
+    "tune_rows": 2000,
+    "clip": 1e-06
+  }
+}

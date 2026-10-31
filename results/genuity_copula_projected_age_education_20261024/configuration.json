@@ -1,0 +1,39 @@
+{
+  "method": "copula",
+  "rows": 10000,
+  "repeats": 3,
+  "train_cap": 0,
+  "numeric_projection": "declared_public_integer_rounding",
+  "reference_cell": "results/ec2_development_skew_20261024/independent_age_education_k5_s101_b799e7652c731185",
+  "reference_role": "development_assessment",
+  "partition": "age_education",
+  "clients": 5,
+  "seed": 101,
+  "target_alpha": [
+    0.12317949687913751,
+    0.2190278040476641,
+    0.2630508795157935,
+    0.24366370342349158,
+    0.15107811613391336
+  ],
+  "synthetic_client_counts": [
+    1232,
+    2190,
+    2630,
+    2437,
+    1511
+  ],
+  "genuity_version": "2.0.2",
+  "genuity_package_source": "published PyPI wheel",
+  "model_release": "none; fit objects stay client-private in this simulated process",
+  "comparison_access": "sample-only client-private model, no privileged real calibration scores",
+  "training_rows_source": "client train only; no tune/calibration/validation/test fit",
+  "manifest_sha256": "53f4e44472bb270aaff856778c5ff088894a2464f8fcf6fda1311c9e49f0c017",
+  "script_sha256": "0bbc5fbe67de92c63b151415899bc626b7dd5a3dd07f9ed83823e40297ed80f6",
+  "host": "ip-172-31-11-178",
+  "started_utc": "2026-10-24T05:27:16.340414+00:00",
+  "ended_utc": "2026-10-24T05:27:17.483840+00:00",
+  "wall_seconds": 3.1890780110261403,
+  "status": "completed",
+  "repetitions_are_synthetic_only": true
+}

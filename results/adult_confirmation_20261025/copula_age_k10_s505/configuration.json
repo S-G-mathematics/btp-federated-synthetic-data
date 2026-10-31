@@ -1,0 +1,25 @@
+{
+  "status": "FROZEN",
+  "reference_role": "official_adult_test_confirmation",
+  "generator": "copula",
+  "partition": "age",
+  "k": 10,
+  "seed": 505,
+  "freeze_sha256": "2420f737b6af732925f9cce3fbb82c8a9a7a30e1988dde5e68900d1404bb3a23",
+  "source_code_hash": "2d7a7598b43865d969dacbb8c91f06ac046b38670e9ef98169c3815dd8b2bb24",
+  "runner_sha256": "b7ddd80774b0f7f360248482c959cf35615c0cc3f4ec91212fc8435bf706e97c",
+  "raw_archive_sha256": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+  "profile": {
+    "smoke": false,
+    "severity": 0.8,
+    "pilot_samples": 1500,
+    "tune_samples": 1000,
+    "structural_projection": true
+  },
+  "created_at_utc": "2026-10-25T05:43:24.149761+00:00",
+  "hardware": {
+    "hostname": "ip-172-31-11-178",
+    "platform": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  }
+}

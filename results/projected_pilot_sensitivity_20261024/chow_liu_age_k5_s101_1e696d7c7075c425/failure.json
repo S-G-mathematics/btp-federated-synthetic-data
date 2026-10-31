@@ -1,0 +1,6 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_k5_s101_1e696d7c7075c425",
+  "error": "ValueError: Saved workload mismatch",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/eval_projected_pilot_sensitivity.py\", line 195, in main\n    run_cell(cell, out, resources)\n  File \"/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/eval_projected_pilot_sensitivity.py\", line 68, in run_cell\n    raise ValueError(\"Saved workload mismatch\")\nValueError: Saved workload mismatch\n",
+  "failed_utc": "2026-10-24T18:21:05.593292+00:00"
+}

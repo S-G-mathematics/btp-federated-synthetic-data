@@ -1,0 +1,436 @@
+{
+  "solver": {
+    "weights": [
+      0.5929605908669143,
+      0.0,
+      0.0,
+      0.2688176288417627,
+      0.13822178029132298
+    ],
+    "success": true,
+    "objective": 0.02939871857975812,
+    "details": {
+      "method": "oracle_query_minimax",
+      "family_fixed": true,
+      "oracle": true,
+      "reference": "REAL validation target; same H,b solver",
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "simplex_valid": true,
+      "residual_linf": 0.02939871857975812
+    }
+  },
+  "oracle_test": {
+    "query_linf": 0.02992118192177473,
+    "query_mae": 0.00563652829482082,
+    "unseen_query_linf": 0.03675921225123485,
+    "unseen_query_mae": 0.011920599915559158,
+    "invalid_income_rate": 0.0,
+    "unique_row_fraction": 1.0,
+    "n_synthetic": 10000,
+    "n_real_reference": 1637,
+    "reference": "weighted empirical client D_R; alpha fixed from training"
+  },
+  "certificate": "exact LP only for fixed empirical H and validation query vector",
+  "operator_same_support_best_found": {
+    "logpool": {
+      "valid": true,
+      "details": {
+        "operator": "logpool",
+        "candidate_count": 192,
+        "pilot_per_model": 500,
+        "support_is_synthetic_only": true,
+        "finite_pool_restricted": true,
+        "query_loss": "linf",
+        "prior_weights": [
+          0.02955362209192359,
+          0.46363722337809726,
+          0.4206544354076036,
+          0.06733497257423872,
+          0.018819746548136944
+        ],
+        "logscore_smoothed_count": 0,
+        "logscore_floor": -60.0,
+        "interpretation": "normalized geometric pool restricted to finite synthetic candidates",
+        "optimizer_success": true,
+        "optimizer_message": "Optimization terminated successfully",
+        "query_loss_value": 0.39264661825406855,
+        "ridge": 0.001,
+        "weights": [
+          4.2188474951404334e-16,
+          0.0,
+          0.0259528593461552,
+          0.9740471406538443,
+          0.0
+        ],
+        "normalization_error": 1.7763568394002505e-15,
+        "posterior_bandwidth": 1.0,
+        "posterior_kind": "kernel_smoothed_approximation",
+        "refit_on_same_pool": true,
+        "validation_target_used": true,
+        "optimizer_method": "SLSQP_epigraph_multistart",
+        "refit_attempts": [
+          {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "weights": [
+              0.0,
+              0.0,
+              0.025953315151604234,
+              0.9740466848483957,
+              0.0
+            ],
+            "query_loss": 0.3926466194404622
+          },
+          {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "weights": [
+              4.2188474951404334e-16,
+              0.0,
+              0.0259528593461552,
+              0.9740471406538443,
+              0.0
+            ],
+            "query_loss": 0.39264661825406855
+          },
+          {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "weights": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "query_loss": 0.40129123940931166
+          },
+          {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "weights": [
+              8.085141815023109e-15,
+              1.1197845594647462e-14,
+              0.9999999999999805,
+              0.0,
+              1.4127077470355227e-16
+            ],
+            "query_loss": 0.4012912394093101
+          },
+          {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "weights": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "query_loss": 0.40129123940931166
+          },
+          {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "weights": [
+              3.660181418176471e-16,
+              0.0,
+              0.02595306394204554,
+              0.9740469360579541,
+              0.0
+            ],
+            "query_loss": 0.3926466187865979
+          },
+          {
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "weights": [
+              0.0,
+              0.0,
+              0.02595292635087291,
+              0.974047073649127,
+              0.0
+            ],
+            "query_loss": 0.3926466184284707
+          }
+        ],
+        "refit_weight_selection": "best_successful_multistart"
+      }
+    },
+    "barycenter": {
+      "valid": true,
+      "details": {
+        "operator": "entropic_barycenter",
+        "candidate_count": 192,
+        "pilot_per_model": 500,
+        "support_is_synthetic_only": true,
+        "finite_pool_restricted": true,
+        "query_loss": "linf",
+        "prior_weights": [
+          0.02955362209192359,
+          0.46363722337809726,
+          0.4206544354076036,
+          0.06733497257423872,
+          0.018819746548136944
+        ],
+        "regularization": 0.05,
+        "iterations": 276,
+        "marginal_error": 9.955827912998041e-10,
+        "converged": true,
+        "weight_candidate_count": 18,
+        "interpretation": "finite-support entropic transport barycenter (regularized W2 analogue); not unregularized W2",
+        "weights": [
+          3.592765596734021e-05,
+          0.8242120866286936,
+          0.07440220096341531,
+          0.10134774432629788,
+          2.0404256257875383e-06
+        ],
+        "normalization_error": 1.1102230246251565e-16,
+        "posterior_bandwidth": 1.0,
+        "posterior_kind": "kernel_smoothed_approximation",
+        "refit_on_same_pool": true,
+        "validation_target_used": true,
+        "query_loss_value": 0.12060993828514777,
+        "weight_candidate_trials": [
+          {
+            "weights": [
+              0.02955362209192359,
+              0.46363722337809726,
+              0.4206544354076036,
+              0.06733497257423872,
+              0.018819746548136944
+            ],
+            "query_loss": 0.13252422662767727,
+            "iterations": 335,
+            "marginal_error": 9.95263598853926e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.2,
+              0.2,
+              0.2,
+              0.2,
+              0.2
+            ],
+            "query_loss": 0.14396544933276084,
+            "iterations": 202,
+            "marginal_error": 9.803346797537804e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.006427886458505718,
+              0.5995111801479924,
+              0.39277399933617013,
+              0.0012836269156691756,
+              3.3071416625049098e-06
+            ],
+            "query_loss": 0.1251027956381522,
+            "iterations": 404,
+            "marginal_error": 9.896601488514772e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.01239756298443341,
+              0.4626152024187125,
+              0.3158234124163096,
+              0.2091638221786905,
+              1.853960938084203e-12
+            ],
+            "query_loss": 0.13222958150154096,
+            "iterations": 290,
+            "marginal_error": 9.936633750061132e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              5.495624902296512e-10,
+              0.20364321330297847,
+              0.7963565208305023,
+              2.4641188303709506e-07,
+              1.8905073654207604e-08
+            ],
+            "query_loss": 0.14013557489201145,
+            "iterations": 303,
+            "marginal_error": 9.931275559617466e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.012842603798813117,
+              0.7216469083476561,
+              0.20699333560801716,
+              0.058517046137078484,
+              1.0610843518625287e-07
+            ],
+            "query_loss": 0.12155320684471915,
+            "iterations": 356,
+            "marginal_error": 9.888504308599002e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.07406024008602141,
+              0.44375353415144914,
+              0.35303282927144447,
+              0.11406119123032056,
+              0.015092205260764484
+            ],
+            "query_loss": 0.13407573636029368,
+            "iterations": 308,
+            "marginal_error": 9.989024697052958e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              3.592765596734021e-05,
+              0.8242120866286936,
+              0.07440220096341531,
+              0.10134774432629788,
+              2.0404256257875383e-06
+            ],
+            "query_loss": 0.12060993828514777,
+            "iterations": 276,
+            "marginal_error": 9.955827912998041e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.001981363168163977,
+              0.6783886943897426,
+              0.30490535333608154,
+              0.01470545187269613,
+              1.9137233315867135e-05
+            ],
+            "query_loss": 0.1222139214888065,
+            "iterations": 396,
+            "marginal_error": 9.889564887513867e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              7.624164333900651e-07,
+              0.5774938883875849,
+              0.4188168109532241,
+              0.0018320727320105278,
+              0.0018564655107471512
+            ],
+            "query_loss": 0.12609025192404139,
+            "iterations": 400,
+            "marginal_error": 9.951597276186504e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              1.4280159983711178e-05,
+              0.47407788720119465,
+              0.4851214154678571,
+              0.040786400530468225,
+              1.6640496206748075e-08
+            ],
+            "query_loss": 0.1318136171969767,
+            "iterations": 352,
+            "marginal_error": 9.940459341417824e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.006427886458505718,
+              0.5995111801479924,
+              0.39277399933617013,
+              0.0012836269156691756,
+              3.3071416625049098e-06
+            ],
+            "query_loss": 0.1251027956381522,
+            "iterations": 404,
+            "marginal_error": 9.896601488514772e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.01239756298443341,
+              0.4626152024187125,
+              0.3158234124163096,
+              0.2091638221786905,
+              1.853960938084203e-12
+            ],
+            "query_loss": 0.13222958150154096,
+            "iterations": 290,
+            "marginal_error": 9.936633750061132e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              5.495624902296512e-10,
+              0.20364321330297847,
+              0.7963565208305023,
+              2.4641188303709506e-07,
+              1.8905073654207604e-08
+            ],
+            "query_loss": 0.14013557489201145,
+            "iterations": 303,
+            "marginal_error": 9.931275559617466e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.012842603798813117,
+              0.7216469083476561,
+              0.20699333560801716,
+              0.058517046137078484,
+              1.0610843518625287e-07
+            ],
+            "query_loss": 0.12155320684471915,
+            "iterations": 356,
+            "marginal_error": 9.888504308599002e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.07406024008602141,
+              0.44375353415144914,
+              0.35303282927144447,
+              0.11406119123032056,
+              0.015092205260764484
+            ],
+            "query_loss": 0.13407573636029368,
+            "iterations": 308,
+            "marginal_error": 9.989024697052958e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              3.592765596734021e-05,
+              0.8242120866286936,
+              0.07440220096341531,
+              0.10134774432629788,
+              2.0404256257875383e-06
+            ],
+            "query_loss": 0.12060993828514777,
+            "iterations": 276,
+            "marginal_error": 9.955827912998041e-10,
+            "converged": true
+          },
+          {
+            "weights": [
+              0.001981363168163977,
+              0.6783886943897426,
+              0.30490535333608154,
+              0.01470545187269613,
+              1.9137233315867135e-05
+            ],
+            "query_loss": 0.1222139214888065,
+            "iterations": 396,
+            "marginal_error": 9.889564887513867e-10,
+            "converged": true
+          }
+        ],
+        "weight_selection": "best_found_candidate_not_global_optimum"
+      }
+    }
+  },
+  "nonlinear_operators": "own same-support best-found validation benchmarks; no global-optimum claims"
+}

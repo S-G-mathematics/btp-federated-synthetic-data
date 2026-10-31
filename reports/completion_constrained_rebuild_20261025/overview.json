@@ -1,0 +1,57 @@
+{
+  "development_cells": 57,
+  "synthetic_draws_per_method": 5,
+  "constrained_all": {
+    "cells": 57,
+    "practical_gain_cells": 3,
+    "practical_and_audit_pass_cells": 3,
+    "mean_paired_delta_vs_size": 0.0024457322750833614,
+    "mean_weight_l1_from_alpha": 0.24979688080450818
+  },
+  "constrained_core": {
+    "cells": 54,
+    "practical_gain_cells": 3,
+    "practical_and_audit_pass_cells": 3,
+    "mean_paired_delta_vs_size": 0.0024279025866620666,
+    "mean_weight_l1_from_alpha": 0.24978559640475864
+  },
+  "constrained_by_generator": {
+    "chow_liu": {
+      "cells": 18,
+      "practical_gain_cells": 0,
+      "practical_and_audit_pass_cells": 0,
+      "mean_paired_delta_vs_size": 0.00129558136349557,
+      "mean_weight_l1_from_alpha": 0.25
+    },
+    "copula": {
+      "cells": 18,
+      "practical_gain_cells": 0,
+      "practical_and_audit_pass_cells": 0,
+      "mean_paired_delta_vs_size": 0.0019759541591894366,
+      "mean_weight_l1_from_alpha": 0.24935678921427595
+    },
+    "independent": {
+      "cells": 3,
+      "practical_gain_cells": 0,
+      "practical_and_audit_pass_cells": 0,
+      "mean_paired_delta_vs_size": 0.002766666666666667,
+      "mean_weight_l1_from_alpha": 0.25
+    },
+    "mixed_gmm": {
+      "cells": 18,
+      "practical_gain_cells": 3,
+      "practical_and_audit_pass_cells": 3,
+      "mean_paired_delta_vs_size": 0.004012172237301191,
+      "mean_weight_l1_from_alpha": 0.25
+    }
+  },
+  "constrained_practical_mean_gain_slices": 0,
+  "constrained_practical_and_audit_slices": 0,
+  "development_split_seeds": [
+    101,
+    202,
+    303
+  ],
+  "official_test_used": false,
+  "scope": "overlapping Adult split seeds; descriptive development assessment, not global selection"
+}

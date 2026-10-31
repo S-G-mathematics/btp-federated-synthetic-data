@@ -1,0 +1,51 @@
+{
+  "cell": "independent_age_k10_s101_06b93042f9c0a17e",
+  "rows": 3254,
+  "k": 10,
+  "likelihood_floor_count": 0,
+  "old_slsqp": {
+    "success": false,
+    "message": "Positive directional derivative for linesearch",
+    "mean_negative_log_score": 34.32415956628728,
+    "duality_gap": 2.3645705893304836e-07
+  },
+  "analytic_slsqp": {
+    "success": true,
+    "message": "Optimization terminated successfully",
+    "iterations": 11,
+    "mean_negative_log_score": 34.32415956621517,
+    "duality_gap": 1.0139845119105928e-07,
+    "wall_seconds": 0.012015105981845409,
+    "weights": [
+      1e-12,
+      0.2797700463175388,
+      0.13461460859782892,
+      1.0000040532206874e-12,
+      1.000013129072838e-12,
+      1e-12,
+      0.10169143521577229,
+      1e-12,
+      0.04787340077787379,
+      0.43605050908598636
+    ]
+  },
+  "em": {
+    "iterations": 342,
+    "mean_negative_log_score": 34.32415959052467,
+    "duality_gap": 9.778316123476571e-08,
+    "wall_seconds": 0.8117473530001007,
+    "weights": [
+      9.999999999999983e-16,
+      0.27976977451138363,
+      0.1346143622999913,
+      7.956257582003543e-07,
+      9.999999999999983e-16,
+      9.999999999999983e-16,
+      0.10169098299293532,
+      9.999999999999983e-16,
+      0.047873499685792145,
+      0.43605058488413534
+    ]
+  },
+  "interpretation": "privileged evaluator reproduction; row-level likelihoods not serialized"
+}

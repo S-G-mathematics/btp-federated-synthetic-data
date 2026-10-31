@@ -1,0 +1,14 @@
+method,access,replicate,query_linf,query_mae,unseen_query_linf,unseen_query_mae,invalid_income_rate,unique_row_fraction,n_synthetic,n_real_reference,reference
+uniform,released_models_and_permitted_summaries,0,0.29902979135358204,0.014337893853590777,0.04710545337574111,0.014845840372675235,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+size,released_models_and_permitted_summaries,0,0.311029791353582,0.01683651646644048,0.051105453375741114,0.01220185214739768,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+moment_l2,released_models_and_permitted_summaries,0,0.317029791353582,0.017391211369502814,0.037105453375741115,0.013014849442524967,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+query_minimax,released_models_and_permitted_summaries,0,0.261029791353582,0.02677514332769753,0.1190715906147724,0.027014113707947585,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+entropy_calibration,released_models_and_permitted_summaries,0,0.29302979135358204,0.01712130464784905,0.04510545337574111,0.011571253875406012,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+uncertainty_gls,released_models_and_permitted_summaries,0,0.307029791353582,0.017648181832583917,0.03910545337574112,0.0133282322776731,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+pseudo_bma_logscore,privileged_real_calibration_scores,0,0.341029791353582,0.022873638546192315,0.13300267698855064,0.03113807361124538,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+predictive_evidence_bma,privileged_real_calibration_scores,0,0.341029791353582,0.022873638546192315,0.13300267698855064,0.03113807361124538,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+stacking_logscore,privileged_real_calibration_scores,0,0.253029791353582,0.01622238475738778,0.04110545337574112,0.01120135649397345,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+kernel_mean_matching,released_models_and_permitted_summaries,0,0.30102979135358204,0.017471279814551044,0.09510545337574113,0.01633556007966502,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+robust_query_calibration,released_models_and_permitted_summaries,0,0.23117943956469805,0.02695140919613058,0.1710715906147724,0.029556619027870643,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+logpool,released_models_and_permitted_summaries,0,0.431029791353582,0.04873449302732831,0.277477635179126,0.050576502015681424,0.0,0.03,500,600,weighted empirical client D_R; alpha fixed from training
+barycenter,released_models_and_permitted_summaries,0,0.36102979135358204,0.025862610928613975,0.14107159061477242,0.026465724861780292,0.0,0.096,500,600,weighted empirical client D_R; alpha fixed from training

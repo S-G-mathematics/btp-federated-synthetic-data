@@ -1,0 +1,34 @@
+{
+  "profile_name": "smoke",
+  "profile": {
+    "smoke": true,
+    "train_cap": 1500,
+    "reference_cap": 600,
+    "severity": 0.8,
+    "pilot_samples": 160,
+    "tune_samples": 160,
+    "synthetic_rows": 500,
+    "support_size": 48,
+    "barycenter_weight_trials": 2,
+    "kernel_features": 16,
+    "repeats": 1,
+    "sample_sizes": [
+      100,
+      500
+    ],
+    "conditional_pool": 2500,
+    "conditional_rows": 200,
+    "privacy_epsilons": [
+      1.0,
+      4.0
+    ]
+  },
+  "generator": "prototype_kde",
+  "partition": "age",
+  "k": 5,
+  "seed": 101,
+  "code_hash": "62550ab0a29f68175f00eb6c011cf4aeef20db5e0d651830070dd6c4b10771fa",
+  "raw_sha256": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+  "reference_role": "development_assessment",
+  "frozen_selection": null
+}

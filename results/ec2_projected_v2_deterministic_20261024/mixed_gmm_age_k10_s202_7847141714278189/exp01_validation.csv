@@ -1,0 +1,14 @@
+method,access,query_linf,query_mae,unseen_query_linf,unseen_query_mae,invalid_income_rate,unique_row_fraction,n_synthetic,n_real_reference,reference
+uniform,released_models_and_permitted_summaries,0.05759331175247423,0.007176490539588931,0.03413482353449746,0.011736191373067471,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+size,released_models_and_permitted_summaries,0.04475741004101741,0.005758718488438696,0.04437777385126636,0.011219913222325349,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+moment_l2,released_models_and_permitted_summaries,0.043957410041017386,0.005875833078964168,0.04017777385126635,0.011441652352760135,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+query_minimax,released_models_and_permitted_summaries,0.07018200194860091,0.007557681158012812,0.03733482353449746,0.011293150614682761,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+entropy_calibration,released_models_and_permitted_summaries,0.04335741004101734,0.005933478279716201,0.037477773851266355,0.011306003052963087,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+uncertainty_gls,released_models_and_permitted_summaries,0.043057410041017374,0.005896734213917535,0.03427777385126636,0.01101904653122396,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+pseudo_bma_logscore,privileged_real_calibration_scores,0.0944820019486009,0.008603231171826244,0.045956133060027715,0.014276005772839254,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+predictive_evidence_bma,privileged_real_calibration_scores,0.0944820019486009,0.008603231171826244,0.045956133060027715,0.014276005772839254,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+stacking_logscore,privileged_real_calibration_scores,0.056782001948600946,0.006748021364415337,0.03417777385126636,0.011061849140972677,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+kernel_mean_matching,released_models_and_permitted_summaries,0.03925741004101735,0.006103443702446344,0.040877773851266355,0.011392959574702217,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+robust_query_calibration,released_models_and_permitted_summaries,0.05938200194860088,0.007443004737655812,0.03733482353449746,0.011509675227929199,0.0,1.0,10000,1641,weighted empirical client D_R; alpha fixed from training
+logpool,released_models_and_permitted_summaries,0.2847005070023154,0.041534402972572264,0.3311561330600278,0.042838828114766477,0.0,0.011,10000,1641,weighted empirical client D_R; alpha fixed from training
+barycenter,released_models_and_permitted_summaries,0.10676569142595893,0.015624545922803114,0.08235613306002773,0.01955662526151173,0.0,0.0191,10000,1641,weighted empirical client D_R; alpha fixed from training

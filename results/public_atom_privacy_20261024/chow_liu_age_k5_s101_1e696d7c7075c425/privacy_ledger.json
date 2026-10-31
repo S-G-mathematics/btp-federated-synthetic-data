@@ -1,0 +1,330 @@
+{
+  "individual_client_releases": [
+    {
+      "method": "nonprivate",
+      "client": 0,
+      "formal_dp_eligible": false,
+      "epsilon_single_release": null,
+      "noise_seed_mode": "no_noise",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": null,
+      "laplace_scale": null,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "nonprivate",
+      "client": 1,
+      "formal_dp_eligible": false,
+      "epsilon_single_release": null,
+      "noise_seed_mode": "no_noise",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": null,
+      "laplace_scale": null,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "nonprivate",
+      "client": 2,
+      "formal_dp_eligible": false,
+      "epsilon_single_release": null,
+      "noise_seed_mode": "no_noise",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": null,
+      "laplace_scale": null,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "nonprivate",
+      "client": 3,
+      "formal_dp_eligible": false,
+      "epsilon_single_release": null,
+      "noise_seed_mode": "no_noise",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": null,
+      "laplace_scale": null,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "nonprivate",
+      "client": 4,
+      "formal_dp_eligible": false,
+      "epsilon_single_release": null,
+      "noise_seed_mode": "no_noise",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": null,
+      "laplace_scale": null,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_1",
+      "client": 0,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 1.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 30.0,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_1",
+      "client": 1,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 1.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 30.0,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_1",
+      "client": 2,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 1.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 30.0,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_1",
+      "client": 3,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 1.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 30.0,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_1",
+      "client": 4,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 1.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 30.0,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_4",
+      "client": 0,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 4.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 7.5,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_4",
+      "client": 1,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 4.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 7.5,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_4",
+      "client": 2,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 4.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 7.5,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_4",
+      "client": 3,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 4.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 7.5,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_4",
+      "client": 4,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 4.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 7.5,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_8",
+      "client": 0,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 8.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 3.75,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_8",
+      "client": 1,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 8.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 3.75,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_8",
+      "client": 2,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 8.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 3.75,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_8",
+      "client": 3,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 8.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 3.75,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    },
+    {
+      "method": "epsilon_8",
+      "client": 4,
+      "formal_dp_eligible": true,
+      "epsilon_single_release": 8.0,
+      "noise_seed_mode": "fresh_os_entropy",
+      "adjacency": "replace-one record with fixed public membership and client size",
+      "sensitivity_l1": 30,
+      "laplace_scale": 3.75,
+      "postprocessing": [
+        "positive clipping",
+        "normalization",
+        "public education-code projection"
+      ],
+      "scope": "this individual 15-column histogram release only; main pipeline is nonprivate"
+    }
+  ],
+  "sum_epsilons_if_all_private_settings_released_per_client_same_cell": 13.0,
+  "cross_seed_composition": "overlapping Adult records and changed assignment; no campaign-wide DP claim",
+  "fixed_membership_size_assumption": "individual release only; data-dependent assignment is outside guarantee",
+  "full_pipeline_dp": false,
+  "deterministic_noise_seed_exposed": false,
+  "synthetic_sampling_seeds_public_postprocessing": true
+}

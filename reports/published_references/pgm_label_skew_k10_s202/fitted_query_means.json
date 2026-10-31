@@ -1,0 +1,914 @@
+[
+  {
+    "query": "age<=25",
+    "released_calibration_mean": 0.19994412325583966,
+    "fitted_mean": 0.199948910336034,
+    "absolute_residual": 4.787080194357252e-06
+  },
+  {
+    "query": "age<=35",
+    "released_calibration_mean": 0.4562789717154435,
+    "fitted_mean": 0.4562884185757511,
+    "absolute_residual": 9.44686030757147e-06
+  },
+  {
+    "query": "age<=45",
+    "released_calibration_mean": 0.7080475423912136,
+    "fitted_mean": 0.7080591820386635,
+    "absolute_residual": 1.163964744987922e-05
+  },
+  {
+    "query": "age<=55",
+    "released_calibration_mean": 0.8744312188871723,
+    "fitted_mean": 0.8744450987008013,
+    "absolute_residual": 1.3879813628991933e-05
+  },
+  {
+    "query": "age<=65",
+    "released_calibration_mean": 0.9686434661251349,
+    "fitted_mean": 0.9686639087210961,
+    "absolute_residual": 2.044259596123421e-05
+  },
+  {
+    "query": "fnlwgt<=100000",
+    "released_calibration_mean": 0.16755820088580656,
+    "fitted_mean": 0.1675582008880568,
+    "absolute_residual": 2.2502555374614985e-12
+  },
+  {
+    "query": "fnlwgt<=200000",
+    "released_calibration_mean": 0.6309958014883172,
+    "fitted_mean": 0.6309958014891848,
+    "absolute_residual": 8.675282714420973e-13
+  },
+  {
+    "query": "fnlwgt<=300000",
+    "released_calibration_mean": 0.874015155703056,
+    "fitted_mean": 0.8740151557032638,
+    "absolute_residual": 2.078337502098293e-13
+  },
+  {
+    "query": "education-num<=8",
+    "released_calibration_mean": 0.12680165174635055,
+    "fitted_mean": 0.1268092799460382,
+    "absolute_residual": 7.628199687637061e-06
+  },
+  {
+    "query": "education-num<=9",
+    "released_calibration_mean": 0.4544459663247845,
+    "fitted_mean": 0.4544473645189921,
+    "absolute_residual": 1.39819420758025e-06
+  },
+  {
+    "query": "education-num<=10",
+    "released_calibration_mean": 0.6683945759566796,
+    "fitted_mean": 0.6684016841913664,
+    "absolute_residual": 7.108234686747927e-06
+  },
+  {
+    "query": "education-num<=12",
+    "released_calibration_mean": 0.7454177422639798,
+    "fitted_mean": 0.7454336196656133,
+    "absolute_residual": 1.5877401633446198e-05
+  },
+  {
+    "query": "education-num<=13",
+    "released_calibration_mean": 0.9108958678435559,
+    "fitted_mean": 0.9109196117511968,
+    "absolute_residual": 2.3743907640927375e-05
+  },
+  {
+    "query": "education-num<=16",
+    "released_calibration_mean": 1.0,
+    "fitted_mean": 1.0000000000000073,
+    "absolute_residual": 7.327471962526033e-15
+  },
+  {
+    "query": "capital-gain<=0",
+    "released_calibration_mean": 0.9120092532073848,
+    "fitted_mean": 0.9119692776406614,
+    "absolute_residual": 3.9975566723415845e-05
+  },
+  {
+    "query": "capital-gain<=1000",
+    "released_calibration_mean": 0.9144683777373765,
+    "fitted_mean": 0.914510698320398,
+    "absolute_residual": 4.232058302144903e-05
+  },
+  {
+    "query": "capital-gain<=5000",
+    "released_calibration_mean": 0.9461060024517578,
+    "fitted_mean": 0.9461040666371656,
+    "absolute_residual": 1.935814592179952e-06
+  },
+  {
+    "query": "capital-gain<=10000",
+    "released_calibration_mean": 0.9734315242916233,
+    "fitted_mean": 0.973431391353827,
+    "absolute_residual": 1.329377963266154e-07
+  },
+  {
+    "query": "capital-loss<=0",
+    "released_calibration_mean": 0.9548851519384801,
+    "fitted_mean": 0.9548313419147612,
+    "absolute_residual": 5.381002371895871e-05
+  },
+  {
+    "query": "capital-loss<=1000",
+    "released_calibration_mean": 0.9560906546868404,
+    "fitted_mean": 0.9561475667246968,
+    "absolute_residual": 5.691203785640475e-05
+  },
+  {
+    "query": "capital-loss<=2000",
+    "released_calibration_mean": 0.9890309779624478,
+    "fitted_mean": 0.9890292584457997,
+    "absolute_residual": 1.7195166480687973e-06
+  },
+  {
+    "query": "hours-per-week<=20",
+    "released_calibration_mean": 0.09116910188014433,
+    "fitted_mean": 0.09116904812788626,
+    "absolute_residual": 5.375225807513484e-08
+  },
+  {
+    "query": "hours-per-week<=35",
+    "released_calibration_mean": 0.20911426257575128,
+    "fitted_mean": 0.20911416196523314,
+    "absolute_residual": 1.0061051813892163e-07
+  },
+  {
+    "query": "hours-per-week<=40",
+    "released_calibration_mean": 0.7166223718376512,
+    "fitted_mean": 0.7166222387930415,
+    "absolute_residual": 1.3304460966256926e-07
+  },
+  {
+    "query": "hours-per-week<=50",
+    "released_calibration_mean": 0.8948373071164949,
+    "fitted_mean": 0.8948371346876152,
+    "absolute_residual": 1.724288797300133e-07
+  },
+  {
+    "query": "hours-per-week<=60",
+    "released_calibration_mean": 0.9626196159463216,
+    "fitted_mean": 0.9626193671795711,
+    "absolute_residual": 2.4876675053242536e-07
+  },
+  {
+    "query": "workclass=Private",
+    "released_calibration_mean": 0.6996664945470688,
+    "fitted_mean": 0.6996775073000967,
+    "absolute_residual": 1.101275302795024e-05
+  },
+  {
+    "query": "workclass=Self-emp-not-inc",
+    "released_calibration_mean": 0.07443452718216569,
+    "fitted_mean": 0.07445155166831728,
+    "absolute_residual": 1.7024486151595575e-05
+  },
+  {
+    "query": "workclass=Self-emp-inc",
+    "released_calibration_mean": 0.03598451837873252,
+    "fitted_mean": 0.03600111214279843,
+    "absolute_residual": 1.659376406591001e-05
+  },
+  {
+    "query": "workclass=Federal-gov",
+    "released_calibration_mean": 0.030442015281646126,
+    "fitted_mean": 0.030441554318440103,
+    "absolute_residual": 4.609632060226243e-07
+  },
+  {
+    "query": "workclass=Local-gov",
+    "released_calibration_mean": 0.05303790836675559,
+    "fitted_mean": 0.05305106064534217,
+    "absolute_residual": 1.3152278586579802e-05
+  },
+  {
+    "query": "workclass=State-gov",
+    "released_calibration_mean": 0.04757482180113247,
+    "fitted_mean": 0.04758826524136732,
+    "absolute_residual": 1.3443440234850446e-05
+  },
+  {
+    "query": "workclass=Without-pay",
+    "released_calibration_mean": 0.00031701799441621284,
+    "fitted_mean": 0.00026290744598414745,
+    "absolute_residual": 5.4110548432065395e-05
+  },
+  {
+    "query": "workclass=Never-worked",
+    "released_calibration_mean": 0.00031701799441621284,
+    "fitted_mean": 0.00026290744598414745,
+    "absolute_residual": 5.4110548432065395e-05
+  },
+  {
+    "query": "workclass=?",
+    "released_calibration_mean": 0.05822567845366631,
+    "fitted_mean": 0.05823775194834652,
+    "absolute_residual": 1.2073494680207852e-05
+  },
+  {
+    "query": "workclass=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 2.538184332807093e-05,
+    "absolute_residual": 2.538184332807093e-05
+  },
+  {
+    "query": "education=Bachelors",
+    "released_calibration_mean": 0.16547812557957606,
+    "fitted_mean": 0.1654824324880953,
+    "absolute_residual": 4.306908519241537e-06
+  },
+  {
+    "query": "education=Some-college",
+    "released_calibration_mean": 0.2139486096318951,
+    "fitted_mean": 0.21395063726975155,
+    "absolute_residual": 2.027637856449882e-06
+  },
+  {
+    "query": "education=11th",
+    "released_calibration_mean": 0.03691227441655222,
+    "fitted_mean": 0.036913425545180435,
+    "absolute_residual": 1.1511286282170352e-06
+  },
+  {
+    "query": "education=HS-grad",
+    "released_calibration_mean": 0.32764431457843396,
+    "fitted_mean": 0.32763395399031847,
+    "absolute_residual": 1.036058811548779e-05
+  },
+  {
+    "query": "education=Prof-school",
+    "released_calibration_mean": 0.01620342956290724,
+    "fitted_mean": 0.016184363217862388,
+    "absolute_residual": 1.906634504485194e-05
+  },
+  {
+    "query": "education=Assoc-acdm",
+    "released_calibration_mean": 0.034639204450561345,
+    "fitted_mean": 0.03464120373626488,
+    "absolute_residual": 1.999285703532805e-06
+  },
+  {
+    "query": "education=Assoc-voc",
+    "released_calibration_mean": 0.042383961856738914,
+    "fitted_mean": 0.042383906891146975,
+    "absolute_residual": 5.4965591939071246e-08
+  },
+  {
+    "query": "education=9th",
+    "released_calibration_mean": 0.012962903481757788,
+    "fitted_mean": 0.012961483306991541,
+    "absolute_residual": 1.420174766246854e-06
+  },
+  {
+    "query": "education=7th-8th",
+    "released_calibration_mean": 0.021928294695173885,
+    "fitted_mean": 0.0219378424110581,
+    "absolute_residual": 9.54771588421513e-06
+  },
+  {
+    "query": "education=12th",
+    "released_calibration_mean": 0.01147734567104155,
+    "fitted_mean": 0.011474027869531611,
+    "absolute_residual": 3.317801509939225e-06
+  },
+  {
+    "query": "education=Masters",
+    "released_calibration_mean": 0.06104437322966372,
+    "fitted_mean": 0.06104627504085222,
+    "absolute_residual": 1.9018111885038547e-06
+  },
+  {
+    "query": "education=1st-4th",
+    "released_calibration_mean": 0.004929563734405,
+    "fitted_mean": 0.004920916491652671,
+    "absolute_residual": 8.64724275232917e-06
+  },
+  {
+    "query": "education=10th",
+    "released_calibration_mean": 0.0283965088123816,
+    "fitted_mean": 0.02840070229109474,
+    "absolute_residual": 4.193478713138132e-06
+  },
+  {
+    "query": "education=Doctorate",
+    "released_calibration_mean": 0.011856329363873083,
+    "fitted_mean": 0.01185236802352673,
+    "absolute_residual": 3.961340346353773e-06
+  },
+  {
+    "query": "education=5th-6th",
+    "released_calibration_mean": 0.008354169673010888,
+    "fitted_mean": 0.008353622741706966,
+    "absolute_residual": 5.469313039217077e-07
+  },
+  {
+    "query": "education=Preschool",
+    "released_calibration_mean": 0.0018405912620276096,
+    "fitted_mean": 0.0018613185142506957,
+    "absolute_residual": 2.0727252223086065e-05
+  },
+  {
+    "query": "education=?",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 7.600853596484398e-07,
+    "absolute_residual": 7.600853596484398e-07
+  },
+  {
+    "query": "education=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 7.600853596484398e-07,
+    "absolute_residual": 7.600853596484398e-07
+  },
+  {
+    "query": "marital-status=Married-civ-spouse",
+    "released_calibration_mean": 0.45469621533683513,
+    "fitted_mean": 0.45468507578430517,
+    "absolute_residual": 1.1139552529959573e-05
+  },
+  {
+    "query": "marital-status=Divorced",
+    "released_calibration_mean": 0.1419436406121501,
+    "fitted_mean": 0.14193037222326232,
+    "absolute_residual": 1.3268388887766047e-05
+  },
+  {
+    "query": "marital-status=Never-married",
+    "released_calibration_mean": 0.3341509172198015,
+    "fitted_mean": 0.33413951179825246,
+    "absolute_residual": 1.1405421549037786e-05
+  },
+  {
+    "query": "marital-status=Separated",
+    "released_calibration_mean": 0.027834998992004444,
+    "fitted_mean": 0.02784021623680505,
+    "absolute_residual": 5.217244800605203e-06
+  },
+  {
+    "query": "marital-status=Widowed",
+    "released_calibration_mean": 0.028884633285361595,
+    "fitted_mean": 0.028890858724819588,
+    "absolute_residual": 6.225439457992893e-06
+  },
+  {
+    "query": "marital-status=Married-spouse-absent",
+    "released_calibration_mean": 0.011264109395685886,
+    "fitted_mean": 0.01125906562006429,
+    "absolute_residual": 5.043775621596178e-06
+  },
+  {
+    "query": "marital-status=Married-AF-spouse",
+    "released_calibration_mean": 0.0012254851581613,
+    "fitted_mean": 0.0012225660852290571,
+    "absolute_residual": 2.919072932242809e-06
+  },
+  {
+    "query": "marital-status=?",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.6166763628452996e-05,
+    "absolute_residual": 1.6166763628452996e-05
+  },
+  {
+    "query": "marital-status=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.6166763628452996e-05,
+    "absolute_residual": 1.6166763628452996e-05
+  },
+  {
+    "query": "occupation=Tech-support",
+    "released_calibration_mean": 0.030076372335235732,
+    "fitted_mean": 0.0300706233973387,
+    "absolute_residual": 5.748937897030737e-06
+  },
+  {
+    "query": "occupation=Craft-repair",
+    "released_calibration_mean": 0.12473939023266128,
+    "fitted_mean": 0.12473525078401128,
+    "absolute_residual": 4.139448650006261e-06
+  },
+  {
+    "query": "occupation=Other-service",
+    "released_calibration_mean": 0.09666679085437616,
+    "fitted_mean": 0.09666265959712957,
+    "absolute_residual": 4.131257246589581e-06
+  },
+  {
+    "query": "occupation=Sales",
+    "released_calibration_mean": 0.11117748900409796,
+    "fitted_mean": 0.11117333554308041,
+    "absolute_residual": 4.1534610175503195e-06
+  },
+  {
+    "query": "occupation=Exec-managerial",
+    "released_calibration_mean": 0.11558892824789488,
+    "fitted_mean": 0.1155847821643568,
+    "absolute_residual": 4.146083538075773e-06
+  },
+  {
+    "query": "occupation=Prof-specialty",
+    "released_calibration_mean": 0.1397183891739052,
+    "fitted_mean": 0.13971426559547334,
+    "absolute_residual": 4.123578431852737e-06
+  },
+  {
+    "query": "occupation=Handlers-cleaners",
+    "released_calibration_mean": 0.03992405808098136,
+    "fitted_mean": 0.03992266615711222,
+    "absolute_residual": 1.3919238691373348e-06
+  },
+  {
+    "query": "occupation=Machine-op-inspct",
+    "released_calibration_mean": 0.06658174624610894,
+    "fitted_mean": 0.06657758492829519,
+    "absolute_residual": 4.161317813750065e-06
+  },
+  {
+    "query": "occupation=Adm-clerical",
+    "released_calibration_mean": 0.11423755650271813,
+    "fitted_mean": 0.11423340862758992,
+    "absolute_residual": 4.1478751282159054e-06
+  },
+  {
+    "query": "occupation=Farming-fishing",
+    "released_calibration_mean": 0.027725789668924146,
+    "fitted_mean": 0.027720738257474273,
+    "absolute_residual": 5.051411449873144e-06
+  },
+  {
+    "query": "occupation=Transport-moving",
+    "released_calibration_mean": 0.048742539101014594,
+    "fitted_mean": 0.048738079228836634,
+    "absolute_residual": 4.4598721779601225e-06
+  },
+  {
+    "query": "occupation=Priv-house-serv",
+    "released_calibration_mean": 0.006190755539201833,
+    "fitted_mean": 0.006178336233590405,
+    "absolute_residual": 1.241930561142815e-05
+  },
+  {
+    "query": "occupation=Protective-serv",
+    "released_calibration_mean": 0.01945346257596483,
+    "fitted_mean": 0.019449076754241616,
+    "absolute_residual": 4.3858217232128904e-06
+  },
+  {
+    "query": "occupation=Armed-Forces",
+    "released_calibration_mean": 0.0006340359888324257,
+    "fitted_mean": 0.0006800320968087262,
+    "absolute_residual": 4.5996107976300506e-05
+  },
+  {
+    "query": "occupation=?",
+    "released_calibration_mean": 0.05854269644808252,
+    "fitted_mean": 0.05853849409852179,
+    "absolute_residual": 4.202349560729346e-06
+  },
+  {
+    "query": "occupation=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 2.0666536135131216e-05,
+    "absolute_residual": 2.0666536135131216e-05
+  },
+  {
+    "query": "relationship=Wife",
+    "released_calibration_mean": 0.04704551482864193,
+    "fitted_mean": 0.047040716437439935,
+    "absolute_residual": 4.798391201994712e-06
+  },
+  {
+    "query": "relationship=Own-child",
+    "released_calibration_mean": 0.16496838301741654,
+    "fitted_mean": 0.16496308899510664,
+    "absolute_residual": 5.294022309892954e-06
+  },
+  {
+    "query": "relationship=Husband",
+    "released_calibration_mean": 0.3983494506701334,
+    "fitted_mean": 0.3983441172643355,
+    "absolute_residual": 5.333405797891544e-06
+  },
+  {
+    "query": "relationship=Not-in-family",
+    "released_calibration_mean": 0.24996403524516486,
+    "fitted_mean": 0.2499587171434036,
+    "absolute_residual": 5.318101761270233e-06
+  },
+  {
+    "query": "relationship=Other-relative",
+    "released_calibration_mean": 0.028780480364363686,
+    "fitted_mean": 0.0287728197689301,
+    "absolute_residual": 7.660595433583994e-06
+  },
+  {
+    "query": "relationship=Unmarried",
+    "released_calibration_mean": 0.11089213587427965,
+    "fitted_mean": 0.11088688450886572,
+    "absolute_residual": 5.251365413933007e-06
+  },
+  {
+    "query": "relationship=?",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.6827940962134125e-05,
+    "absolute_residual": 1.6827940962134125e-05
+  },
+  {
+    "query": "relationship=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.6827940962134125e-05,
+    "absolute_residual": 1.6827940962134125e-05
+  },
+  {
+    "query": "race=White",
+    "released_calibration_mean": 0.8510801652453504,
+    "fitted_mean": 0.8510728250894177,
+    "absolute_residual": 7.340155932622494e-06
+  },
+  {
+    "query": "race=Asian-Pac-Islander",
+    "released_calibration_mean": 0.0325577281873147,
+    "fitted_mean": 0.032562016957130256,
+    "absolute_residual": 4.288769815556648e-06
+  },
+  {
+    "query": "race=Amer-Indian-Eskimo",
+    "released_calibration_mean": 0.00866343494076053,
+    "fitted_mean": 0.00864630679410932,
+    "absolute_residual": 1.7128146651210208e-05
+  },
+  {
+    "query": "race=Other",
+    "released_calibration_mean": 0.0070592075749087695,
+    "fitted_mean": 0.007056939893133203,
+    "absolute_residual": 2.267681775566799e-06
+  },
+  {
+    "query": "race=Black",
+    "released_calibration_mean": 0.10063946405166549,
+    "fitted_mean": 0.1006300523754157,
+    "absolute_residual": 9.41167624979311e-06
+  },
+  {
+    "query": "race=?",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.5929445394853136e-05,
+    "absolute_residual": 1.5929445394853136e-05
+  },
+  {
+    "query": "race=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.5929445394853136e-05,
+    "absolute_residual": 1.5929445394853136e-05
+  },
+  {
+    "query": "sex=Female",
+    "released_calibration_mean": 0.3318088235790543,
+    "fitted_mean": 0.33179217457149807,
+    "absolute_residual": 1.6649007556213125e-05
+  },
+  {
+    "query": "sex=Male",
+    "released_calibration_mean": 0.6681911764209458,
+    "fitted_mean": 0.6681789044677646,
+    "absolute_residual": 1.2271953181208772e-05
+  },
+  {
+    "query": "sex=?",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.446048036893465e-05,
+    "absolute_residual": 1.446048036893465e-05
+  },
+  {
+    "query": "sex=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 1.446048036893465e-05,
+    "absolute_residual": 1.446048036893465e-05
+  },
+  {
+    "query": "native-country=United-States",
+    "released_calibration_mean": 0.8985389861484958,
+    "fitted_mean": 0.8985362096522631,
+    "absolute_residual": 2.776496232703707e-06
+  },
+  {
+    "query": "native-country=Cambodia",
+    "released_calibration_mean": 0.00030589017955557875,
+    "fitted_mean": 0.00028936116016536423,
+    "absolute_residual": 1.6529019390214522e-05
+  },
+  {
+    "query": "native-country=England",
+    "released_calibration_mean": 0.002447996715131127,
+    "fitted_mean": 0.00244204653760991,
+    "absolute_residual": 5.950177521217136e-06
+  },
+  {
+    "query": "native-country=Puerto-Rico",
+    "released_calibration_mean": 0.003277750147067484,
+    "fitted_mean": 0.0032721544018542497,
+    "absolute_residual": 5.595745213234169e-06
+  },
+  {
+    "query": "native-country=Canada",
+    "released_calibration_mean": 0.004038766190422021,
+    "fitted_mean": 0.004041718747022703,
+    "absolute_residual": 2.9525566006818535e-06
+  },
+  {
+    "query": "native-country=Germany",
+    "released_calibration_mean": 0.002115996220733003,
+    "fitted_mean": 0.002113407395781349,
+    "absolute_residual": 2.588824951653846e-06
+  },
+  {
+    "query": "native-country=Outlying-US(Guam-USVI-etc)",
+    "released_calibration_mean": 0.00031701799441621284,
+    "fitted_mean": 0.00029831498424240203,
+    "absolute_residual": 1.870301017381081e-05
+  },
+  {
+    "query": "native-country=India",
+    "released_calibration_mean": 0.0030404251110431016,
+    "fitted_mean": 0.0030397159221643632,
+    "absolute_residual": 7.091888787383836e-07
+  },
+  {
+    "query": "native-country=Japan",
+    "released_calibration_mean": 0.0012090482236185932,
+    "fitted_mean": 0.0012140891260681568,
+    "absolute_residual": 5.040902449563638e-06
+  },
+  {
+    "query": "native-country=Greece",
+    "released_calibration_mean": 0.001542542722695812,
+    "fitted_mean": 0.0015324851140781576,
+    "absolute_residual": 1.0057608617654486e-05
+  },
+  {
+    "query": "native-country=South",
+    "released_calibration_mean": 0.0027099437832756547,
+    "fitted_mean": 0.0027100760151650355,
+    "absolute_residual": 1.3223188938087105e-07
+  },
+  {
+    "query": "native-country=China",
+    "released_calibration_mean": 0.0018760165154350248,
+    "fitted_mean": 0.0018773316226949391,
+    "absolute_residual": 1.3151072599142718e-06
+  },
+  {
+    "query": "native-country=Cuba",
+    "released_calibration_mean": 0.0015806887424746137,
+    "fitted_mean": 0.001571735208964699,
+    "absolute_residual": 8.953533509914761e-06
+  },
+  {
+    "query": "native-country=Iran",
+    "released_calibration_mean": 0.0018362675765428275,
+    "fitted_mean": 0.0018373054285151776,
+    "absolute_residual": 1.037851972350047e-06
+  },
+  {
+    "query": "native-country=Honduras",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 2.132333159248994e-05,
+    "absolute_residual": 2.132333159248994e-05
+  },
+  {
+    "query": "native-country=Philippines",
+    "released_calibration_mean": 0.008388249712558115,
+    "fitted_mean": 0.00839256572363356,
+    "absolute_residual": 4.316011075445117e-06
+  },
+  {
+    "query": "native-country=Italy",
+    "released_calibration_mean": 0.0018339431360995394,
+    "fitted_mean": 0.0018349519987523228,
+    "absolute_residual": 1.0088626527834498e-06
+  },
+  {
+    "query": "native-country=Poland",
+    "released_calibration_mean": 0.0008937239389569337,
+    "fitted_mean": 0.0008750487460467024,
+    "absolute_residual": 1.8675192910231307e-05
+  },
+  {
+    "query": "native-country=Jamaica",
+    "released_calibration_mean": 0.003099407215762926,
+    "fitted_mean": 0.003097364486634829,
+    "absolute_residual": 2.042729128097151e-06
+  },
+  {
+    "query": "native-country=Vietnam",
+    "released_calibration_mean": 0.002174885001773685,
+    "fitted_mean": 0.0021708379872245036,
+    "absolute_residual": 4.0470145491813825e-06
+  },
+  {
+    "query": "native-country=Mexico",
+    "released_calibration_mean": 0.02011891213288903,
+    "fitted_mean": 0.020117465905543936,
+    "absolute_residual": 1.4462273450928376e-06
+  },
+  {
+    "query": "native-country=Portugal",
+    "released_calibration_mean": 0.0024581707716265504,
+    "fitted_mean": 0.0024523738731960726,
+    "absolute_residual": 5.79689843047777e-06
+  },
+  {
+    "query": "native-country=Ireland",
+    "released_calibration_mean": 0.0006340359888324257,
+    "fitted_mean": 0.0006380965572972796,
+    "absolute_residual": 4.060568464853923e-06
+  },
+  {
+    "query": "native-country=France",
+    "released_calibration_mean": 0.0009225354754800868,
+    "fitted_mean": 0.00090621962496728,
+    "absolute_residual": 1.631585051280681e-05
+  },
+  {
+    "query": "native-country=Dominican-Republic",
+    "released_calibration_mean": 0.004301294554195869,
+    "fitted_mean": 0.00430123781932936,
+    "absolute_residual": 5.673486650880494e-08
+  },
+  {
+    "query": "native-country=Laos",
+    "released_calibration_mean": 0.0003101501379851634,
+    "fitted_mean": 0.0002927282495822801,
+    "absolute_residual": 1.7421888402883317e-05
+  },
+  {
+    "query": "native-country=Ecuador",
+    "released_calibration_mean": 0.0006229081739717915,
+    "fitted_mean": 0.0006284149524685605,
+    "absolute_residual": 5.50677849676896e-06
+  },
+  {
+    "query": "native-country=Taiwan",
+    "released_calibration_mean": 0.0015237929981143762,
+    "fitted_mean": 0.0015134605415473537,
+    "absolute_residual": 1.033245656702252e-05
+  },
+  {
+    "query": "native-country=Haiti",
+    "released_calibration_mean": 0.0012680719776648514,
+    "fitted_mean": 0.0012703177422707117,
+    "absolute_residual": 2.2457646058602915e-06
+  },
+  {
+    "query": "native-country=Columbia",
+    "released_calibration_mean": 0.0024850863602817064,
+    "fitted_mean": 0.0024797635715110046,
+    "absolute_residual": 5.3227887707018445e-06
+  },
+  {
+    "query": "native-country=Hungary",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 2.132333159248994e-05,
+    "absolute_residual": 2.132333159248994e-05
+  },
+  {
+    "query": "native-country=Guatemala",
+    "released_calibration_mean": 0.0021669700632982814,
+    "fitted_mean": 0.0021631119696046016,
+    "absolute_residual": 3.8580936936797976e-06
+  },
+  {
+    "query": "native-country=Nicaragua",
+    "released_calibration_mean": 0.001203874076942097,
+    "fitted_mean": 0.0012090549026993452,
+    "absolute_residual": 5.180825757248198e-06
+  },
+  {
+    "query": "native-country=Scotland",
+    "released_calibration_mean": 0.0006055174810638739,
+    "fitted_mean": 0.0006130065457593736,
+    "absolute_residual": 7.489064695499672e-06
+  },
+  {
+    "query": "native-country=Thailand",
+    "released_calibration_mean": 0.0006035307425547194,
+    "fitted_mean": 0.0006112211333665084,
+    "absolute_residual": 7.690390811788939e-06
+  },
+  {
+    "query": "native-country=Yugoslavia",
+    "released_calibration_mean": 0.00059666288612367,
+    "fitted_mean": 0.0006050046885323369,
+    "absolute_residual": 8.341802408666889e-06
+  },
+  {
+    "query": "native-country=El-Salvador",
+    "released_calibration_mean": 0.0030636682272629032,
+    "fitted_mean": 0.0030624466385004456,
+    "absolute_residual": 1.2215887624576587e-06
+  },
+  {
+    "query": "native-country=Trinadad&Tobago",
+    "released_calibration_mean": 0.001212703203664412,
+    "fitted_mean": 0.0012176334973514188,
+    "absolute_residual": 4.930293687006784e-06
+  },
+  {
+    "query": "native-country=Peru",
+    "released_calibration_mean": 0.0006229081739717915,
+    "fitted_mean": 0.0006284149524685605,
+    "absolute_residual": 5.50677849676896e-06
+  },
+  {
+    "query": "native-country=Hong",
+    "released_calibration_mean": 0.0005907346861574211,
+    "fitted_mean": 0.0005995798335954725,
+    "absolute_residual": 8.845147438051406e-06
+  },
+  {
+    "query": "native-country=Holand-Netherlands",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 2.132333159248994e-05,
+    "absolute_residual": 2.132333159248994e-05
+  },
+  {
+    "query": "native-country=?",
+    "released_calibration_mean": 0.013460926611860886,
+    "fitted_mean": 0.013458433415160478,
+    "absolute_residual": 2.4931967004086786e-06
+  },
+  {
+    "query": "native-country=__UNKNOWN__",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 2.132333159248994e-05,
+    "absolute_residual": 2.132333159248994e-05
+  },
+  {
+    "query": "income=<=50K",
+    "released_calibration_mean": 0.7655764560593454,
+    "fitted_mean": 0.7655644314994965,
+    "absolute_residual": 1.202455984894435e-05
+  },
+  {
+    "query": "income=>50K",
+    "released_calibration_mean": 0.23442354394065448,
+    "fitted_mean": 0.23443556850050404,
+    "absolute_residual": 1.2024559849554972e-05
+  },
+  {
+    "query": "sex=Female&income>50K",
+    "released_calibration_mean": 0.03822400067307773,
+    "fitted_mean": 0.038219571795021966,
+    "absolute_residual": 4.42887805576081e-06
+  },
+  {
+    "query": "sex=Male&income>50K",
+    "released_calibration_mean": 0.19619954326757671,
+    "fitted_mean": 0.19620463778547415,
+    "absolute_residual": 5.094517897430428e-06
+  },
+  {
+    "query": "education=HS-grad&income>50K",
+    "released_calibration_mean": 0.044497415504510925,
+    "fitted_mean": 0.04449777061667948,
+    "absolute_residual": 3.551121685527181e-07
+  },
+  {
+    "query": "education=Bachelors&income>50K",
+    "released_calibration_mean": 0.07097573390599296,
+    "fitted_mean": 0.07097912390278843,
+    "absolute_residual": 3.389996795472028e-06
+  },
+  {
+    "query": "education=Masters&income>50K",
+    "released_calibration_mean": 0.03165990507530245,
+    "fitted_mean": 0.03165813560839312,
+    "absolute_residual": 1.7694669093293314e-06
+  },
+  {
+    "query": "workclass=Private&income>50K",
+    "released_calibration_mean": 0.14873455953099915,
+    "fitted_mean": 0.14874274268907162,
+    "absolute_residual": 8.183158072466723e-06
+  },
+  {
+    "query": "workclass=Self-emp-not-inc&income>50K",
+    "released_calibration_mean": 0.021554365094017293,
+    "fitted_mean": 0.021559236851962697,
+    "absolute_residual": 4.871757945404398e-06
+  },
+  {
+    "query": "workclass=Local-gov&income>50K",
+    "released_calibration_mean": 0.01518357105319578,
+    "fitted_mean": 0.015182332933442053,
+    "absolute_residual": 1.2381197537266603e-06
+  },
+  {
+    "query": "education_number_relation_violation_v2",
+    "released_calibration_mean": 0.0,
+    "fitted_mean": 0.00011090069234972287,
+    "absolute_residual": 0.00011090069234972287
+  }
+]

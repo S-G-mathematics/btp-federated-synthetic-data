@@ -1,0 +1,73 @@
+{
+  "alpha": [
+    0.12478721392093815,
+    0.21595422735010403,
+    0.2665027425761301,
+    0.2425761301305088,
+    0.1501796860223189
+  ],
+  "counts": [
+    2639,
+    4567,
+    5636,
+    5130,
+    3176
+  ],
+  "rule": {
+    "kind": "age_education",
+    "k": 5,
+    "seed": 303,
+    "severity": 0.8,
+    "age_edges": [
+      26.0,
+      33.0,
+      41.0,
+      50.0
+    ],
+    "education_edges": [
+      9.0,
+      10.0,
+      13.0
+    ],
+    "label_probs": []
+  },
+  "split_client_sizes": {
+    "train": [
+      2639,
+      4567,
+      5636,
+      5130,
+      3176
+    ],
+    "tune": [
+      619,
+      1074,
+      1239,
+      1221,
+      727
+    ],
+    "calibration": [
+      405,
+      677,
+      834,
+      824,
+      514
+    ],
+    "validation": [
+      192,
+      317,
+      455,
+      409,
+      244
+    ],
+    "test": [
+      205,
+      369,
+      436,
+      392,
+      235
+    ]
+  },
+  "test_reference_role": "development_assessment",
+  "target": "training client mass; empirical references weighted by this same alpha"
+}

@@ -1,0 +1,109 @@
+{
+  "reference_commit": "3e698da752b4af928a040f645f7e08fa306db4cd",
+  "autodp_commit": "06489ea485653909397937cf5e3c31d06a677ffe",
+  "epsilon": 4.0,
+  "delta": 1e-06,
+  "rounds": 4,
+  "clients_per_round": 1.0,
+  "accounting_method": "distributed",
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/copula_label_skew_k10_s101_0a27e311089a7026",
+  "train_counts": [
+    5364,
+    3742,
+    285,
+    3584,
+    3340,
+    492,
+    1229,
+    673,
+    227,
+    2212
+  ],
+  "train_total": 21148,
+  "workload_cliques": [
+    [
+      "age"
+    ],
+    [
+      "fnlwgt"
+    ],
+    [
+      "education-num"
+    ],
+    [
+      "capital-gain"
+    ],
+    [
+      "capital-loss"
+    ],
+    [
+      "hours-per-week"
+    ],
+    [
+      "workclass"
+    ],
+    [
+      "education"
+    ],
+    [
+      "marital-status"
+    ],
+    [
+      "occupation"
+    ],
+    [
+      "relationship"
+    ],
+    [
+      "race"
+    ],
+    [
+      "sex"
+    ],
+    [
+      "native-country"
+    ],
+    [
+      "income"
+    ],
+    [
+      "sex",
+      "income"
+    ],
+    [
+      "education",
+      "income"
+    ],
+    [
+      "workclass",
+      "income"
+    ],
+    [
+      "education",
+      "education-num"
+    ]
+  ],
+  "domain_shape": {
+    "age": 10,
+    "workclass": 10,
+    "fnlwgt": 4,
+    "education": 18,
+    "education-num": 17,
+    "marital-status": 9,
+    "occupation": 16,
+    "relationship": 8,
+    "race": 7,
+    "sex": 4,
+    "capital-gain": 5,
+    "capital-loss": 4,
+    "hours-per-week": 6,
+    "native-country": 43,
+    "income": 2
+  },
+  "source_config_sha256": "41ed1629a4811e8db48d380486928323c4b83f066d6be13c3d505d8e67425885",
+  "source_membership_sha256": "32aed19720d9e55fccc29a78de00d30c8640585e940b71341a0e72acd2ff9d39",
+  "created_at_utc": "2026-10-25T05:31:31.053520+00:00",
+  "private_noise_seed_recorded": false,
+  "reference_access": "client_raw_train_rows_and_interactive_noisy_marginal_rounds",
+  "access_matched_to_btp_summary_rule": false
+}

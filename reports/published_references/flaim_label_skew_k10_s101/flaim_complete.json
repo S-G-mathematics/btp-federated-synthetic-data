@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/copula_label_skew_k10_s101_0a27e311089a7026",
+  "fit_seconds": 7.233273306977935,
+  "epsilon_spent_reported": 4.000000000000001,
+  "delta_requested": 1e-06,
+  "model_sha256": "a7b0eb1d32e2b0915310fed7afbfd48cbba57c85f0f5d9f11849c0c1d8401c1e",
+  "draws": [
+    {
+      "replicate": 0,
+      "seed": 7701,
+      "path": "discrete_draw_0.npz",
+      "sha256": "76d8904e28058758b9062b03c6cff7163bc630f543aa819df2b800787fb98588"
+    },
+    {
+      "replicate": 1,
+      "seed": 7702,
+      "path": "discrete_draw_1.npz",
+      "sha256": "0299f3cd489c570f3c5c4e80422d2e94bf7658eeafdd13cb889770083fdd76dc"
+    },
+    {
+      "replicate": 2,
+      "seed": 7703,
+      "path": "discrete_draw_2.npz",
+      "sha256": "33a8ce8c329f93fb9b6f079980450c727d5a4f070742e16598b9a7d535f0bcb3"
+    },
+    {
+      "replicate": 3,
+      "seed": 7704,
+      "path": "discrete_draw_3.npz",
+      "sha256": "927136410a5c364a7c9e51e91b01302312766b8928162d1a8f57abc0a02aa82e"
+    },
+    {
+      "replicate": 4,
+      "seed": 7705,
+      "path": "discrete_draw_4.npz",
+      "sha256": "780eee0a4c549ddf503a3e38c558818b01068a00ad9d85a6be08b5de49658b6a"
+    }
+  ],
+  "workload_cliques": 19,
+  "train_counts": [
+    5364,
+    3742,
+    285,
+    3584,
+    3340,
+    492,
+    1229,
+    673,
+    227,
+    2212
+  ]
+}

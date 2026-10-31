@@ -1,0 +1,232 @@
+[
+  {
+    "method": "size",
+    "train_seed": 11303,
+    "tune_seed": 12303,
+    "calibration_seed": 13303,
+    "train_client_counts": [
+      134,
+      1252,
+      1308,
+      283,
+      200,
+      368,
+      2980,
+      2159,
+      1037,
+      279
+    ],
+    "tune_client_counts": [
+      40,
+      376,
+      392,
+      85,
+      60,
+      110,
+      894,
+      648,
+      311,
+      84
+    ],
+    "calibration_client_counts": [
+      40,
+      376,
+      392,
+      85,
+      60,
+      110,
+      894,
+      648,
+      311,
+      84
+    ],
+    "weight_l1_from_alpha": 0.0
+  },
+  {
+    "method": "constrained",
+    "train_seed": 11303,
+    "tune_seed": 12303,
+    "calibration_seed": 13303,
+    "train_client_counts": [
+      67,
+      1931,
+      1308,
+      283,
+      771,
+      184,
+      2639,
+      2159,
+      519,
+      139
+    ],
+    "tune_client_counts": [
+      20,
+      579,
+      392,
+      85,
+      231,
+      55,
+      792,
+      648,
+      156,
+      42
+    ],
+    "calibration_client_counts": [
+      20,
+      579,
+      392,
+      85,
+      231,
+      55,
+      792,
+      648,
+      156,
+      42
+    ],
+    "weight_l1_from_alpha": 0.25
+  },
+  {
+    "method": "size",
+    "learner": "logistic",
+    "selected_setting": "C=0.1",
+    "tuning_trials": [
+      {
+        "setting": "C=0.1",
+        "synthetic_or_real_tune_brier": 0.1354051553485074,
+        "fit_seconds": 0.09755481302272528,
+        "status": "complete"
+      },
+      {
+        "setting": "C=1.0",
+        "synthetic_or_real_tune_brier": 0.13578660412128835,
+        "fit_seconds": 0.10664114897372201,
+        "status": "complete"
+      },
+      {
+        "setting": "C=10.0",
+        "synthetic_or_real_tune_brier": 0.136010186735486,
+        "fit_seconds": 0.11602406098973006,
+        "status": "complete"
+      }
+    ],
+    "calibration": "Platt logistic on separate source-matched calibration draw",
+    "privileged_real_training": false
+  },
+  {
+    "method": "constrained",
+    "learner": "logistic",
+    "selected_setting": "C=0.1",
+    "tuning_trials": [
+      {
+        "setting": "C=0.1",
+        "synthetic_or_real_tune_brier": 0.13007556646964524,
+        "fit_seconds": 0.09569268400082365,
+        "status": "complete"
+      },
+      {
+        "setting": "C=1.0",
+        "synthetic_or_real_tune_brier": 0.13073500728628956,
+        "fit_seconds": 0.0991881350055337,
+        "status": "complete"
+      },
+      {
+        "setting": "C=10.0",
+        "synthetic_or_real_tune_brier": 0.13128290066417292,
+        "fit_seconds": 0.12233589799143374,
+        "status": "complete"
+      }
+    ],
+    "calibration": "Platt logistic on separate source-matched calibration draw",
+    "privileged_real_training": false
+  },
+  {
+    "method": "TRTR_privileged",
+    "learner": "logistic",
+    "selected_setting": "C=0.1",
+    "tuning_trials": [
+      {
+        "setting": "C=0.1",
+        "synthetic_or_real_tune_brier": 0.10319399785118419,
+        "fit_seconds": 0.15806550299748778,
+        "status": "complete"
+      },
+      {
+        "setting": "C=1.0",
+        "synthetic_or_real_tune_brier": 0.10338207155133469,
+        "fit_seconds": 0.17459194496041164,
+        "status": "complete"
+      },
+      {
+        "setting": "C=10.0",
+        "synthetic_or_real_tune_brier": 0.1034288744276394,
+        "fit_seconds": 0.19276836299104616,
+        "status": "complete"
+      }
+    ],
+    "calibration": "Platt logistic on separate source-matched calibration draw",
+    "privileged_real_training": true
+  },
+  {
+    "method": "size",
+    "learner": "extra_trees",
+    "selected_setting": "min_leaf=3",
+    "tuning_trials": [
+      {
+        "setting": "min_leaf=3",
+        "synthetic_or_real_tune_brier": 0.1427764882959976,
+        "fit_seconds": 0.7664423389942385,
+        "status": "complete"
+      },
+      {
+        "setting": "min_leaf=10",
+        "synthetic_or_real_tune_brier": 0.1435240095307298,
+        "fit_seconds": 0.6169917589868419,
+        "status": "complete"
+      }
+    ],
+    "calibration": "Platt logistic on separate source-matched calibration draw",
+    "privileged_real_training": false
+  },
+  {
+    "method": "constrained",
+    "learner": "extra_trees",
+    "selected_setting": "min_leaf=3",
+    "tuning_trials": [
+      {
+        "setting": "min_leaf=3",
+        "synthetic_or_real_tune_brier": 0.13478635652268556,
+        "fit_seconds": 0.7681705660070293,
+        "status": "complete"
+      },
+      {
+        "setting": "min_leaf=10",
+        "synthetic_or_real_tune_brier": 0.1357931079988443,
+        "fit_seconds": 0.6157490499899723,
+        "status": "complete"
+      }
+    ],
+    "calibration": "Platt logistic on separate source-matched calibration draw",
+    "privileged_real_training": false
+  },
+  {
+    "method": "TRTR_privileged",
+    "learner": "extra_trees",
+    "selected_setting": "min_leaf=3",
+    "tuning_trials": [
+      {
+        "setting": "min_leaf=3",
+        "synthetic_or_real_tune_brier": 0.1080670628075235,
+        "fit_seconds": 1.3829080639989115,
+        "status": "complete"
+      },
+      {
+        "setting": "min_leaf=10",
+        "synthetic_or_real_tune_brier": 0.11132904523087774,
+        "fit_seconds": 1.1955254179774784,
+        "status": "complete"
+      }
+    ],
+    "calibration": "Platt logistic on separate source-matched calibration draw",
+    "privileged_real_training": true
+  }
+]

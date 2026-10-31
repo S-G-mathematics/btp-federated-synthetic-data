@@ -1,0 +1,101 @@
+{
+  "registered_at": "2026-10-25 pre-execution",
+  "cells": [
+    {
+      "generator": "chow_liu",
+      "partition": "age",
+      "k": 5,
+      "seed": 101,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_k5_s101_1e696d7c7075c425",
+      "source_configuration_sha256": "11abdbc08770a79d44f82c2f56f6c8feeb33bea67ac0d347fff5906f1396f929"
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "age",
+      "k": 5,
+      "seed": 202,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_k5_s202_930c4f378ec6b732",
+      "source_configuration_sha256": "76de367ba27f5e05a44da5391cb7fe3200d7850629653af5e8c17e4bbffa7a49"
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "age",
+      "k": 5,
+      "seed": 303,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_k5_s303_4488bb1c0ba33b2a",
+      "source_configuration_sha256": "d303b2dbc3863784c577f1eba6ab4fc27a5ef30e774b1433cfdf8792773932e8"
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "label_skew",
+      "k": 10,
+      "seed": 101,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_label_skew_k10_s101_bbde2cd3276d15a4",
+      "source_configuration_sha256": "5b2189ffaa86be68aaa3a75d447e74237b9f8a4c681f4f7505fe6c649605c0a2"
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "label_skew",
+      "k": 10,
+      "seed": 202,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_label_skew_k10_s202_e229ba357fae15f5",
+      "source_configuration_sha256": "bacefe4c0b1d5e4b8ce2688d4a46ce069b6a33ec98782e324d8d8df34f945d14"
+    },
+    {
+      "generator": "chow_liu",
+      "partition": "label_skew",
+      "k": 10,
+      "seed": 303,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_label_skew_k10_s303_2cbec8decd594dda",
+      "source_configuration_sha256": "e38b8c544f69a0de7a4a7989e1001b2de08e15d5037bcfa275edaed80c75815e"
+    },
+    {
+      "generator": "mixed_gmm",
+      "partition": "age",
+      "k": 5,
+      "seed": 101,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_age_k5_s101_0330e44f58d9cd31",
+      "source_configuration_sha256": "52eeb413e752f9cd28a211ed71cd48ccbd7f6582c2f5c7b77d4060842bd3db6b"
+    },
+    {
+      "generator": "mixed_gmm",
+      "partition": "age",
+      "k": 5,
+      "seed": 202,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_age_k5_s202_2ab062441b8aa1dd",
+      "source_configuration_sha256": "969ece894978edef305c6f57c1651f63aeab491acf0856198081e4b6ea71ca8a"
+    },
+    {
+      "generator": "mixed_gmm",
+      "partition": "age",
+      "k": 5,
+      "seed": 303,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_age_k5_s303_3dd8c1e3959568fa",
+      "source_configuration_sha256": "bba5d058eedaf3dbcf97e262408d293c28632fb533a6772199ddf3e42d942a66"
+    },
+    {
+      "generator": "mixed_gmm",
+      "partition": "label_skew",
+      "k": 10,
+      "seed": 101,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_label_skew_k10_s101_887c210b5e6f34b6",
+      "source_configuration_sha256": "7bb5e5a89d556748458d3597429dc6926e83543b763d59bb39ea01b4a0b1c647"
+    },
+    {
+      "generator": "mixed_gmm",
+      "partition": "label_skew",
+      "k": 10,
+      "seed": 202,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_label_skew_k10_s202_3b84653b11377b5f",
+      "source_configuration_sha256": "1943d3caf2fb2959c9a62cd55c6f5423404e80b90007766209b9a85f68ef9d95"
+    },
+    {
+      "generator": "mixed_gmm",
+      "partition": "label_skew",
+      "k": 10,
+      "seed": 303,
+      "source_cell": "results/ec2_projected_v2_deterministic_20261024/mixed_gmm_label_skew_k10_s303_6a10dea7a37ed9cd",
+      "source_configuration_sha256": "1f3bd348b9d7365c703eef6b98d945284a1624563e689fb62ae1534ed1c8f8d2"
+    }
+  ]
+}

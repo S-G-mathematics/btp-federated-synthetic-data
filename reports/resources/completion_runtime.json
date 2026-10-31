@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-10-25T06:18:17.758186+00:00",
+  "primary_sum_marker_elapsed_seconds": 692.7655649429071,
+  "confirmation_upper_seconds_first_test_read_to_secondary_log_mtime": 1231.083724,
+  "pre_confirmation_registered_upper_seconds": 2120.0,
+  "incremental_worker_upper_seconds": 3351.083724,
+  "incremental_worker_upper_hours": 0.93085659,
+  "cap_seconds": 86400,
+  "under_cap": true,
+  "accounting_limits": "Confirmation interval includes idle/reporting and begins at first test read, so it is conservative; earlier phase entries are rounded upper bounds from run logs. No AWS dollar/hourly rate inferred.",
+  "logs": {
+    "adult_confirmation_primary_20261025.log": {
+      "bytes": 410,
+      "mtime_utc": "2026-10-25T05:52:05.928050+00:00",
+      "ctime_utc": "2026-10-25T05:52:05.928050+00:00"
+    },
+    "adult_confirmation_secondary_20261025.log": {
+      "bytes": 530,
+      "mtime_utc": "2026-10-25T06:01:04.156617+00:00",
+      "ctime_utc": "2026-10-25T06:01:04.156617+00:00"
+    }
+  }
+}

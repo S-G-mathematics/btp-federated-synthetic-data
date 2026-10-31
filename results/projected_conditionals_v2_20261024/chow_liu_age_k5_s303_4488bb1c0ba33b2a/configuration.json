@@ -1,0 +1,25 @@
+{
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_k5_s303_4488bb1c0ba33b2a",
+  "source_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "source_manifest_sha256": "1d6eda8dc9b8ab3551d7a3252d56350d34abcd2feff643cd78587ca70061e6a9",
+  "script_sha256": "5ab1af2f11ff22ca48ca95a0c064c821e1d225279859105062848dca5f89dd38",
+  "methods": [
+    "size",
+    "constrained"
+  ],
+  "condition_names": [
+    "age25-45",
+    "female",
+    "bachelors_age30-60",
+    "rare_doctorate_age60-90"
+  ],
+  "teacher_rows": 30000,
+  "requested_student_rows": 2000,
+  "minimum_teacher_rows": 300,
+  "minimum_teacher_mass": 0.01,
+  "official_test_used": false,
+  "reference_role": "development_assessment",
+  "elapsed_seconds": 15.384964081982616,
+  "ended_utc": "2026-10-24T18:44:49.175987+00:00",
+  "status": "complete"
+}

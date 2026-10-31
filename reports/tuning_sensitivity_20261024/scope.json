@@ -1,0 +1,10 @@
+{
+  "seed": 101,
+  "partition": "age",
+  "clients": 5,
+  "repeats_per_setting": 3,
+  "synthetic_rows_per_repeat": 1000,
+  "reference_role": "local_tune_only",
+  "source_results": "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/results/ec2_pilot_gls_fixed_20261024",
+  "purpose": "diagnose upper-edge tuning choices; not a final method selection"
+}

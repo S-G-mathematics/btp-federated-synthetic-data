@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "source_cell": "results/ec2_projected_v2_deterministic_20261024/copula_age_education_k5_s101_8072a0aa0e591a84",
+  "fit_seconds": 0.9887129410053603,
+  "epsilon_spent_reported": 4.000000000000001,
+  "delta_requested": 1e-06,
+  "model_sha256": "118df596149d3a42713826dcb4c0ab66b7880b0dff96f81273ed4dc96e1a1cd2",
+  "draws": [
+    {
+      "replicate": 0,
+      "seed": 7701,
+      "path": "discrete_draw_0.npz",
+      "sha256": "2e03142579da60b55888db79cafea42ed2cf2a53dc8a8dfd31d5a615ff26495b"
+    },
+    {
+      "replicate": 1,
+      "seed": 7702,
+      "path": "discrete_draw_1.npz",
+      "sha256": "9eb89a2418268f32c87125a802fa88e007bb5ab7a79887de831af0f1df66ddbf"
+    },
+    {
+      "replicate": 2,
+      "seed": 7703,
+      "path": "discrete_draw_2.npz",
+      "sha256": "177763555143be9d7d2c343b426d39ba279c43b53372e3562863f70bd8dda151"
+    },
+    {
+      "replicate": 3,
+      "seed": 7704,
+      "path": "discrete_draw_3.npz",
+      "sha256": "dcb52deb400cccbeed1d42721da7b2d96f4912d32895d36bd998705a9279711b"
+    },
+    {
+      "replicate": 4,
+      "seed": 7705,
+      "path": "discrete_draw_4.npz",
+      "sha256": "c92946a965378e166983c7121568df91a773479e680a8905188e6e634be5a4ad"
+    }
+  ],
+  "workload_cliques": 19,
+  "train_counts": [
+    2605,
+    4632,
+    5563,
+    5153,
+    3195
+  ]
+}

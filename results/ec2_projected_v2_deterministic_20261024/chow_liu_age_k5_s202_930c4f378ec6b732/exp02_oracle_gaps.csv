@@ -1,0 +1,14 @@
+method,same_family,comparator_family,certificate,test_query_gap,weight_l1_diagnostic
+uniform,True,mixture,exact LP for fixed empirical H,0.0020000000000000018,0.04683538343355653
+size,True,mixture,exact LP for fixed empirical H,-0.008515151963744229,0.08316978857825102
+moment_l2,True,mixture,exact LP for fixed empirical H,-0.009615151963744233,0.6465881979426245
+query_minimax,True,mixture,exact LP for fixed empirical H,0.0024000000000000132,0.5411099152318051
+entropy_calibration,True,mixture,exact LP for fixed empirical H,-0.007715151963744227,0.2418184609488836
+uncertainty_gls,True,mixture,exact LP for fixed empirical H,-0.011415151963744229,0.43264069025853447
+pseudo_bma_logscore,True,mixture,exact LP for fixed empirical H,0.04054965307978656,1.6075891329188514
+predictive_evidence_bma,True,mixture,exact LP for fixed empirical H,0.04054965307978656,1.6075891329188514
+stacking_logscore,True,mixture,exact LP for fixed empirical H,0.0018390126688482555,0.5460503608730692
+kernel_mean_matching,True,mixture,exact LP for fixed empirical H,-0.005315151963744227,0.49054920145388875
+robust_query_calibration,True,mixture,exact LP for fixed empirical H,-0.0013999999999999846,0.47799101527828836
+logpool,True,finite_support_operator,"best found, no global optimum claim",0.01128174824993114,0.7698294388136286
+barycenter,True,finite_support_operator,"best found, no global optimum claim",0.005300000000000082,0.39555148777554033

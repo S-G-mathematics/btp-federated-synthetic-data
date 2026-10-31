@@ -1,0 +1,262 @@
+{
+  "individual_releases": [
+    {
+      "epsilon_setting": 1.0,
+      "client": 0,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 1.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 1.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 30.0,
+          "n_public": 269,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 1.0,
+      "client": 1,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 1.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 1.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 30.0,
+          "n_public": 305,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 1.0,
+      "client": 2,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 1.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 1.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 30.0,
+          "n_public": 322,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 1.0,
+      "client": 3,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 1.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 1.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 30.0,
+          "n_public": 349,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 1.0,
+      "client": 4,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 1.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 1.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 30.0,
+          "n_public": 255,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 4.0,
+      "client": 0,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 4.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 4.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 7.5,
+          "n_public": 269,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 4.0,
+      "client": 1,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 4.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 4.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 7.5,
+          "n_public": 305,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 4.0,
+      "client": 2,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 4.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 4.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 7.5,
+          "n_public": 322,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 4.0,
+      "client": 3,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 4.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 4.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 7.5,
+          "n_public": 349,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    },
+    {
+      "epsilon_setting": 4.0,
+      "client": 4,
+      "accounting": "sequential basic composition",
+      "epsilon_spent": 4.0,
+      "formal_dp_eligible": true,
+      "noise_seed_mode": "fresh_os_entropy",
+      "releases": [
+        {
+          "name": "private_histogram_marginals",
+          "epsilon": 4.0,
+          "mechanism": "Laplace",
+          "sensitivity_l1": 30,
+          "scale": 7.5,
+          "n_public": 255,
+          "adjacency": "replace-one record at fixed public client size",
+          "noise_seed_mode": "fresh_os_entropy",
+          "postprocessing": [
+            "clip counts to positive values",
+            "normalize each marginal"
+          ]
+        }
+      ],
+      "scope": "this histogram release only; no claim for non-private pipeline"
+    }
+  ],
+  "epsilon_for_releasing_all_settings_same_cell": 5.0,
+  "conditions": [
+    "fixed public client membership and sizes",
+    "replace-one adjacency",
+    "fixed public schema and clipping"
+  ],
+  "full_bundle_is_NOT_DP": "contains raw public Adult and nonprivate model outputs; guarantee covers specified histogram mechanisms only",
+  "cross_seed_composition": "sum applicable per-run budgets if releasing all runs on overlapping individuals"
+}

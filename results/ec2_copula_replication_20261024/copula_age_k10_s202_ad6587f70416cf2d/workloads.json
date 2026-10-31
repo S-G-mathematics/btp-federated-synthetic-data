@@ -1,0 +1,2044 @@
+{
+  "calibration": [
+    {
+      "name": "age<=25",
+      "terms": [
+        [
+          "age",
+          "le",
+          25
+        ]
+      ]
+    },
+    {
+      "name": "age<=35",
+      "terms": [
+        [
+          "age",
+          "le",
+          35
+        ]
+      ]
+    },
+    {
+      "name": "age<=45",
+      "terms": [
+        [
+          "age",
+          "le",
+          45
+        ]
+      ]
+    },
+    {
+      "name": "age<=55",
+      "terms": [
+        [
+          "age",
+          "le",
+          55
+        ]
+      ]
+    },
+    {
+      "name": "age<=65",
+      "terms": [
+        [
+          "age",
+          "le",
+          65
+        ]
+      ]
+    },
+    {
+      "name": "fnlwgt<=100000",
+      "terms": [
+        [
+          "fnlwgt",
+          "le",
+          100000
+        ]
+      ]
+    },
+    {
+      "name": "fnlwgt<=200000",
+      "terms": [
+        [
+          "fnlwgt",
+          "le",
+          200000
+        ]
+      ]
+    },
+    {
+      "name": "fnlwgt<=300000",
+      "terms": [
+        [
+          "fnlwgt",
+          "le",
+          300000
+        ]
+      ]
+    },
+    {
+      "name": "education-num<=8",
+      "terms": [
+        [
+          "education-num",
+          "le",
+          8
+        ]
+      ]
+    },
+    {
+      "name": "education-num<=9",
+      "terms": [
+        [
+          "education-num",
+          "le",
+          9
+        ]
+      ]
+    },
+    {
+      "name": "education-num<=10",
+      "terms": [
+        [
+          "education-num",
+          "le",
+          10
+        ]
+      ]
+    },
+    {
+      "name": "education-num<=12",
+      "terms": [
+        [
+          "education-num",
+          "le",
+          12
+        ]
+      ]
+    },
+    {
+      "name": "education-num<=13",
+      "terms": [
+        [
+          "education-num",
+          "le",
+          13
+        ]
+      ]
+    },
+    {
+      "name": "education-num<=16",
+      "terms": [
+        [
+          "education-num",
+          "le",
+          16
+        ]
+      ]
+    },
+    {
+      "name": "capital-gain<=0",
+      "terms": [
+        [
+          "capital-gain",
+          "le",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "capital-gain<=1000",
+      "terms": [
+        [
+          "capital-gain",
+          "le",
+          1000
+        ]
+      ]
+    },
+    {
+      "name": "capital-gain<=5000",
+      "terms": [
+        [
+          "capital-gain",
+          "le",
+          5000
+        ]
+      ]
+    },
+    {
+      "name": "capital-gain<=10000",
+      "terms": [
+        [
+          "capital-gain",
+          "le",
+          10000
+        ]
+      ]
+    },
+    {
+      "name": "capital-loss<=0",
+      "terms": [
+        [
+          "capital-loss",
+          "le",
+          0
+        ]
+      ]
+    },
+    {
+      "name": "capital-loss<=1000",
+      "terms": [
+        [
+          "capital-loss",
+          "le",
+          1000
+        ]
+      ]
+    },
+    {
+      "name": "capital-loss<=2000",
+      "terms": [
+        [
+          "capital-loss",
+          "le",
+          2000
+        ]
+      ]
+    },
+    {
+      "name": "hours-per-week<=20",
+      "terms": [
+        [
+          "hours-per-week",
+          "le",
+          20
+        ]
+      ]
+    },
+    {
+      "name": "hours-per-week<=35",
+      "terms": [
+        [
+          "hours-per-week",
+          "le",
+          35
+        ]
+      ]
+    },
+    {
+      "name": "hours-per-week<=40",
+      "terms": [
+        [
+          "hours-per-week",
+          "le",
+          40
+        ]
+      ]
+    },
+    {
+      "name": "hours-per-week<=50",
+      "terms": [
+        [
+          "hours-per-week",
+          "le",
+          50
+        ]
+      ]
+    },
+    {
+      "name": "hours-per-week<=60",
+      "terms": [
+        [
+          "hours-per-week",
+          "le",
+          60
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Private",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Private"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Self-emp-not-inc",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Self-emp-not-inc"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Self-emp-inc",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Self-emp-inc"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Federal-gov",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Federal-gov"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Local-gov",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Local-gov"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=State-gov",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "State-gov"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Without-pay",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Without-pay"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Never-worked",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Never-worked"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=?",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=__UNKNOWN__",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "education=Bachelors",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Bachelors"
+        ]
+      ]
+    },
+    {
+      "name": "education=Some-college",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Some-college"
+        ]
+      ]
+    },
+    {
+      "name": "education=11th",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "11th"
+        ]
+      ]
+    },
+    {
+      "name": "education=HS-grad",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "HS-grad"
+        ]
+      ]
+    },
+    {
+      "name": "education=Prof-school",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Prof-school"
+        ]
+      ]
+    },
+    {
+      "name": "education=Assoc-acdm",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Assoc-acdm"
+        ]
+      ]
+    },
+    {
+      "name": "education=Assoc-voc",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Assoc-voc"
+        ]
+      ]
+    },
+    {
+      "name": "education=9th",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "9th"
+        ]
+      ]
+    },
+    {
+      "name": "education=7th-8th",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "7th-8th"
+        ]
+      ]
+    },
+    {
+      "name": "education=12th",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "12th"
+        ]
+      ]
+    },
+    {
+      "name": "education=Masters",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Masters"
+        ]
+      ]
+    },
+    {
+      "name": "education=1st-4th",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "1st-4th"
+        ]
+      ]
+    },
+    {
+      "name": "education=10th",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "10th"
+        ]
+      ]
+    },
+    {
+      "name": "education=Doctorate",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Doctorate"
+        ]
+      ]
+    },
+    {
+      "name": "education=5th-6th",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "5th-6th"
+        ]
+      ]
+    },
+    {
+      "name": "education=Preschool",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Preschool"
+        ]
+      ]
+    },
+    {
+      "name": "education=?",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "education=__UNKNOWN__",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=Married-civ-spouse",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "Married-civ-spouse"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=Divorced",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "Divorced"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=Never-married",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "Never-married"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=Separated",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "Separated"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=Widowed",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "Widowed"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=Married-spouse-absent",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "Married-spouse-absent"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=Married-AF-spouse",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "Married-AF-spouse"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=?",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "marital-status=__UNKNOWN__",
+      "terms": [
+        [
+          "marital-status",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Tech-support",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Tech-support"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Craft-repair",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Craft-repair"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Other-service",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Other-service"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Sales",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Sales"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Exec-managerial",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Exec-managerial"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Prof-specialty",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Prof-specialty"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Handlers-cleaners",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Handlers-cleaners"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Machine-op-inspct",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Machine-op-inspct"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Adm-clerical",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Adm-clerical"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Farming-fishing",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Farming-fishing"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Transport-moving",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Transport-moving"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Priv-house-serv",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Priv-house-serv"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Protective-serv",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Protective-serv"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=Armed-Forces",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "Armed-Forces"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=?",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "occupation=__UNKNOWN__",
+      "terms": [
+        [
+          "occupation",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=Wife",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "Wife"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=Own-child",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "Own-child"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=Husband",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "Husband"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=Not-in-family",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "Not-in-family"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=Other-relative",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "Other-relative"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=Unmarried",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "Unmarried"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=?",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "relationship=__UNKNOWN__",
+      "terms": [
+        [
+          "relationship",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "race=White",
+      "terms": [
+        [
+          "race",
+          "eq",
+          "White"
+        ]
+      ]
+    },
+    {
+      "name": "race=Asian-Pac-Islander",
+      "terms": [
+        [
+          "race",
+          "eq",
+          "Asian-Pac-Islander"
+        ]
+      ]
+    },
+    {
+      "name": "race=Amer-Indian-Eskimo",
+      "terms": [
+        [
+          "race",
+          "eq",
+          "Amer-Indian-Eskimo"
+        ]
+      ]
+    },
+    {
+      "name": "race=Other",
+      "terms": [
+        [
+          "race",
+          "eq",
+          "Other"
+        ]
+      ]
+    },
+    {
+      "name": "race=Black",
+      "terms": [
+        [
+          "race",
+          "eq",
+          "Black"
+        ]
+      ]
+    },
+    {
+      "name": "race=?",
+      "terms": [
+        [
+          "race",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "race=__UNKNOWN__",
+      "terms": [
+        [
+          "race",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "sex=Female",
+      "terms": [
+        [
+          "sex",
+          "eq",
+          "Female"
+        ]
+      ]
+    },
+    {
+      "name": "sex=Male",
+      "terms": [
+        [
+          "sex",
+          "eq",
+          "Male"
+        ]
+      ]
+    },
+    {
+      "name": "sex=?",
+      "terms": [
+        [
+          "sex",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "sex=__UNKNOWN__",
+      "terms": [
+        [
+          "sex",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=United-States",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "United-States"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Cambodia",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Cambodia"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=England",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "England"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Puerto-Rico",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Puerto-Rico"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Canada",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Canada"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Germany",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Germany"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Outlying-US(Guam-USVI-etc)",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Outlying-US(Guam-USVI-etc)"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=India",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "India"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Japan",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Japan"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Greece",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Greece"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=South",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "South"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=China",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "China"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Cuba",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Cuba"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Iran",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Iran"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Honduras",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Honduras"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Philippines",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Philippines"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Italy",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Italy"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Poland",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Poland"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Jamaica",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Jamaica"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Vietnam",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Vietnam"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Mexico",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Mexico"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Portugal",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Portugal"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Ireland",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Ireland"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=France",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "France"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Dominican-Republic",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Dominican-Republic"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Laos",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Laos"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Ecuador",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Ecuador"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Taiwan",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Taiwan"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Haiti",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Haiti"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Columbia",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Columbia"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Hungary",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Hungary"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Guatemala",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Guatemala"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Nicaragua",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Nicaragua"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Scotland",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Scotland"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Thailand",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Thailand"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Yugoslavia",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Yugoslavia"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=El-Salvador",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "El-Salvador"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Trinadad&Tobago",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Trinadad&Tobago"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Peru",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Peru"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Hong",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Hong"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=Holand-Netherlands",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "Holand-Netherlands"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=?",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "?"
+        ]
+      ]
+    },
+    {
+      "name": "native-country=__UNKNOWN__",
+      "terms": [
+        [
+          "native-country",
+          "eq",
+          "__UNKNOWN__"
+        ]
+      ]
+    },
+    {
+      "name": "income=<=50K",
+      "terms": [
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "income=>50K",
+      "terms": [
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "sex=Female&income>50K",
+      "terms": [
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "sex=Male&income>50K",
+      "terms": [
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "education=HS-grad&income>50K",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "HS-grad"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "education=Bachelors&income>50K",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Bachelors"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "education=Masters&income>50K",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Masters"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Private&income>50K",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Private"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Self-emp-not-inc&income>50K",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Self-emp-not-inc"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "workclass=Local-gov&income>50K",
+      "terms": [
+        [
+          "workclass",
+          "eq",
+          "Local-gov"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    }
+  ],
+  "unseen_audit": [
+    {
+      "name": "age17-30&Female&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            17,
+            30
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age17-30&Female&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            17,
+            30
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "age17-30&Male&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            17,
+            30
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age17-30&Male&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            17,
+            30
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "age31-45&Female&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            31,
+            45
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age31-45&Female&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            31,
+            45
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "age31-45&Male&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            31,
+            45
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age31-45&Male&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            31,
+            45
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "age46-60&Female&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            46,
+            60
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age46-60&Female&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            46,
+            60
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "age46-60&Male&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            46,
+            60
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age46-60&Male&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            46,
+            60
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "age61-90&Female&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            61,
+            90
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age61-90&Female&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            61,
+            90
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Female"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "age61-90&Male&<=50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            61,
+            90
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          "<=50K"
+        ]
+      ]
+    },
+    {
+      "name": "age61-90&Male&>50K",
+      "terms": [
+        [
+          "age",
+          "between",
+          [
+            61,
+            90
+          ]
+        ],
+        [
+          "sex",
+          "eq",
+          "Male"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "audit:HS-grad&Private&income",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "HS-grad"
+        ],
+        [
+          "workclass",
+          "eq",
+          "Private"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "audit:HS-grad&Self-emp-not-inc&income",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "HS-grad"
+        ],
+        [
+          "workclass",
+          "eq",
+          "Self-emp-not-inc"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "audit:Bachelors&Private&income",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Bachelors"
+        ],
+        [
+          "workclass",
+          "eq",
+          "Private"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "audit:Bachelors&Self-emp-not-inc&income",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Bachelors"
+        ],
+        [
+          "workclass",
+          "eq",
+          "Self-emp-not-inc"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "audit:Masters&Private&income",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Masters"
+        ],
+        [
+          "workclass",
+          "eq",
+          "Private"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    },
+    {
+      "name": "audit:Masters&Self-emp-not-inc&income",
+      "terms": [
+        [
+          "education",
+          "eq",
+          "Masters"
+        ],
+        [
+          "workclass",
+          "eq",
+          "Self-emp-not-inc"
+        ],
+        [
+          "income",
+          "eq",
+          ">50K"
+        ]
+      ]
+    }
+  ]
+}

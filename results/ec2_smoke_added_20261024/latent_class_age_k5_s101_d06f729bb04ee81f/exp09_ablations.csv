@@ -1,0 +1,4 @@
+ablation,query_linf,query_mae,unseen_query_linf,unseen_query_mae,invalid_income_rate,unique_row_fraction,n_synthetic,n_real_reference,reference
+uniform,0.1702155510835348,0.014623008630264608,0.07892840938522759,0.01663023786195748,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+size,0.18621555108353482,0.01471951193257048,0.05092840938522758,0.01668165775664733,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training
+uncertainty_gls,0.0850164872107011,0.013637946278401007,0.07492840938522759,0.014124672326575431,0.0,1.0,500,600,weighted empirical client D_R; alpha fixed from training

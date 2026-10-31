@@ -1,0 +1,73 @@
+{
+  "all": {
+    "cells": 57,
+    "size_selected": 10,
+    "selected_assessment_wins": 30,
+    "selected_practical_gain_cells": 7,
+    "selected_material_harm_cells": 3,
+    "mean_selected_delta_vs_size": -0.0005170865301353789,
+    "selected_meets_l1_and_floor": 18
+  },
+  "core_only": {
+    "cells": 54,
+    "size_selected": 10,
+    "selected_assessment_wins": 28,
+    "selected_practical_gain_cells": 7,
+    "selected_material_harm_cells": 3,
+    "mean_selected_delta_vs_size": -0.00045766541143919614,
+    "selected_meets_l1_and_floor": 18
+  },
+  "by_generator": {
+    "chow_liu": {
+      "cells": 18,
+      "size_selected": 3,
+      "selected_assessment_wins": 8,
+      "selected_practical_gain_cells": 1,
+      "selected_material_harm_cells": 1,
+      "mean_selected_delta_vs_size": 5.6946414188373404e-05,
+      "selected_meets_l1_and_floor": 8
+    },
+    "copula": {
+      "cells": 18,
+      "size_selected": 6,
+      "selected_assessment_wins": 7,
+      "selected_practical_gain_cells": 0,
+      "selected_material_harm_cells": 2,
+      "mean_selected_delta_vs_size": 0.000918569763404572,
+      "selected_meets_l1_and_floor": 8
+    },
+    "independent": {
+      "cells": 3,
+      "size_selected": 0,
+      "selected_assessment_wins": 2,
+      "selected_practical_gain_cells": 0,
+      "selected_material_harm_cells": 0,
+      "mean_selected_delta_vs_size": -0.0015866666666666674,
+      "selected_meets_l1_and_floor": 0
+    },
+    "mixed_gmm": {
+      "cells": 18,
+      "size_selected": 1,
+      "selected_assessment_wins": 13,
+      "selected_practical_gain_cells": 6,
+      "selected_material_harm_cells": 0,
+      "mean_selected_delta_vs_size": -0.002348512411910535,
+      "selected_meets_l1_and_floor": 2
+    }
+  },
+  "source_code_hashes": [
+    "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868"
+  ],
+  "development_split_seeds": [
+    101,
+    202,
+    303
+  ],
+  "failed_weight_fit_cells": 0,
+  "failed_local_tune_trials": 0,
+  "nonconverged_or_invalid_tune_trials": 0,
+  "core_selected_practical_mean_gain_slices": 1,
+  "core_selected_practical_and_audit_slices": 1,
+  "official_test_used": false,
+  "scope": "overlapping Adult split seeds, development assessment only; no global selection"
+}
