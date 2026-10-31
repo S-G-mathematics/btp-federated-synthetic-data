@@ -1,35 +1,17 @@
-# Experiment 7: Joint Implied Prediction
+# Experiment 07: Joint-implied prediction
 
-**Question.** Can a joint model imply an income predictor?
+**Research question.** Can the fitted joint mixture imply useful income predictions on observed feature rows?
 
-**Hypothesis/objective.** Exactness is limited to declared discrete projected model
+**Setup and stage.** Six development cells: Chow-Liu age/K5 and mixed GMM label-skew/K10 at seeds 101/202/303. Both income labels were scored and normalized on the same assessment people as the synthetic logistic and privileged TRTR comparisons, under size and constrained weights.
 
-**Type and status.** completed empirical comparison; `COMPLETE_BOUNDED_FINDING` in the dated twelve-package closure. The files linked below record historical execution. This guide is a packaging-time index, not a new experiment.
+**Observed result.** Two-label mass was finite for every observed assessment row. Size-weighted Chow-Liu joint Brier was 0.128481 versus 0.137953 for synthetic logistic; GMM joint Brier was 0.126214 versus 0.116265.
 
-**Dataset and data roles.** Official UCI Adult is the primary dataset; Experiment 1 additionally includes UCI Bank Marketing `bank-additional-full.csv` as registered external replication. Adult official test was scored only after the campaign freeze. Local fitting uses train/local tune, weighting uses permitted calibration summaries, and a privileged evaluator scores held-out real references. Bank's `duration` is excluded. See [data protocol](../../docs/DATA_PROTOCOL.md), [Bank protocol](../../docs/EXTERNAL_BANK_PROTOCOL.md), [access contract](../../docs/RELEASE_CONTRACT.md) and [freeze](../../SELECTION_FROZEN.json).
+**Limits.** Chow-Liu scores are exact for its declared discretized fitted model; GMM rounded/clipped output scores are approximate. Observed-row coverage does not imply off-support coverage.
 
-**Models and methods.** exact supported projected Chow-Liu and approximate GMM/copula score routes. All clients use the same schema. The final Adult generator is train/local-tune-selected projected copula; the main weight comparator uses the fixed alpha target, L1 budget 0.25 and floor 0.5 alpha. Other families or access levels in historical results are labelled separately.
+**Reproduction.** `python scripts/reproduce_repository.py --tables` rebuilds reports from saved results without fitting. For historical execution, prerequisites, and selecting a specific cell, see [REPRODUCE](../../REPRODUCE.md), [campaign settings](../../configs/campaign.yaml), [resource limits](../../configs/resources.yaml), [environment lock](../../environment/requirements_final_portable_20261025.txt), [source](../../btp/) and [runners](../../scripts/).
 
-**Partitions, clients and seeds.** The corrected core uses age, age+education and label-skew assignments, K=5/10, seeds 101/202/303. Frozen Adult confirmation uses 404/505; Bank replication uses its registered split and 611/622/633. Experiment-specific subsets, severity seeds, pilot and draw streams are recorded in the linked evidence and [configuration](../../configs/campaign.yaml). Do not infer that all combinations were run in this package.
-
-**Synthetic and pilot budgets.** The primary Adult/Bank comparison uses m=10,000 and five synthetic draws. Exp2 varies pilots 500/1,500/5,000/15,000; Exp4 varies m=2,500/10,000/40,000. Other conditional or private budgets are in their fixed protocols and run manifests.
-
-**Metric and aggregation.** paired Brier/AUROC, two-label mass, abstention coverage. Lower is better for query error and Brier; higher is better for AUROC/AUPRC. Primary paired contrast is challenger minus size; negative favours challenger. Draws are averaged within a cell before slice/overall summaries. The exact unit for this package is in the evidence tables; seeds and draws reuse people and are not independent cohorts.
-
-**Executable source/configuration.** [Package](../../btp/), [experiment runners](../../scripts/), [campaign settings](../../configs/campaign.yaml), [resource limits](../../configs/resources.yaml), [environment lock](../../environment/requirements_final_portable_20261025.txt). `python scripts/reproduce_repository.py --tables` rebuilds saved-result reports without fitting. Full historical execution commands and resource limits are in [REPRODUCE](../../REPRODUCE.md); a specific cell must be explicitly selected there. No default command launches a campaign.
-
-**Expected outputs.** Canonical files below, retained report tables in `reports/`, inspectable author tables in `AUTHOR_READY/PAPER_TABLES/`, and full checkpoints/draws in the verified v2 archive manifest. The latter are not silently duplicated in Git.
-
-**Recorded result.** Observed-row coverage 100%; exact-score preimages audited; approximate routes labelled
-
-**Interpretation.** Exactness is limited to declared discrete projected model
-
-**Limitations/exclusions.** Universal off-support coverage and exact copula/GMM probabilities. Forbidden extension: Exact rounded/clipped continuous score claim
-
-**Evidence stage.** development predictor audit. Historical source files are retained, and packaging-time checks appear separately in `logs/packaging/` when run. Missing in-Git evidence links: none.
-
-**Canonical evidence and provenance.**
+**Evidence.**
 - [docs/INTEGRITY_AND_PROJECTION_AUDIT.md](../../docs/INTEGRITY_AND_PROJECTION_AUDIT.md)
 - [docs/PROJECTED_JOINT_PREDICTION_FINDINGS_20261025.md](../../docs/PROJECTED_JOINT_PREDICTION_FINDINGS_20261025.md)
 
-See [closure register](../../EXPERIMENTS_01_TO_12_CLOSURE.json), [full archive manifest](../../artifacts/full_archive_manifest_v2.json), [claim map](../../results/summaries/claim_to_evidence.csv), and [source mapping](../../provenance/source_to_repository_map.csv).
+See the [data protocol](../../docs/DATA_PROTOCOL.md), [Bank protocol](../../docs/EXTERNAL_BANK_PROTOCOL.md), [access contract](../../docs/RELEASE_CONTRACT.md), [freeze](../../SELECTION_FROZEN.json), [closure register](../../EXPERIMENTS_01_TO_12_CLOSURE.json), [archive manifest](../../artifacts/full_archive_manifest_v2.json), [claim map](../../results/summaries/claim_to_evidence.csv), and [source mapping](../../provenance/source_to_repository_map.csv).

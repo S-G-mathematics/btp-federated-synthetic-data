@@ -1,35 +1,17 @@
-# Experiment 11: Conditional Transfer
+# Experiment 11: Conditional transfer
 
-**Question.** What finite-query conditional transfer follows?
+**Research question.** What finite-query conditional bound and teacher/student accounting hold under measured support?
 
-**Hypothesis/objective.** Finite-query bound under stated support assumptions
+**Setup and stage.** Six development cells used Chow-Liu age/K5 and mixed GMM label-skew/K10, seeds 101/202/303, two weight routes and four registered conditions. The audit evaluated 142 feature-only queries; student/direct comparisons were made only for supported combinations.
 
-**Type and status.** completed bounded audit; `COMPLETE_BOUNDED_FINDING` in the dated twelve-package closure. The files linked below record historical execution. This guide is a packaging-time index, not a new experiment.
+**Observed result.** The finite-query ratio bound held in all 48 condition/route/cell rows, and the empirical triangle held in all 5,112 supported student/direct query rows. The rare condition failed the prior 300-row/1% teacher gate in every route and abstained.
 
-**Dataset and data roles.** Official UCI Adult is the primary dataset; Experiment 1 additionally includes UCI Bank Marketing `bank-additional-full.csv` as registered external replication. Adult official test was scored only after the campaign freeze. Local fitting uses train/local tune, weighting uses permitted calibration summaries, and a privileged evaluator scores held-out real references. Bank's `duration` is excluded. See [data protocol](../../docs/DATA_PROTOCOL.md), [Bank protocol](../../docs/EXTERNAL_BANK_PROTOCOL.md), [access contract](../../docs/RELEASE_CONTRACT.md) and [freeze](../../SELECTION_FROZEN.json).
+**Limits.** The bound requires measured joint intersections and positive condition mass; rare support makes it weak. Finite empirical checks do not prove arbitrary-condition or population transfer.
 
-**Models and methods.** finite-query conditional bounds and teacher/student empirical identities. All clients use the same schema. The final Adult generator is train/local-tune-selected projected copula; the main weight comparator uses the fixed alpha target, L1 budget 0.25 and floor 0.5 alpha. Other families or access levels in historical results are labelled separately.
+**Reproduction.** `python scripts/reproduce_repository.py --tables` rebuilds reports from saved results without fitting. For historical execution, prerequisites, and selecting a specific cell, see [REPRODUCE](../../REPRODUCE.md), [campaign settings](../../configs/campaign.yaml), [resource limits](../../configs/resources.yaml), [environment lock](../../environment/requirements_final_portable_20261025.txt), [source](../../btp/) and [runners](../../scripts/).
 
-**Partitions, clients and seeds.** The corrected core uses age, age+education and label-skew assignments, K=5/10, seeds 101/202/303. Frozen Adult confirmation uses 404/505; Bank replication uses its registered split and 611/622/633. Experiment-specific subsets, severity seeds, pilot and draw streams are recorded in the linked evidence and [configuration](../../configs/campaign.yaml). Do not infer that all combinations were run in this package.
-
-**Synthetic and pilot budgets.** The primary Adult/Bank comparison uses m=10,000 and five synthetic draws. Exp2 varies pilots 500/1,500/5,000/15,000; Exp4 varies m=2,500/10,000/40,000. Other conditional or private budgets are in their fixed protocols and run manifests.
-
-**Metric and aggregation.** ratio bound, support denominator, empirical triangle. Lower is better for query error and Brier; higher is better for AUROC/AUPRC. Primary paired contrast is challenger minus size; negative favours challenger. Draws are averaged within a cell before slice/overall summaries. The exact unit for this package is in the evidence tables; seeds and draws reuse people and are not independent cohorts.
-
-**Executable source/configuration.** [Package](../../btp/), [experiment runners](../../scripts/), [campaign settings](../../configs/campaign.yaml), [resource limits](../../configs/resources.yaml), [environment lock](../../environment/requirements_final_portable_20261025.txt). `python scripts/reproduce_repository.py --tables` rebuilds saved-result reports without fitting. Full historical execution commands and resource limits are in [REPRODUCE](../../REPRODUCE.md); a specific cell must be explicitly selected there. No default command launches a campaign.
-
-**Expected outputs.** Canonical files below, retained report tables in `reports/`, inspectable author tables in `AUTHOR_READY/PAPER_TABLES/`, and full checkpoints/draws in the verified v2 archive manifest. The latter are not silently duplicated in Git.
-
-**Recorded result.** Algebra checked; rare support makes bounds weak and triggers abstention
-
-**Interpretation.** Finite-query bound under stated support assumptions
-
-**Limitations/exclusions.** General arbitrary-condition theorem. Forbidden extension: Experimental proof of universal transfer
-
-**Evidence stage.** finite empirical transfer audit. Historical source files are retained, and packaging-time checks appear separately in `logs/packaging/` when run. Missing in-Git evidence links: none.
-
-**Canonical evidence and provenance.**
+**Evidence.**
 - [docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md](../../docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md)
 - [docs/PROJECTED_TRANSFER_FINDINGS_20261025.md](../../docs/PROJECTED_TRANSFER_FINDINGS_20261025.md)
 
-See [closure register](../../EXPERIMENTS_01_TO_12_CLOSURE.json), [full archive manifest](../../artifacts/full_archive_manifest_v2.json), [claim map](../../results/summaries/claim_to_evidence.csv), and [source mapping](../../provenance/source_to_repository_map.csv).
+See the [data protocol](../../docs/DATA_PROTOCOL.md), [Bank protocol](../../docs/EXTERNAL_BANK_PROTOCOL.md), [access contract](../../docs/RELEASE_CONTRACT.md), [freeze](../../SELECTION_FROZEN.json), [closure register](../../EXPERIMENTS_01_TO_12_CLOSURE.json), [archive manifest](../../artifacts/full_archive_manifest_v2.json), [claim map](../../results/summaries/claim_to_evidence.csv), and [source mapping](../../provenance/source_to_repository_map.csv).

@@ -1,3 +1,5 @@
-# Chronology
+# Chronology and post-experiment additions
 
-The current report contains later theoretical additions. They are explanatory and future proof targets; they did not control the frozen historical selection. Refer to the original dated report, campaign freeze and `docs/experimental_history.md` when citing prospectivity.
+The original [theoretical framework](BTP_Theoretical_Framework.tex) is retained as a historical source. The finite-query transfer note is dated 2026-10-25; it is explicitly later than development. The current report develops additional conditional results, and the [proof supplement](PROOFS.md), dated 2026-10-31, gathers its 27 numbered statements with proofs or counterexamples. It is an explanatory post-experiment supplement: it did not govern the frozen selection, change the experiment, or retrospectively certify its results. See the [proof review](PROOF_REVIEW.md) and [statement register](statements.md).
+
+The historical backlog may still call a topic open because it predates the supplement. In particular, later conditional results establish a sufficient fallback certificate, positive-score geometric perturbation bound, finite entropic transport objective bound, approximate size-weight bounds, and a sufficient query-loss dual certificate. Application-specific error radii, premises and numerical certificates remain unestablished where noted. Dates or prospectivity not supported by historical evidence remain later/uncertain; consult the campaign freeze and `docs/experimental_history.md` for experimental chronology.
