@@ -1,0 +1,9 @@
+# Chow-Liu cross-process sampling correction
+
+**Found and fixed:** 24 October 2026 UTC, during the projected version 2 development campaign.
+
+The Chow-Liu sampler in `btp/models.py` visited ready tree nodes from a Python `set`. With the same fitted checkpoint and integer sample seed, different process `PYTHONHASHSEED` values could consume the random stream in different column orders. The campaign scheduler set `PYTHONHASHSEED` to the split seed, while the separate constrained-weighting script initially did not. Thus its first projected five-cell run could not be treated as a matched same-seed comparison with the campaign output, even though both recorded the same integer sample seeds.
+
+The sampler now traverses the declared schema column order. `tests/test_models.py` checks that a Chow-Liu sample has the same SHA-256 digest in two subprocesses with different hash seeds. The EC2 suite passed **74 tests** at `logs/ec2_tests_deterministic_chow.log`. The corrected projected campaign uses code hash `25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868` and a separate `results/ec2_projected_v2_deterministic_20261024/` root. Its constrained rerun is in `results/representation_constrained_projected_v2_deterministic_20261024/`.
+
+The earlier `results/ec2_projected_v2_pilot_20261024/`, `results/ec2_projected_v2_harder_skew_20261024/` and `results/representation_constrained_projected_v2_20261024/` roots remain preserved as diagnostic history. Their fitted models and findings must not be merged with the corrected matched seed matrix. The direct first-pilot result was adverse for the validation-selected method, but the exact numeric value is historical because Chow-Liu samples changed under deterministic traversal. `logs/projected_v2_constrained_launcher.log` also preserves the initial manifest-format failure before any constrained cell was scored. No official-test row was used in this correction.

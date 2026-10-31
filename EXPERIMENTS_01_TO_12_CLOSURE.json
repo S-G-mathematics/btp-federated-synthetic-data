@@ -1,0 +1,202 @@
+{
+  "created_at_utc": "2026-10-25T06:59:30.858856+00:00",
+  "overall": "EXPERIMENTAL_WORK_COMPLETE_WITH_EXPLICIT_SCOPE_LIMITS",
+  "packages": [
+    {
+      "experiment": 1,
+      "question": "Does weighting improve fixed-target empirical fidelity?",
+      "methods_and_scope": "54 corrected Adult development cells; 12 frozen confirmation cells; same locally tuned models and five 10k draws",
+      "metric": "alpha-standardized Q_primary_v2 query max; constrained minus size",
+      "completed_scope": "0/18 Adult development and 0/6 confirmation partition/K slices reached -0.005; overall confirmation delta -0.000215",
+      "unresolved_scope": "Other populations, workloads and privacy-matched aggregation",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "No registered practical constrained gain; retain size weighting",
+      "forbidden_claim": "A general weighting-improvement or equivalence claim",
+      "evidence": [
+        "docs/ADULT_WEIGHTING_DEVELOPMENT_CLOSURE.md",
+        "docs/FROZEN_CONFIRMATION_FINDINGS.md",
+        "reports/final_build/confirmation_slices.csv"
+      ],
+      "stop_criterion": "All registered Adult development and frozen confirmation cells terminal; compare the same alpha target and retain every adverse slice."
+    },
+    {
+      "experiment": 2,
+      "question": "How close are candidates to a finite-pilot oracle?",
+      "methods_and_scope": "57 certified fixed-pilot LPs; six-cell four-size/five-seed pilot sensitivity",
+      "metric": "LP certificate, pilot regret and fresh-sample query loss",
+      "completed_scope": "Finite matrix optimum certified; larger pilots reduced numerical excess but did not establish practical fresh-sample gain",
+      "unresolved_scope": "Population optimum or globally optimal nonlinear operators",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Oracle is conditional on fixed synthetic H and empirical target",
+      "forbidden_claim": "Population or continuous-pooling optimality",
+      "evidence": [
+        "docs/PROJECTED_PILOT_SENSITIVITY_FINDINGS_20261024.md",
+        "reports/projected_pilot_sensitivity_v2_20261024/"
+      ],
+      "stop_criterion": "Every finite-pilot LP status/certificate retained and the predeclared pilot-size study terminal; do not claim a population optimum."
+    },
+    {
+      "experiment": 3,
+      "question": "Do overlapping client subsets add mixture expressivity?",
+      "methods_and_scope": "Cyclic subset effective-weight identity and saved numerical check",
+      "metric": "Equality of effective client mass and resulting mixture",
+      "completed_scope": "Mixtures of subset mixtures collapse to one global mixture",
+      "unresolved_scope": "New within-subset estimators",
+      "disposition": "CLOSED_NEGATIVE_OR_INAPPLICABLE",
+      "retained_claim": "Subset regrouping alone adds no expressive family",
+      "forbidden_claim": "Novel subset generator from regrouping",
+      "evidence": [
+        "docs/EXPERIMENTS_12.md",
+        "docs/WEIGHT_METHODS.md",
+        "results/ec2_fullstage_dev_20261024/copula_age_k5_s101_24ff1a5a4b33acfa/exp03_subsets.json"
+      ],
+      "stop_criterion": "Algebraic collapse proved and a saved cyclic example has zero effective-weight identity error; no extra expressive model claimed."
+    },
+    {
+      "experiment": 4,
+      "question": "What changes with synthetic sample size?",
+      "methods_and_scope": "Six checkpoints, m=2500/10000/40000, five draws each",
+      "metric": "query error, draw variation, diversity, runtime",
+      "completed_scope": "Draw variation shrank; model error persisted; no practical constrained gain",
+      "unresolved_scope": "Other families or very large m",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Sampling more rows does not repair observed model bias in these cells",
+      "forbidden_claim": "Universal population error floor",
+      "evidence": [
+        "docs/PROJECTED_SAMPLE_SIZE_FINDINGS_20261024.md",
+        "reports/projected_sample_size_20261024/"
+      ],
+      "stop_criterion": "Five draws at each registered m share fixed checkpoints; separate draw variation from model-error plateau and retain diversity/runtime."
+    },
+    {
+      "experiment": 5,
+      "question": "When does conditional synthesis succeed or abstain?",
+      "methods_and_scope": "Six development student/direct-teacher cells; frozen 12-cell four-condition confirmation",
+      "metric": "support, acceptance, violations, within-condition query max",
+      "completed_scope": "Direct teacher default; older-doctorate request abstained 12/12. Female-condition relationship=Husband was the worst query in all 12 confirmation cells: zero alpha-standardized real frequency, generated 0.340?0.399, mean absolute error 0.375 despite zero condition violations.",
+      "unresolved_scope": "Arbitrary-condition fidelity certification or learned cross-condition generalization",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Support-gated rejection is operationally valid for registered requests; fidelity still limited",
+      "forbidden_claim": "Universal conditional accuracy",
+      "evidence": [
+        "docs/PROJECTED_CONDITIONAL_FINDINGS_20261024.md",
+        "docs/FROZEN_CONFIRMATION_FINDINGS.md",
+        "reports/final_build/confirmation_conditional.csv"
+      ],
+      "stop_criterion": "Registered teacher/student comparison and off-seed support audit terminal; accepted rows satisfy requests, low-support requests abstain, and within-condition errors remain visible."
+    },
+    {
+      "experiment": 6,
+      "question": "Does synthetic training preserve income probability utility?",
+      "methods_and_scope": "Paired logistic/extra-trees, synthetic TSTR and privileged real TRTR, six development and 12 confirmation cells",
+      "metric": "Brier, AUROC, AUPRC, log loss, subgroup coverage",
+      "completed_scope": "At registered unequal budgets, size logistic Brier 0.129818 versus privileged TRTR 0.101987 and AUROC 0.856167 versus 0.904646. TRTR used 21,148/4,880/3,254 real train/tune/calibration rows versus 10,000/2,000/2,000 generated rows; no matched-size effect inferred.",
+      "unresolved_scope": "Independent cohort utility and small unsupported subgroups",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Real-trained reference outperformed synthetic-trained predictors at this scope",
+      "forbidden_claim": "Synthetic-over-real superiority",
+      "evidence": [
+        "docs/FROZEN_CONFIRMATION_FINDINGS.md",
+        "reports/final_build/confirmation_utility.csv"
+      ],
+      "stop_criterion": "Same-person TSTR/TRTR proper scores, calibration and supported client/subgroup counts retained; no test-derived tuning or synthetic-over-real claim."
+    },
+    {
+      "experiment": 7,
+      "question": "Can a joint model imply an income predictor?",
+      "methods_and_scope": "Six same-person projected development comparisons; exact finite Chow-Liu route and approximate GMM route",
+      "metric": "paired Brier/AUROC, two-label mass, abstention coverage",
+      "completed_scope": "Observed-row coverage 100%; exact-score preimages audited; approximate routes labelled",
+      "unresolved_scope": "Universal off-support coverage and exact copula/GMM probabilities",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Exactness is limited to declared discrete projected model",
+      "forbidden_claim": "Exact rounded/clipped continuous score claim",
+      "evidence": [
+        "docs/INTEGRITY_AND_PROJECTION_AUDIT.md",
+        "docs/PROJECTED_JOINT_PREDICTION_FINDINGS_20261025.md"
+      ],
+      "stop_criterion": "Projected discrete score exactness checked with preimages, approximate routes labelled, zero-denominator policy stated and same-person predictions saved."
+    },
+    {
+      "experiment": 8,
+      "question": "Which queries fail?",
+      "methods_and_scope": "10,500 development query answers, 175 queries; frozen official primary/audit answers",
+      "metric": "max/mean error, arity, support, named worst query",
+      "completed_scope": "Official size primary mean 0.022216; dominant HS-grad/high-income query in 33/60 size draws",
+      "unresolved_scope": "Arbitrary-query guarantee; independent inference from viewed audit",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Finite-workload maxima are reproducible and named",
+      "forbidden_claim": "Population TV or universal query accuracy",
+      "evidence": [
+        "docs/PROJECTED_QUERY_AUDIT_FINDINGS_20261025.md",
+        "reports/final_build/confirmation_dominant_queries.csv"
+      ],
+      "stop_criterion": "All registered query definitions/answers and named maxima retained with arity/support and target-role labels; viewed audits are not called independent."
+    },
+    {
+      "experiment": 9,
+      "question": "Which registered components explain results?",
+      "methods_and_scope": "12 same-row projection, six fixed-checkpoint summary-access ablations, historical capacity comparison",
+      "metric": "paired primary/query errors and access bytes",
+      "completed_scope": "Structural repair and access changes matter; no isolated component establishes a practical general weighting gain",
+      "unresolved_scope": "Irrelevant covariance/regularization factorial sweeps",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Component effects only for measured fixed-input contrasts",
+      "forbidden_claim": "Causal explanation from confounded historical versions",
+      "evidence": [
+        "docs/EXP09_ABLATION_CLOSURE.md",
+        "reports/mechanisms/"
+      ],
+      "stop_criterion": "Registered same-row projection and fixed-pilot summary-access contrasts terminal; any untested component effect is removed from retained claims."
+    },
+    {
+      "experiment": 10,
+      "question": "How does controlled heterogeneity affect correction?",
+      "methods_and_scope": "Six G* fixed-quantity K5 cells at severity 0.25/0.85 and seeds711/722/733",
+      "metric": "achieved skew, local error, oracle headroom, fidelity",
+      "completed_scope": "Registered contrasts terminal; fixed 1000 train/200 tune per client and equal-alpha mechanism target",
+      "unresolved_scope": "Full causal isolation of assignment and conditional relationships",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Severity findings apply to achieved empirical partitions",
+      "forbidden_claim": "Population-TV decomposition or universal causal mechanism",
+      "evidence": [
+        "docs/EXP10_MECHANISM_CLOSURE.md",
+        "reports/mechanisms/"
+      ],
+      "stop_criterion": "Both non-IID severities and three seeds have fixed per-client quantities and achieved-skew diagnostics; empirical identity is not called population TV."
+    },
+    {
+      "experiment": 11,
+      "question": "What finite-query conditional transfer follows?",
+      "methods_and_scope": "Elementary proposition, binary counterexample, 48 bound rows and 5112 student/direct triangles",
+      "metric": "ratio bound, support denominator, empirical triangle",
+      "completed_scope": "Algebra checked; rare support makes bounds weak and triggers abstention",
+      "unresolved_scope": "General arbitrary-condition theorem",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Finite-query bound under stated support assumptions",
+      "forbidden_claim": "Experimental proof of universal transfer",
+      "evidence": [
+        "docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md",
+        "docs/PROJECTED_TRANSFER_FINDINGS_20261025.md"
+      ],
+      "stop_criterion": "Finite-query proposition, counterexample, support curves and saved empirical triangle checks agree on their denominators and assumptions."
+    },
+    {
+      "experiment": 12,
+      "question": "What privacy, access and resource claims survive?",
+      "methods_and_scope": "Complete release ledger, atom-aware histogram epsilon1/4/8, four adapted FLAIM fits, three matched payload cells",
+      "metric": "adjacency/composition, serialized bytes, runtime, attack diagnostics",
+      "completed_scope": "Main pipeline nonprivate; model+metadata 1.915-2.866x matched raw bytes; conditional histogram epsilon13 if three settings released",
+      "unresolved_scope": "Whole-pipeline DP, WAN/security measurement and privacy-matched FLAIM ranking",
+      "disposition": "COMPLETE_BOUNDED_FINDING",
+      "retained_claim": "Separate conditional privacy reference and measured release costs",
+      "forbidden_claim": "End-to-end DP or compression assertion",
+      "evidence": [
+        "docs/FINAL_RELEASE_AND_PRIVACY_LEDGER.md",
+        "reports/resources/",
+        "docs/PUBLISHED_REFERENCE_FINDINGS.md"
+      ],
+      "stop_criterion": "Every released-object class has access/privacy provenance; matched payload units, histogram adjacency/composition and main nonprivate status are explicit."
+    }
+  ]
+}

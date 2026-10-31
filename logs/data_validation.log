@@ -1,0 +1,17 @@
+{
+  "status": "ok",
+  "source_rows": {
+    "official_train": 32561,
+    "official_test": 16281,
+    "total": 48842
+  },
+  "split_rows": {
+    "train": 21148,
+    "tune": 4880,
+    "calibration": 3254,
+    "validation": 3254,
+    "test": 16281,
+    "quarantine": 25
+  },
+  "manifest": "data/data_manifest.json"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/research-director/btp-final-repro-check-20261025/btp_ec2_handoff/scripts/audit_completion_integrity.py", line 165, in <module>
+    main()
+  File "/home/ubuntu/research-director/btp-final-repro-check-20261025/btp_ec2_handoff/scripts/audit_completion_integrity.py", line 161, in main
+    audit(args.core, args.constrained, args.rebuilt, args.out)
+  File "/home/ubuntu/research-director/btp-final-repro-check-20261025/btp_ec2_handoff/scripts/audit_completion_integrity.py", line 33, in audit
+    raise ValueError("Current btp source hash differs from corrected checkpoint hash")
+ValueError: Current btp source hash differs from corrected checkpoint hash

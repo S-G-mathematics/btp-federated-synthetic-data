@@ -1,0 +1,5 @@
+# Large artifact access
+
+The complete executable archive is `BTP_FINAL_EXPERIMENTAL_PACKAGE_20261025_v2.zip` (SHA-256 `b184b0b07d3185ca7bd95322fd7bf432b28293b1041f5cae5cc9153ead25b2bf`). It has model checkpoints, synthetic draws, paired prediction rows and full historical result lineage; `full_archive_manifest_v2.json` lists every member. The verified original is preserved on EC2 at `/home/ubuntu/research-director/btp-federated-statistics-20261024/BTP_FINAL_EXPERIMENTAL_PACKAGE_20261025_v2.zip` and on the owner's laptop. This repository keeps source and inspectable tables; it does not claim the excluded binaries are downloadable from GitHub unless a release asset is linked here after verification. Only load trusted pickle checkpoints. GitHub source alone regenerates the included tables if their saved input CSVs are present; complete fit/draw replay requires the full archive.
+
+Artifact state and SHA-256 are recorded in `../provenance/source_inventory.json`. No credential or private key belongs in the archive or repository.

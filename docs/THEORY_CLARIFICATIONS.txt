@@ -1,0 +1,19 @@
+CURRENT AUTHORITY AND CLARIFICATIONS
+
+1. The included 29-section PDF/LaTeX preserves the earlier conversational theory. The current user's empirical reporting rule supersedes any wording suggesting that unknown population distances are directly measured: evaluate real D_R versus generated D_S only. D_R already exists. Probability laws remain modelling notation.
+
+2. In the earlier section 13, the displayed expression with max over both ell and i but a free n_i on the right should be read as: simultaneously for every client i, max_ell |qbar_i,ell - E_Pi q_ell| <= sqrt(log(2 K L/gamma)/(2 n_i)). An equivalent single global bound uses n_min on the right. This indexing clarification does not change the following weighted bound.
+
+3. The exact discrete generators in code assign probability to every sampled integer, not just a numeric bin: bin mass is divided by the count of integers in that bin. Category vocab and numeric bounds are consistently declared. Copula and rounded/clipped mixed-GMM scores remain approximate and are not exact mixed-data probability masses.
+
+4. Eight candidate families from the weighting discussion are not eight novel algorithms. Moment calibration and kernel mean matching use distinct features but can share a constrained least-squares solver. Conditional fixed-model predictive-evidence BMA and pseudo-BMA can coincide for uniform model priors and temperature 1. Classical Bayesian integration over learned parameter posteriors is not implemented by renaming a validation score.
+
+5. Logpool and transport are separate aggregation operators. Current versions normalize over finite, synthetic-only candidate rows. They are explicit approximations with support/diversity limits, not exact continuous logarithmic pools or unregularized Wasserstein barycenters. A best-found weight search is not a global optimality certificate.
+
+6. The exact mixture LP optimizes a fixed empirical pilot query matrix against real validation summaries. Its certificate is conditional on those empirical inputs. Final generated datasets add sampling variability. Own-family nonlinear validation comparators use the same candidate support and fitted operator state.
+
+7. Final test data must not choose model settings, weights, workload, winner, target proportions, or claimed hypotheses. The present per-cell validation selection is a development convenience. A campaign-wide final method must be frozen separately from development validation before confirmation. Official test reuse across partition seeds does not create independent cohorts.
+
+8. The private histogram guarantee is conditional on public fixed record membership, public sizes and a fixed public schema/clipping map. It does not cover data-dependent partition creation unless that mechanism is also protected. Full research bundles include raw public Adult and nonprivate releases; they are not claimed DP. Composing releases across epsilon settings/seeds is mandatory if those releases on overlapping individuals are all published.
+
+9. A separately trained conditional generator is an additional estimator, even when fed samples from the learned joint. Filtering violations is postprocessing, not evidence that the within-condition law is correct. The kernel-smoothed posterior of a finite pool is a separate predictive approximation, not the exact conditional of that finite-support joint on unseen feature rows.

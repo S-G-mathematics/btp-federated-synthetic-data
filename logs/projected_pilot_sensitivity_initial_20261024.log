@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/eval_projected_pilot_sensitivity.py", line 210, in <module>
+    main()
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/eval_projected_pilot_sensitivity.py", line 195, in main
+    run_cell(cell, out, resources)
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/eval_projected_pilot_sensitivity.py", line 68, in run_cell
+    raise ValueError("Saved workload mismatch")
+ValueError: Saved workload mismatch

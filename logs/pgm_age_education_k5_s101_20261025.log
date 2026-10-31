@@ -1,0 +1,8 @@
+/home/ubuntu/research-director/btp-reference-src-20261025/mbi/src/mbi/__init__.py:23: UserWarning: JAX persistent compilation cache is enabled. MBI generates many small compiled programs, which makes the cache counterproductive — especially when running sweeps of experiments that all write to the same cache location. Consider disabling it with: jax.config.update("jax_enable_compilation_cache", False)
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/fit_pgm_reference.py", line 101, in <module>
+    main()
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/fit_pgm_reference.py", line 60, in main
+    raise ValueError("Invalid released scalar query measurement")
+ValueError: Invalid released scalar query measurement

@@ -1,0 +1,11 @@
+# Empirical joint-to-conditional transfer protocol
+
+**Registered 25 October 2026 local time**, after the fixed-query audit and before this transfer analysis. Development assessment only; official Adult test and confirmation seeds 404/505 stay locked.
+
+Use the same six corrected projected source cells: Chow-Liu age/K5 and mixed-GMM label-skew/K10 at seeds 101/202/303. Keep saved size and constrained weights, model checkpoints, alpha-standardized real reference, registered version-2 feature-only queries and the four pre-existing conditions. Regenerate each method's 30,000-row teacher mixture at the prior teacher seed `split_seed+71000` to match the conditional-student audit. No weights or conditions are fitted from assessment data. Verify exact teacher matching counts against saved condition metrics; failure invalidates the cell.
+
+For each condition A with real alpha mass r>0 and synthetic teacher mass s>0, save every empirical conditional query answer, joint intersection error, mass error, observed conditional error and the deterministic finite-query ratio upper bound `min(1,(max_q |S(A and q)-R(A and q)|+|s-r|)/r)`. Report the support denominator and bound looseness by condition. Conditions failing the prior teacher support gate (300 of 30,000 and 1% mass) remain **abstentions** for operational claims even if a mathematical empirical ratio can be calculated.
+
+For supported conditions, join the prior matched-row independent direct-teacher and postfiltered student query tables. Save the observed student-versus-direct discrepancy and check the empirical triangle `student-to-real <= direct-to-real + student-to-direct` per query. This is an accounting identity on saved answers; the independent direct pool and student samples are finite, and it does not certify generalization to unregistered requests.
+
+Prove the conditional ratio bound with explicit positive-support assumptions and give a counterexample to universal conditional/predictive transfer from incomplete query matching. The scope is finite empirical measures and registered queries, not unknown population total variation or a novel theorem. Run bounded cells sequentially under the shared lease and preserve failures.

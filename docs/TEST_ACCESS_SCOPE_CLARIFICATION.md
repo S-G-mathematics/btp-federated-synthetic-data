@@ -1,0 +1,7 @@
+# Scope of the official Adult test access audit
+
+The file `reports/confirmation/FIRST_OFFICIAL_TEST_READ.json` records the first **official-test confirmation-scoring invocation** after the campaign-wide freeze, at 2026-10-25T05:40:33.072893Z. `scripts/run_adult_confirmation.py` writes that record after accepting `SELECTION_FROZEN.json` and immediately before `prepare_splits` constructs the scored official-test reference. The freeze had canonical SHA-256 `2420f737b6af732925f9cce3fbb82c8a9a7a30e1988dde5e68900d1404bb3a23` and the gate currently still accepts it.
+
+The timestamp is **not** the first physical read of `adult.test`. `scripts/validate_data.py` and `btp.data.read_adult` had earlier read official train and test source records to check row counts, normalize labels, and quarantine 25 training rows that exactly duplicate test records. Those provenance and leakage checks are necessary for the declared split contract. They did not compute test query losses, utility metrics, candidate rankings or method selection. The claim retained here is that no official-test **experiment scoring or selection** occurred before the global freeze.
+
+The distinction matters because an absolute “first read of test data” claim would contradict the source-validation implementation. This clarification changes no frozen procedure, test score, timestamp or underlying artifact. Confirmation seeds404/505 and official-test outcomes remain excluded from global method selection. The original access JSON remains unmodified as an immutable execution record.

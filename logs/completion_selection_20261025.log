@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/select_global_generator.py", line 157, in <module>
+    main()
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/select_global_generator.py", line 153, in main
+    run(ROOT / args.source, ROOT / args.out)
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/select_global_generator.py", line 77, in run
+    raise ValueError(f"Unexpected or duplicate core cell: {cell}")
+ValueError: Unexpected or duplicate core cell: /home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/results/ec2_projected_v2_deterministic_20261024/independent_age_education_k10_s101_41be38918c6fbdba

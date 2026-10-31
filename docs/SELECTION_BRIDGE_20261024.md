@@ -1,0 +1,13 @@
+# Development selection audit and bridge (24 October 2026 UTC)
+
+The prior per-cell selector sorted release-only methods by (primary validation query maximum, unseen-interaction query MAE, method name). The unseen interaction workload was therefore **not untouched** in cells where primary query maxima tied. This was discovered during the supervisor-directed protocol review. Historical files remain unchanged.
+
+The corrected btp.run selector sorts by (primary validation query maximum, method name) only. Its selection_frozen.json records audit_used_for_selection:false. configs/campaign.yaml now names that rule. The regression test deliberately gives the audit metric the opposite ordering in a primary-score tie. The full test suite passed 68 tests after this change.
+
+The old current-code hash was ff7cd479d151...; the corrected BTP code hash is 984177ee25c0.... No generator, local tuning, pilot, sample, metric or oracle code was changed during this selection correction. The report at reports/selection_tiebreak_audit_20261024/ scanned 65 historical three-generator cells: five historical outputs would have selected another method, including repeated versions of the same copula age/K=5/seed101 cell.
+
+For the 26 core cells whose profile and Exp 1/2 per-method outputs match the corrected campaign, reports/core_selection_bridge_20261024/ recomputes the selection-policy summary from saved validation and per-method development-assessment rows. It found **one changed core winner**: copula age/K=5/seed101 moves from kernel_mean_matching to entropy_calibration. The new audit-only policy still beats size in 6/18 copula cells, but its mean paired query-max difference changes from +0.001348 to about +0.000356. The four Chow-Liu and four mixed-GMM age cells keep their winners. These are descriptive Adult development results, not independent confirmation.
+
+Only per-method Exp 1/2 outputs and the fixed-pilot oracle are bridgeable. Old synthetic_selected.csv.gz, selected-model downstream Exp 3–12 stages, and any result whose local tuning/profile/solver history differs are **not** reused as if run under the corrected selection rule. Twelve older Chow-Liu/GMM seed101 cells were classified as rerun_incompatible_history in the 54-cell manifest and are being rerun under the corrected code. The manifest and measured runtime estimates are in reports/core_matrix_audit_20261024/.
+
+The primary target is the alpha-standardized empirical held-out reference defined in docs/ANALYSIS_PROTOCOL_20261024.md. Ordinary pooled held-out counts are a separately labeled diagnostic. No official Adult test was used in this audit or bridge.

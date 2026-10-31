@@ -1,0 +1,1227 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=22mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{microtype}
+\usepackage{booktabs,longtable,array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\definecolor{ink}{HTML}{17334D}
+\definecolor{muted}{HTML}{526574}
+\hypersetup{colorlinks=true,linkcolor=ink,citecolor=ink,urlcolor=ink,
+ pdftitle={A Statistical Framework for Weighted Distribution Aggregation in Heterogeneous Federated Synthetic Data Generation},
+ pdfsubject={Complete theoretical framework, mathematical formulation, and twelve research work packages}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{muted}BTP \enspace|\enspace Theoretical framework}
+\fancyhead[R]{\small\color{muted}Federated synthetic data}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\titleformat{\section}{\large\bfseries\color{ink}}{\thesection.}{0.55em}{}
+\titlespacing*{\section}{0pt}{19pt}{9pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{2em}
+\setlist{topsep=3pt,itemsep=3pt,parsep=0pt,leftmargin=1.6em}
+\setlength{\LTpre}{7pt}
+\setlength{\LTpost}{7pt}
+\renewcommand{\arraystretch}{1.2}
+\allowdisplaybreaks[2]
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\begin{document}
+\begin{center}
+{\small\color{muted}IIT GUWAHATI BTP\par}
+\vspace{9pt}
+{\LARGE\bfseries\color{ink}A Statistical Framework for Weighted Distribution Aggregation in Heterogeneous Federated Synthetic Data Generation\par}
+\vspace{10pt}
+{\large Complete theoretical framework\par}
+\end{center}
+\vspace{5pt}
+Yes. \textbf{We will settle the mathematical framework, objectives, assumptions, and theorem targets before executing the 12 experiments.}
+
+The distinction throughout is:
+\begin{itemize}
+\item \textbf{Definitions} specify the objects our system constructs.
+\item \textbf{Foundational propositions} follow from standard mathematics; I give their derivations below.
+\item \textbf{Method-specific guarantees} require us to finish designing the weighting method and establish its assumptions. These remain research targets.
+\end{itemize}
+Our working title is:
+
+\textbf{A Statistical Framework for Weighted Distribution Aggregation in Heterogeneous Federated Synthetic Data Generation}
+
+\vspace{7pt}\hrule\vspace{10pt}
+\tableofcontents
+\clearpage
+
+\section{The statistical setting}
+There are $K$ clients, indexed by
+\[
+[K]=\{1,\ldots,K\}.
+\]
+Each client holds records with the same schema:
+\[
+Z=(X,Y)\in\mathcal Z=\mathcal X\times\mathcal Y.
+\]
+For Adult,
+\[
+\mathcal X=\prod_{a=1}^{d}\mathcal X_a,
+\qquad d=14,\qquad\mathcal Y=\{0,1\}.
+\]
+Thus, a complete record contains \textbf{14 predictors and one income label}.
+
+Some feature domains are categorical; others are numerical. We equip $\mathcal Z$ with a suitable sigma-algebra so that all distributions, queries, and sampling operations below are measurable.
+
+Client $i$ has an unknown joint distribution
+\[
+P_i\in\mathcal P(\mathcal Z).
+\]
+Its feature marginal and income probability are
+\[
+P_i^X,\qquad\eta_i(x)=P_i(Y=1\mid X=x).
+\]
+Heterogeneity means that, in general,
+\[
+P_i\neq P_j.
+\]
+This can involve differences in any of
+\[
+P_i^X,\qquad P_i(Y),\qquad P_i(Y\mid X).
+\]
+Our primary setting is heterogeneous clients throughout.
+
+\section{Observed datasets and sampling assumptions}
+Client $i$ has three disjoint datasets:
+\[
+D_i^{\mathrm{tr}},\qquad D_i^{\mathrm{val}},\qquad D_i^{\mathrm{test}},
+\]
+with sizes
+\[
+n_i,\qquad v_i,\qquad t_i.
+\]
+Write
+\[
+D_i^{\mathrm{tr}}=\{Z_{ij}\}_{j=1}^{n_i}.
+\]
+For population-level concentration results, our basic sampling assumption is
+\[
+Z_{ij}\overset{\mathrm{iid}}{\sim}P_i,
+\]
+with independent held-out samples from the same client population.
+
+This is an assumption, not a consequence of calling a partition ``non-IID.''
+
+For a fixed finite dataset partitioned without replacement, some observations are dependent. We must then either use appropriate finite-population arguments or state that the target is the finite empirical population.
+
+The empirical distributions are
+\[
+\widehat P_i^{\mathrm{tr}}=\frac1{n_i}\sum_{j=1}^{n_i}\delta_{Z_{ij}},
+\]
+and similarly for validation and test.
+
+The pooled real training dataset is
+\[
+D_R=\biguplus_{i=1}^{K}D_i^{\mathrm{tr}},\qquad N=\sum_{i=1}^{K}n_i.
+\]
+Here $\biguplus$ emphasizes that the client datasets are disjoint.
+
+\section{A mathematical description of non-IID partitioning}
+Suppose the original population is $P_0$. Define client-assignment probabilities
+\[
+a_i:\mathcal Z\rightarrow[0,1],\qquad\sum_{i=1}^{K}a_i(z)=1.
+\]
+Assign each record to exactly one client using
+\[
+I\mid Z=z\sim\operatorname{Categorical}\left(a_1(z),\ldots,a_K(z)\right).
+\]
+The induced population proportion of client $i$ is
+\[
+\alpha_i^0=\int a_i(z)\,P_0(dz).
+\]
+Assuming $\alpha_i^0>0$,
+\[
+\boxed{P_i(dz)=\frac{a_i(z)}{\alpha_i^0}P_0(dz).}
+\]
+Consequently,
+\[
+\boxed{P_0=\sum_{i=1}^{K}\alpha_i^0P_i.}
+\]
+This formalizes partitioning using one or two features: the assignment function depends on those coordinates, while each client retains \textbf{all columns}.
+
+A useful heterogeneity descriptor is
+\[
+\mathsf H_{\mathcal F}=\sum_{i=1}^{K}\alpha_i d_{\mathcal F}(P_i,P_R),
+\]
+where $d_{\mathcal F}$ is a distribution discrepancy defined below.
+
+The partition mechanism, boundaries, random seeds, and client sizes become part of the experimental specification.
+
+\section{The target population must be fixed}
+Choose target proportions
+\[
+\alpha\in\Delta_K,
+\]
+where
+\[
+\Delta_K=\left\{w\in\mathbb R^K:w_i\geq0,\;\sum_iw_i=1\right\}.
+\]
+Define
+\[
+\boxed{P_R=\sum_{i=1}^{K}\alpha_iP_i.}
+\]
+For a declared pooled-record target, we can use
+\[
+\alpha_i=\frac{n_i}{N}.
+\]
+For the original population in the assignment construction, the appropriate proportions are $\alpha_i^0$. Observed proportions $n_i/N$ estimate those population proportions; they need not equal them exactly.
+
+We must therefore distinguish
+\[
+\underbrace{\alpha}_{\text{specified population proportions}}
+\qquad\text{from}\qquad
+\underbrace{w}_{\text{aggregation weights}}.
+\]
+\textbf{Our method changes $w$, while $P_R$ remains fixed.}
+
+If $\alpha$ itself must be estimated, that creates another error term. For example,
+\[
+\operatorname{TV}\left(\sum_i\alpha_iP_i,\sum_i\widehat\alpha_iP_i\right)
+\leq\frac12\|\alpha-\widehat\alpha\|_1.
+\]
+For the initial analysis, treating target proportions as fixed simplifies the problem.
+
+\section{Local models and the release contract}
+Each client learns a statistical joint model
+\[
+\boxed{\widetilde P_i=\operatorname{Fit}_i(D_i^{\mathrm{tr}}).}
+\]
+Our current modelling scope uses non-neural statistical methods.
+
+A possible factorization is
+\[
+\widetilde P_i(dx,dy)=\widetilde P_i^X(dx)
+\operatorname{Bernoulli}\left(\widehat f_i(x)\right)(dy),
+\]
+where
+\[
+\widehat f_i:\mathcal X\rightarrow[0,1].
+\]
+When a density or probability mass function exists,
+\[
+\widetilde p_i(x,1)=\widetilde p_i^X(x)\widehat f_i(x),
+\]
+\[
+\widetilde p_i(x,0)=\widetilde p_i^X(x)\left[1-\widehat f_i(x)\right].
+\]
+The complete client release is
+\[
+\boxed{R_i=(\widetilde P_i,M_i).}
+\]
+Here $M_i$ is explicitly permitted metadata.
+
+We distinguish three possibilities:
+\begin{enumerate}
+\item Public information, such as the declared schema.
+\item Statistics computed from the already released model.
+\item Additional statistics computed from private records.
+\end{enumerate}
+The third category is a new private-data release and must be included in privacy accounting.
+
+A distribution model also needs an operational interface. Depending on the method, this may support
+\[
+\begin{gathered}
+\operatorname{Sample}_i(m),\qquad\operatorname{Prob}_i(C),\\
+\operatorname{Density}_i(z),\qquad\operatorname{ConditionalSample}_i(C).
+\end{gathered}
+\]
+These capabilities are not interchangeable: sampling access alone does not imply exact density evaluation.
+
+\section{The server's information constraint}
+The deployable server procedure has the form
+\[
+\boxed{\Theta=F(R_1,\ldots,R_K;U),}
+\]
+where $U$ denotes server randomness.
+
+The server's output $\Theta$ may include the aggregate model, weights, conditional generator, predictor, and generated data.
+
+It must not depend on unreleased client rows.
+
+The real validation and test datasets belong to a separate benchmark pathway:
+\[
+\text{client releases}\longrightarrow\text{deployable method},
+\]
+while
+\[
+\text{held-out real data}\longrightarrow\text{benchmark assessment}.
+\]
+A procedure tuned directly on real validation rows is a privileged benchmark unless that access is explicitly included in the deployment protocol.
+
+\section{Distribution discrepancies and query workloads}
+For a class $\mathcal F$ of bounded measurable functions, define the integral probability discrepancy
+\[
+d_{\mathcal F}(P,Q)=\sup_{f\in\mathcal F}
+\left|\mathbb E_Pf-\mathbb E_Qf\right|.
+\]
+This is an established framework for comparing distributions; the choice of function class determines what differences can be detected.\cite{ipm}
+
+Our primary operational choice is a finite workload
+\[
+\mathcal Q=\{q_1,\ldots,q_L\},\qquad q_\ell:\mathcal Z\rightarrow[0,1].
+\]
+Then
+\[
+\boxed{d_{\mathcal Q}(P,Q)=\max_{\ell\in[L]}
+\left|\mathbb E_Pq_\ell-\mathbb E_Qq_\ell\right|.}
+\]
+Define the workload answer vector
+\[
+b_{\mathcal Q}(P)=\begin{bmatrix}\mathbb E_Pq_1\\\vdots\\\mathbb E_Pq_L\end{bmatrix}.
+\]
+Therefore,
+\[
+d_{\mathcal Q}(P,Q)=\|b_{\mathcal Q}(P)-b_{\mathcal Q}(Q)\|_\infty.
+\]
+For a dataset,
+\[
+b_{\mathcal Q}(D)=\frac1{|D|}\sum_{z\in D}
+\begin{bmatrix}q_1(z)\\\vdots\\q_L(z)\end{bmatrix}.
+\]
+A finite workload gives a \textbf{pseudometric}: two different distributions can have the same answers.
+
+For theoretical transfer results, we also use
+\[
+\boxed{\operatorname{TV}(P,Q)=\sup_E|P(E)-Q(E)|.}
+\]
+For densities,
+\[
+\operatorname{TV}(P,Q)=\frac12\int|p-q|.
+\]
+Since our queries lie in $[0,1]$,
+\[
+d_{\mathcal Q}(P,Q)\leq\operatorname{TV}(P,Q).
+\]
+The reverse inequality generally does not hold.
+
+Thus, good performance on a finite workload does not automatically justify every total-variation-based guarantee.
+
+\section{Aggregation and unconditional generation}
+Let $A$ be an aggregation operator:
+\[
+\boxed{\widetilde P_{A,w}=A(\widetilde P_1,\ldots,\widetilde P_K;w).}
+\]
+It must return a valid probability distribution.
+
+The basic family is
+\[
+\boxed{\widetilde P_w=\sum_{i=1}^{K}w_i\widetilde P_i,\qquad w\in\Delta_K.}
+\]
+Sampling is
+\[
+I\sim\operatorname{Categorical}(w),\qquad Z\mid I=i\sim\widetilde P_i.
+\]
+The synthetic dataset is
+\[
+D_S^{(m)}=\{\widetilde Z_1,\ldots,\widetilde Z_m\},\qquad
+\widetilde Z_j\overset{\mathrm{iid}}{\sim}\widetilde P_{A,w}.
+\]
+Its empirical distribution is
+\[
+\widehat P_S^{(m)}=\frac1m\sum_{j=1}^{m}\delta_{\widetilde Z_j}.
+\]
+The mathematical objectives are different:
+\[
+\underbrace{d_{\mathcal Q}(P_R,\widetilde P_{A,w})}_{\text{model reconstruction}},
+\]
+and
+\[
+\underbrace{d_{\mathcal Q}(P_R,\widehat P_S^{(m)})}_{\text{finite synthetic-data fidelity}}.
+\]
+More generated rows reduce the second object's sampling error. They do not automatically improve the underlying model.
+
+\section{The oracle problem and the expressive limit of weighting}
+For a fixed $A$, define population reconstruction loss
+\[
+\mathcal L_A(w)=d_{\mathcal Q}\left(P_R,\widetilde P_{A,w}\right).
+\]
+The population oracle is
+\[
+\boxed{w^*_{A,R}\in\arg\min_{w\in\Delta_K}\mathcal L_A(w).}
+\]
+This is conceptual because $P_R$ is unknown.
+
+For mixtures, define
+\[
+H_{\ell i}=\mathbb E_{\widetilde P_i}q_\ell,\qquad b=b_{\mathcal Q}(P_R).
+\]
+Then
+\[
+\boxed{\mathcal L(w)=\|Hw-b\|_\infty.}
+\]
+The achievable workload vectors form the convex hull of the client-model vectors:
+\[
+\{Hw:w\in\Delta_K\}=\operatorname{conv}\{H_{\cdot1},\ldots,H_{\cdot K}\}.
+\]
+Therefore,
+\[
+\boxed{\inf_{w\in\Delta_K}\mathcal L(w)=
+\operatorname{dist}_\infty\left(b,\operatorname{conv}\{H_{\cdot i}\}_{i=1}^{K}\right).}
+\]
+\textbf{Interpretation: weighting cannot repair every modelling error.}
+
+If $b$ lies outside that convex hull, no mixture weights can achieve zero workload error. Improving the weighting rule and improving the local model family are separate research questions.
+
+\section{What our statistics-based weighting method must solve}
+Our general proposed structure is
+\[
+S=\operatorname{Stats}(R_1,\ldots,R_K),
+\]
+\[
+\boxed{\widehat w=T_\beta(S)\in\Delta_K.}
+\]
+The main desired guarantee is an oracle inequality:
+\[
+\boxed{\mathcal L_A(\widehat w)\leq
+\inf_{w\in\Delta_K}\mathcal L_A(w)+\mathcal E_{\mathrm{weight}}.}
+\]
+The meaningful research question is:
+\begin{quote}
+Under what information and assumptions can $\mathcal E_{\mathrm{weight}}$ be bounded, and how does it depend on sample sizes, privacy noise, workload size, and model approximation?
+\end{quote}
+Before constructing such a rule, we need an identification result.
+
+\textbf{Proposition 1: no universal model-only oracle recovery without additional assumptions.}
+
+Consider two released models on a binary variable:
+\[
+\widetilde P_1=\operatorname{Bernoulli}(1/4),\qquad
+\widetilde P_2=\operatorname{Bernoulli}(3/4).
+\]
+Suppose these same releases are compatible with two underlying worlds:
+\[
+P_R^{(a)}=\operatorname{Bernoulli}(1/4),
+\]
+\[
+P_R^{(b)}=\operatorname{Bernoulli}(3/4).
+\]
+This is possible when no restriction relates local model error to the underlying distributions.
+
+The oracle chooses
+\[
+w^{*(a)}=(1,0),\qquad w^{*(b)}=(0,1).
+\]
+A rule receiving identical releases cannot distinguish the worlds.
+
+Moreover,
+\[
+\operatorname{TV}\left(P_R^{(a)},P_R^{(b)}\right)=\frac12.
+\]
+For any common output $Q$, the triangle inequality gives
+\[
+\max\left\{\operatorname{TV}(P_R^{(a)},Q),
+\operatorname{TV}(P_R^{(b)},Q)\right\}\geq\frac14.
+\]
+So universal oracle recovery is impossible in this unrestricted setting.
+
+\textbf{Consequence:} our theory must use an explicit assumption class, informative permitted metadata, or both.
+
+\section{A concrete statistical weighting family we can analyze}
+To make the theory substantive, consider the following \textbf{candidate family}, not a claim of originality.
+
+Suppose we can construct from the releases:
+\[
+\widehat H\approx H,\qquad\widehat b\approx b_{\mathcal Q}(P_R).
+\]
+Here:
+\begin{itemize}
+\item $\widehat H$ describes query answers under the released client models.
+\item $\widehat b$ estimates target query answers using permitted information.
+\end{itemize}
+Define
+\[
+\Omega(w)=\frac12\|w-\alpha\|_2^2.
+\]
+A regularized statistical weighting rule is
+\[
+\boxed{\widehat w_\lambda\in\arg\min_{w\in\Delta_K}
+\left\{\|\widehat H w-\widehat b\|_\infty+\lambda\Omega(w)\right\}.}
+\]
+The first term matches released target statistics. The second discourages unnecessary departures from target population proportions.
+
+For $\lambda=0$, this is a linear program:
+\[
+\begin{aligned}
+\min_{w,u}\quad &u\\
+\text{subject to}\quad &-u\mathbf1\leq\widehat H w-\widehat b\leq u\mathbf1,\\
+&w\geq0,\\
+&\mathbf1^\top w=1.
+\end{aligned}
+\]
+For $\lambda>0$, the objective is strongly convex and has a unique minimizer.
+
+However, uniqueness caused by regularization does \textbf{not} establish that the underlying population weights are identifiable.
+
+Also, fitting distributions to noisy statistical measurements is established in Private-PGM, and federated private synthetic generation under heterogeneity is addressed by FLAIM. Our eventual contribution must distinguish itself from these ideas; this optimization template alone is insufficient as a novelty claim.\cite{privatepgm,flaim}
+
+\section{A deterministic oracle inequality for that family}
+Assume
+\[
+\max_i\|\widehat H_{\cdot i}-H_{\cdot i}\|_\infty\leq r_H,
+\]
+and
+\[
+\|\widehat b-b\|_\infty\leq r_b.
+\]
+For every $w\in\Delta_K$,
+\[
+\|(\widehat H-H)w\|_\infty\leq
+\sum_iw_i\|\widehat H_{\cdot i}-H_{\cdot i}\|_\infty\leq r_H.
+\]
+Therefore,
+\[
+\boxed{\left|\|\widehat H w-\widehat b\|_\infty-\|Hw-b\|_\infty\right|
+\leq r_H+r_b.}
+\]
+Suppose optimization has tolerance $\zeta$:
+\[
+\widehat F_\lambda(\widehat w_\lambda)\leq
+\inf_{w\in\Delta_K}\widehat F_\lambda(w)+\zeta.
+\]
+Let $w^*$ minimize the unregularized population loss. Then
+\[
+\begin{aligned}
+\mathcal L(\widehat w_\lambda)
+&\leq\widehat{\mathcal L}(\widehat w_\lambda)+r_H+r_b\\
+&\leq\widehat{\mathcal L}(w^*)+\lambda\Omega(w^*)+\zeta+r_H+r_b\\
+&\leq\mathcal L(w^*)+2(r_H+r_b)+\lambda\Omega(w^*)+\zeta.
+\end{aligned}
+\]
+Hence:
+\[
+\boxed{\mathcal L(\widehat w_\lambda)-\inf_{w\in\Delta_K}\mathcal L(w)
+\leq2(r_H+r_b)+\lambda\Omega(w^*)+\zeta.}
+\]
+Since $\Omega(w)\leq1$ on the simplex,
+\[
+\boxed{\mathcal L(\widehat w_\lambda)-\mathcal L(w^*)
+\leq2r_H+2r_b+\lambda+\zeta.}
+\]
+This is a valid initial result under the stated assumptions.
+
+\textbf{The unresolved methodological work is constructing useful $\widehat b$ and tight error certificates within the release budget.} The inequality does not create that information for us.
+
+\section{Where the statistical uncertainty comes from}
+Suppose each client additionally releases a vector
+\[
+s_i=b_{\mathcal Q}(\widehat P_i^{\mathrm{tr}})+\xi_i,
+\]
+where $\xi_i$ is release noise.
+
+Set
+\[
+\widehat b=\sum_i\alpha_i s_i.
+\]
+For fixed, data-independent queries, Hoeffding's inequality and a union bound give, with probability at least $1-\gamma$,
+\[
+\max_{\ell,i}\left|
+b_{\mathcal Q}(\widehat P_i^{\mathrm{tr}})_\ell-b_{\mathcal Q}(P_i)_\ell
+\right|\leq\sqrt{\frac{\log(2KL/\gamma)}{2n_i}}
+\]
+with the appropriate client-specific bound on the right.
+
+Consequently,
+\[
+\boxed{r_b\leq\sum_i\alpha_i\left[
+\sqrt{\frac{\log(2KL/\gamma)}{2n_i}}+\|\xi_i\|_\infty\right].}
+\]
+This decomposition separates
+\[
+\text{finite real-sample uncertainty}\quad+\quad\text{release noise}.
+\]
+If $\widehat H$ is computed from $m_i$ generated samples per client, the corresponding bound is
+\[
+\boxed{r_H\leq\max_i\sqrt{\frac{\log(2KL/\gamma)}{2m_i}}}
+\]
+with probability at least $1-\gamma$, conditional on the fitted models.
+
+These two probability statements can be combined by allocating a total failure budget between them.
+
+Two cautions matter:
+\begin{itemize}
+\item Queries adaptively selected using the same raw samples require additional analysis.
+\item Statistics computed only from $\widetilde P_i$ cannot automatically be treated as unbiased estimates of $P_i$.
+\end{itemize}
+
+\section{Stability of regularized weights}
+Let two estimated objectives $F$ and $F'$ use the same $\lambda>0$, and suppose
+\[
+\sup_{w\in\Delta_K}|F(w)-F'(w)|\leq\eta.
+\]
+Let their exact minimizers be $w$ and $w'$.
+
+Strong convexity gives
+\[
+\frac{\lambda}{2}\|w-w'\|_2^2\leq F(w')-F(w).
+\]
+Optimality under $F'$ implies
+\[
+F(w')-F(w)\leq2\eta.
+\]
+Thus,
+\[
+\boxed{\|w-w'\|_2\leq2\sqrt{\frac{\eta}{\lambda}}.}
+\]
+This shows the trade-off:
+\[
+\text{larger }\lambda\Rightarrow\text{greater stability},
+\]
+but potentially more bias toward $\alpha$.
+
+This is a standard strong-convexity argument. Its role is to guide the weighting design and its ablations.
+
+\section{Validation oracle and honest comparison}
+Define the weighted validation reference
+\[
+\widehat P_R^{\mathrm{val}}=\sum_i\alpha_i\widehat P_i^{\mathrm{val}}.
+\]
+The empirical oracle is
+\[
+\boxed{w^*_{A,\mathrm{val}}\in\arg\min_{w\in\Delta_K}
+d_{\mathcal Q}\left(\widehat P_R^{\mathrm{val}},\widetilde P_{A,w}\right).}
+\]
+For fixed bounded queries and independent validation observations,
+\[
+r_{\mathrm{val}}(\gamma)=\sqrt{\frac12\log\left(\frac{2L}{\gamma}\right)
+\sum_i\frac{\alpha_i^2}{v_i}}.
+\]
+With probability at least $1-\gamma$,
+\[
+d_{\mathcal Q}\left(\widehat P_R^{\mathrm{val}},P_R\right)\leq r_{\mathrm{val}}.
+\]
+By the triangle inequality, this implies uniformly over all weights
+\[
+\left|\mathcal L_{A,\mathrm{val}}(w)-\mathcal L_A(w)\right|\leq r_{\mathrm{val}}.
+\]
+If the validation oracle is optimized to tolerance $\zeta_{\mathrm{val}}$, then
+\[
+\boxed{\mathcal L_A(w^*_{A,\mathrm{val}})\leq
+\inf_w\mathcal L_A(w)+2r_{\mathrm{val}}+\zeta_{\mathrm{val}}.}
+\]
+This quantifies how good our privileged benchmark is.
+
+The final empirical comparison uses independent test data:
+\[
+\Delta_{\mathrm{oracle,test}}=\mathcal L_{A,\mathrm{test}}(\widehat w)
+-\mathcal L_{A,\mathrm{test}}(w^*_{A,\mathrm{val}}).
+\]
+It can be negative because a validation oracle is not a test oracle.
+
+If optimization is approximate and no optimality certificate exists, we must call it a \textbf{best-found benchmark}, not an exact optimum.
+
+\section{Client-subset generators and composition}
+Let
+\[
+B\subseteq[K],\qquad B\neq\varnothing,
+\]
+be a subset of clients.
+
+Every subset generator still generates a full record in $\mathcal Z$.
+
+Define
+\[
+\widetilde P_B=A_B\left(\{\widetilde P_i:i\in B\};w^{(B)}\right).
+\]
+For a collection $\mathcal B$ of subsets,
+\[
+\widetilde P_{\mathrm{sub}}=\sum_{B\in\mathcal B}\rho_B\widetilde P_B,
+\qquad\rho\in\Delta_{|\mathcal B|}.
+\]
+If every subset generator is a mixture,
+\[
+\widetilde P_B=\sum_{i\in B}w_i^{(B)}\widetilde P_i,
+\]
+then
+\[
+\boxed{\widetilde P_{\mathrm{sub}}=\sum_i\omega_i\widetilde P_i,}
+\]
+where
+\[
+\boxed{\omega_i=\sum_{B\ni i}\rho_Bw_i^{(B)}.}
+\]
+This follows simply by exchanging the two finite sums.
+
+Therefore:
+\begin{itemize}
+\item Overlapping subsets require accounting for repeated client contributions.
+\item Exact target-mass preservation requires $\omega=\alpha$.
+\item Pure subset mixtures do not enlarge the original mixture family.
+\end{itemize}
+Any additional advantage must come from what happens \textbf{inside} the subset procedure, such as re-estimation or regularization.
+
+\section{Conditional feature generation}
+A condition is a measurable feature event
+\[
+C\subseteq\mathcal X.
+\]
+For rectangular conditions,
+\[
+C=C_1\times\cdots\times C_d,
+\]
+where each coordinate restriction can be an interval, a category set, or the full domain.
+
+The real target is
+\[
+\boxed{P_R^X(dx\mid C)=\frac{\mathbf1_C(x)P_R^X(dx)}{P_R^X(C)}.}
+\]
+Let $\widetilde P$ denote our selected final joint model. Its implied conditional is
+\[
+\widetilde P^X(dx\mid C)=\frac{\mathbf1_C(x)\widetilde P^X(dx)}{\widetilde P^X(C)}.
+\]
+Both require positive conditioning probability.
+
+Our separately trained conditional generator is
+\[
+\boxed{Q_\phi(dx\mid C)\equiv\widetilde P_\phi(dx\mid C).}
+\]
+A mathematical training objective is
+\[
+\boxed{\phi^*\in\arg\min_{\phi\in\Phi}
+\mathbb E_{C\sim\nu_{\mathrm{tr}}}
+\left[D\left(\widetilde P^X(\cdot\mid C),Q_\phi(\cdot\mid C)\right)\right],}
+\]
+where:
+\begin{itemize}
+\item $\Phi$ is the conditional model family.
+\item $\nu_{\mathrm{tr}}$ is the training distribution over conditions.
+\item $D$ is an appropriate divergence or discrepancy.
+\end{itemize}
+The server obtains training examples from released models.
+
+We must distinguish
+\[
+\text{approximation error of }\Phi,
+\]
+\[
+\text{finite synthetic-training error},
+\]
+and
+\[
+\text{optimization error}.
+\]
+We also measure
+\[
+\operatorname{Viol}_\phi(C)=Q_\phi(X\notin C\mid C).
+\]
+Condition satisfaction alone does not establish distributional fidelity within the condition.
+
+\section{Correct conditional routing across clients}
+For a mixture
+\[
+\widetilde P_w=\sum_iw_i\widetilde P_i,
+\]
+define
+\[
+c_i(C)=\widetilde P_i^X(C).
+\]
+Then
+\[
+\widetilde P_w^X(C)=\sum_iw_i c_i(C).
+\]
+The correct client-selection probability under condition $C$ is
+\[
+\boxed{r_i(C)=\frac{w_i c_i(C)}{\sum_jw_j c_j(C)}.}
+\]
+Hence,
+\[
+\boxed{\widetilde P_w^X(dx\mid C)=\sum_i r_i(C)\widetilde P_i^X(dx\mid C).}
+\]
+A component with $c_i(C)=0$ contributes zero.
+
+This gives an exact reference sampler when component conditional sampling is available:
+\[
+I\sim\operatorname{Categorical}(r(C)),
+\]
+\[
+X\mid I=i,C\sim\widetilde P_i^X(\cdot\mid C).
+\]
+Selecting clients using the original $w_i$ after imposing a condition generally produces the wrong conditional distribution.
+
+Our trained $Q_\phi$ is evaluated against this implied conditional and against the real conditional reference.
+
+\section{Income prediction and its relationship to the joint model}
+The true target income probability is
+\[
+\eta_R(x)=P_R(Y=1\mid X=x).
+\]
+The aggregate implies
+\[
+\boxed{\eta_{\mathrm{joint}}(x)=\widetilde P(Y=1\mid X=x).}
+\]
+For a mixture,
+\[
+\boxed{\eta_{\mathrm{joint}}(x)=
+\frac{\sum_iw_i\widetilde p_i^X(x)\widehat f_i(x)}
+{\sum_iw_i\widetilde p_i^X(x)},}
+\]
+where the denominator is positive.
+
+Define feature-dependent responsibilities
+\[
+r_i(x)=\frac{w_i\widetilde p_i^X(x)}{\sum_jw_j\widetilde p_j^X(x)}.
+\]
+Then
+\[
+\eta_{\mathrm{joint}}(x)=\sum_i r_i(x)\widehat f_i(x).
+\]
+Thus, constant mixture weights lead to feature-dependent predictive contributions through Bayes' rule.
+
+We also train a separate model
+\[
+\boxed{\widehat\eta_\psi:\mathcal X\rightarrow[0,1].}
+\]
+For Brier loss,
+\[
+\psi^*\in\arg\min_{\psi\in\Psi}
+\mathbb E_{(X,Y)\sim\widetilde P}
+\left[(\widehat\eta_\psi(X)-Y)^2\right].
+\]
+At the sample level,
+\[
+\widehat\psi\in\arg\min_\psi\frac1m\sum_{j=1}^{m}
+\left[\widehat\eta_\psi(\widetilde X_j)-\widetilde Y_j\right]^2.
+\]
+The joint-implied predictor and the separately trained predictor are distinct objects. Their difference measures approximation and learning effects.
+
+\section{Reconstruction-error decomposition}
+Write
+\[
+e_i=\operatorname{TV}(P_i,\widetilde P_i).
+\]
+For a general final aggregate $\widetilde P_{A,w}$, define
+\[
+a_A(w)=\operatorname{TV}\left(\sum_iw_i\widetilde P_i,\widetilde P_{A,w}\right).
+\]
+Then
+\[
+\boxed{\operatorname{TV}(P_R,\widetilde P_{A,w})
+\leq\sum_i\alpha_i e_i+\frac12\|\alpha-w\|_1+a_A(w).}
+\]
+\textbf{Derivation.} Insert the two intermediate distributions
+\[
+\sum_i\alpha_i\widetilde P_i,\qquad\sum_iw_i\widetilde P_i,
+\]
+and apply the triangle inequality. Convexity bounds the first difference by $\sum_i\alpha_i e_i$; the mixture-weight difference is bounded by $\frac12\|\alpha-w\|_1$.
+
+A sharper version uses the released-model diameter
+\[
+\widetilde D=\max_{i,j}\operatorname{TV}(\widetilde P_i,\widetilde P_j).
+\]
+Then
+\[
+\boxed{\operatorname{TV}(P_R,\widetilde P_{A,w})
+\leq\sum_i\alpha_i e_i+\frac{\widetilde D}{2}\|\alpha-w\|_1+a_A(w).}
+\]
+This captures an intuitive fact: changing weights matters less when the client models are similar.
+
+These are upper bounds, not exact decompositions into independently observable quantities. In particular, the unknown $e_i$ cannot generally be measured exactly from finite real samples.
+
+\section{Joint-to-conditional error transfer}
+Let
+\[
+e=\operatorname{TV}(P_R,\widetilde P).
+\]
+Marginalization cannot increase total variation:
+\[
+\operatorname{TV}(P_R^X,\widetilde P^X)\leq e.
+\]
+Consider conditions satisfying
+\[
+P_R^X(C)\geq\tau>e.
+\]
+Then
+\[
+\widetilde P^X(C)\geq\tau-e>0.
+\]
+For any event $B\subseteq\mathcal X$,
+\[
+\begin{aligned}
+&\left|\frac{P_R^X(B\cap C)}{P_R^X(C)}-
+\frac{\widetilde P^X(B\cap C)}{\widetilde P^X(C)}\right|\\
+&\quad\leq
+\frac{|P_R^X(B\cap C)-\widetilde P^X(B\cap C)|}{P_R^X(C)}
++\frac{|P_R^X(C)-\widetilde P^X(C)|}{P_R^X(C)}\\
+&\quad\leq\frac{2e}{\tau}.
+\end{aligned}
+\]
+Taking the supremum gives
+\[
+\boxed{\operatorname{TV}\left(P_R^X(\cdot\mid C),\widetilde P^X(\cdot\mid C)\right)
+\leq\min\left\{1,\frac{2e}{\tau}\right\}.}
+\]
+Define conditional approximation error
+\[
+a_\phi(C)=\operatorname{TV}\left(\widetilde P^X(\cdot\mid C),Q_\phi(\cdot\mid C)\right).
+\]
+Then
+\[
+\boxed{\operatorname{TV}\left(P_R^X(\cdot\mid C),Q_\phi(\cdot\mid C)\right)
+\leq\min\left\{1,\frac{2e}{\tau}+a_\phi(C)\right\}.}
+\]
+This formally explains why rare conditions are difficult.
+
+If we use rejection sampling from $\widetilde P^X$, the expected number of proposals is
+\[
+\frac1{\widetilde P^X(C)}\leq\frac1{\tau-e}.
+\]
+A trained conditional sampler may improve efficiency, but its approximation error must be measured.
+
+\section{Joint-to-prediction and downstream guarantees}
+For a loss bounded in $[0,1]$, define
+\[
+R_P(g)=\mathbb E_P[\ell(g(X),Y)].
+\]
+Then
+\[
+\boxed{|R_{P_R}(g)-R_{\widetilde P}(g)|\leq e.}
+\]
+For Brier loss, the Bayes predictor is $\eta_R$, and
+\[
+\boxed{R_{P_R}(g)-R_{P_R}(\eta_R)
+=\mathbb E_{P_R^X}[(g-\eta_R)^2].}
+\]
+Define synthetic-distribution predictor error
+\[
+a_\psi=\mathbb E_{\widetilde P^X}
+\left[(\widehat\eta_\psi-\eta_{\mathrm{joint}})^2\right].
+\]
+Using the bounded-risk transfer inequality and the optimality of the Bayes predictors,
+\[
+\boxed{\mathbb E_{P_R^X}\left[(\widehat\eta_\psi-\eta_R)^2\right]
+\leq a_\psi+2e.}
+\]
+\textbf{Derivation:}
+\[
+\begin{aligned}
+R_{P_R}(\widehat\eta_\psi)
+&\leq R_{\widetilde P}(\widehat\eta_\psi)+e\\
+&=R_{\widetilde P}(\eta_{\mathrm{joint}})+a_\psi+e\\
+&\leq R_{\widetilde P}(\eta_R)+a_\psi+e\\
+&\leq R_{P_R}(\eta_R)+a_\psi+2e.
+\end{aligned}
+\]
+For a synthetic-trained empirical risk minimizer $g_S\in\mathcal H$, assume
+\[
+\sup_{g\in\mathcal H}
+|\widehat R_{D_S}(g)-R_{\widetilde P}(g)|\leq\xi_m,
+\]
+and optimization tolerance $\zeta$. Then
+\[
+\boxed{R_{P_R}(g_S)-\inf_{g\in\mathcal H}R_{P_R}(g)
+\leq2e+2\xi_m+\zeta.}
+\]
+This separates distribution error, finite synthetic-sample learning error, and optimization error.
+
+For the real-trained reference
+\[
+g_R=\operatorname{Learn}(D_R),
+\]
+our empirical comparison is
+\[
+\Delta_{\mathrm{utility}}=R_{P_R}(g_S)-R_{P_R}(g_R).
+\]
+There is \textbf{no universal guarantee that synthetic training beats real training}. We test when it helps, when it matches, and when it hurts.
+
+These risk bounds concern the stated bounded losses. Metrics such as AUC require their own statistical treatment.
+
+\section{Query-level guarantees for generated datasets}
+Conditional on the fitted model, let
+\[
+D_S^{(m)}\sim\widetilde P^{\otimes m}.
+\]
+For fixed $L$ queries, with probability at least $1-\gamma$,
+\[
+\boxed{d_{\mathcal Q}\left(\widehat P_S^{(m)},\widetilde P\right)
+\leq\sqrt{\frac{\log(2L/\gamma)}{2m}}.}
+\]
+Therefore,
+\[
+\boxed{d_{\mathcal Q}\left(\widehat P_S^{(m)},P_R\right)
+\leq d_{\mathcal Q}(\widetilde P,P_R)
++\sqrt{\frac{\log(2L/\gamma)}{2m}}.}
+\]
+With a real test reference,
+\[
+\begin{aligned}
+d_{\mathcal Q}\left(\widehat P_S^{(m)},\widehat P_R^{\mathrm{test}}\right)
+\leq{}&d_{\mathcal Q}(\widetilde P,P_R)\\
+&+\underbrace{d_{\mathcal Q}(\widehat P_S^{(m)},\widetilde P)}_{\text{synthetic sampling error}}\\
+&+\underbrace{d_{\mathcal Q}(\widehat P_R^{\mathrm{test}},P_R)}_{\text{real reference uncertainty}}.
+\end{aligned}
+\]
+For a desired synthetic sampling error at most $u$, it suffices that
+\[
+\boxed{m\geq\frac{\log(2L/\gamma)}{2u^2}.}
+\]
+This gives a principled reason for the synthetic sample sizes we later choose.
+
+\section{Consistency among the joint, conditional, and predictive models}
+We have three related learned objects:
+\[
+\widetilde P,\qquad Q_\phi(X\mid C),\qquad\widehat\eta_\psi(X).
+\]
+Predictive consistency is
+\[
+\mathcal C_{\mathrm{pred}}=\mathbb E_{\widetilde P^X}
+\left[(\widehat\eta_\psi-\eta_{\mathrm{joint}})^2\right].
+\]
+Conditional consistency is
+\[
+\mathcal C_{\mathrm{cond}}(C)=D\left(Q_\phi(\cdot\mid C),
+\widetilde P^X(\cdot\mid C)\right).
+\]
+For an evaluation distribution $\nu_{\mathrm{eval}}$ over conditions,
+\[
+\overline{\mathcal C}_{\mathrm{cond}}=
+\mathbb E_{C\sim\nu_{\mathrm{eval}}}[\mathcal C_{\mathrm{cond}}(C)].
+\]
+These measure whether our modules agree.
+
+They do not establish agreement with reality. Consequently, we need both
+\[
+\text{internal consistency}
+\]
+and
+\[
+\text{external real-data fidelity}.
+\]
+Similarly, a low average conditional error does not imply a low worst-case conditional error. A uniform guarantee over an infinite condition class requires additional complexity assumptions.
+
+\section{Privacy of the full released system}
+For the initial privacy analysis, use \textbf{replace-one-record adjacency with fixed client membership and fixed public client sizes}.
+
+Let
+\[
+\mathcal M_i(D_i)=R_i.
+\]
+The complete release is $(\varepsilon_i,\delta_i)$-differentially private if, for every neighboring pair $D_i,D_i'$ and measurable event $E$,
+\[
+\boxed{\Pr[\mathcal M_i(D_i)\in E]
+\leq e^{\varepsilon_i}\Pr[\mathcal M_i(D_i')\in E]+\delta_i.}
+\]
+Post-processing preserves DP. Sequential accesses require composition; disjoint-client releases admit parallel composition under the stated adjacency model. These are established privacy properties.\cite{dp}
+
+For a concrete metadata example, consider
+\[
+s_i=b_{\mathcal Q}(\widehat P_i^{\mathrm{tr}})+\xi_i.
+\]
+For $L$ fixed queries in $[0,1]$, its vector-valued statistic has sensitivity
+\[
+\Delta_1\leq\frac{L}{n_i}.
+\]
+Independent Laplace coordinates with scale
+\[
+\boxed{\sigma_i=\frac{L}{n_i\varepsilon_i^{\mathrm{stats}}}}
+\]
+therefore provide an $\varepsilon_i^{\mathrm{stats}}$-DP metadata mechanism.
+
+With probability at least $1-\gamma$,
+\[
+\|\xi_i\|_\infty\leq\sigma_i\log(L/\gamma).
+\]
+This can be inserted directly into the weighting bound.
+
+If the local model itself is
+\[
+(\varepsilon_i^{\mathrm{model}},\delta_i^{\mathrm{model}})\text{-DP},
+\]
+then a basic composed release guarantee is
+\[
+\varepsilon_i=\varepsilon_i^{\mathrm{model}}+\varepsilon_i^{\mathrm{stats}},
+\]
+\[
+\delta_i=\delta_i^{\mathrm{model}}.
+\]
+For disjoint clients under fixed membership,
+\[
+\varepsilon_{\mathrm{overall}}=\max_i\varepsilon_i,
+\qquad\delta_{\mathrm{overall}}=\max_i\delta_i.
+\]
+All subsequent operations using only these releases---including weighting, synthetic generation, and training the server-side conditional and predictive models---are post-processing.
+
+\textbf{Important boundaries:}
+\begin{itemize}
+\item Releasing a nonprivate fitted model does not become DP by adding private metadata.
+\item If modifying a record can move it between clients, the fixed-membership argument must be revised.
+\item Real validation access and published evaluation statistics need separate treatment if those records are private.
+\item Record-level DP is different from protecting the participation of an entire institution.
+\end{itemize}
+
+\section{Communication, runtime, and compression}
+Define total transmitted information as
+\[
+\boxed{B_{\mathrm{total}}=\sum_{i=1}^{K}
+\left[\operatorname{bits}(\widetilde P_i)+\operatorname{bits}(M_i)\right]
++B_{\mathrm{additional\ messages}}.}
+\]
+A release containing $L$ numerical summaries at $s$ bits each adds approximately
+\[
+KLs
+\]
+bits, excluding protocol overhead.
+
+Runtime should be separated into
+\[
+\begin{gathered}
+T_{\mathrm{local\ fit}},\quad T_{\mathrm{release}},\quad T_{\mathrm{weight}},\\
+T_{\mathrm{generation}},\quad T_{\mathrm{conditional}},\quad T_{\mathrm{prediction}}.
+\end{gathered}
+\]
+If a compressed aggregate $\widetilde P^{\mathrm{cmp}}$ satisfies
+\[
+\operatorname{TV}(\widetilde P,\widetilde P^{\mathrm{cmp}})\leq e_{\mathrm{cmp}},
+\]
+then
+\[
+\boxed{\operatorname{TV}(P_R,\widetilde P^{\mathrm{cmp}})
+\leq\operatorname{TV}(P_R,\widetilde P)+e_{\mathrm{cmp}}.}
+\]
+Compression is another approximation term. It is not automatically a privacy guarantee.
+
+\section{The complete mathematical problem}
+Collect the server decisions into
+\[
+\Theta=\left(A,\widehat w,\mathcal B,\rho,\{w^{(B)}\},\phi,\psi\right),
+\]
+using only components relevant to the selected method.
+
+The fundamental information constraint is
+\[
+\boxed{\Theta=F(R_1,\ldots,R_K;U).}
+\]
+The primary objective is
+\[
+\boxed{\min_F d_{\mathcal Q}\left(P_R,\widetilde P_{\Theta}\right).}
+\]
+The accompanying objectives are:
+\[
+\boxed{\mathbb E_{C\sim\nu_{\mathrm{eval}}}
+D\left(P_R^X(\cdot\mid C),Q_\phi(\cdot\mid C)\right),}
+\]
+\[
+\boxed{R_{P_R}(\widehat\eta_\psi)-R_{P_R}(\eta_R),}
+\]
+and
+\[
+\boxed{d_{\mathcal Q}\left(P_R,\widehat P_S^{(m)}\right).}
+\]
+These are studied subject to declared constraints such as
+\[
+B_{\mathrm{total}}\leq B_0,\qquad T_{\mathrm{total}}\leq T_0,
+\]
+and, for the private variant,
+\[
+\varepsilon_{\mathrm{overall}}\leq\varepsilon_0,
+\qquad\delta_{\mathrm{overall}}\leq\delta_0.
+\]
+We should not combine these into an arbitrary weighted scalar objective before deciding what trade-offs the application requires.
+
+The scientific goal is to characterize the achievable trade-off among
+\[
+\boxed{\begin{gathered}
+\text{reconstruction}\;,\;\text{conditional fidelity}\;,\;\text{predictive utility}\;,\\
+\text{privacy}\;,\;\text{resources}.
+\end{gathered}}
+\]
+
+\section{The quantities we need to construct, estimate, or analyze}
+\small
+\begin{longtable}{@{}P{0.22\textwidth}P{0.33\textwidth}P{0.39\textwidth}@{}}
+\toprule
+\textbf{Quantity}&\textbf{Meaning}&\textbf{Status}\\\midrule
+\endfirsthead
+\toprule
+\textbf{Quantity}&\textbf{Meaning}&\textbf{Status}\\\midrule
+\endhead
+\bottomrule\endfoot
+$P_i$&True client population&Unknown; not exactly recoverable from finite data\\
+$P_R$&Declared target population&Defined by $P_i$ and $\alpha$\\
+$\widetilde P_i$&Learned local joint distributions&Fit locally\\
+$M_i$&Permitted metadata&Must specify content, accuracy, and privacy cost\\
+$H,\widehat H$&Client-model workload answers&Evaluate exactly or estimate by sampling\\
+$b,\widehat b$&True and released estimates of target workload answers&Central information requirement\\
+$T_\beta$&Statistical weighting procedure&Main method-design object\\
+$\widehat w$&Deployable aggregation weights&Computed from releases\\
+$w^*_{A,R}$&Population-optimal weights in family $A$&Theoretical comparator\\
+$w^*_{A,\mathrm{val}}$&Validation-oracle weights&Privileged empirical benchmark\\
+$\widetilde P$&Final reconstructed joint distribution&Constructed at server\\
+$\widetilde P_{\mathrm{sub}}$&Composition of client-subset generators&Construct and check effective contributions\\
+$D_S^{(m)}$&Finite synthetic dataset&Sample from final model\\
+$Q_\phi(X\mid C)$&Trained conditional feature generator&Fit from permitted model-derived examples\\
+$\eta_{\mathrm{joint}}(x)$&Joint-implied income probability&Derive from final joint\\
+$\widehat\eta_\psi(x)$&Separately trained income predictor&Fit and evaluate\\
+$e,e_i,a_A,a_\phi,a_\psi$&Reconstruction and module errors&Bound theoretically; diagnose empirically\\
+$\varepsilon,\delta$&Privacy guarantee&Derive for the implemented release\\
+$B_{\mathrm{total}},T_{\mathrm{total}}$&Communication and runtime&Measure and analyze\\
+\end{longtable}
+\normalsize
+\textbf{We do not need to ``find the exact true distribution.'' We need estimators, comparisons, and justified error statements about these objects.}
+
+\section{The theorem programme and the 12 experiments}
+The initial mathematics above gives us several foundational results already. It does \textbf{not} finish the method-specific theory.
+
+\small
+\begin{longtable}{@{}P{0.05\textwidth}P{0.29\textwidth}P{0.60\textwidth}@{}}
+\toprule
+\textbf{No.}&\textbf{Research package}&\textbf{Theoretical question or guarantee}\\\midrule
+\endfirsthead
+\toprule
+\textbf{No.}&\textbf{Research package}&\textbf{Theoretical question or guarantee}\\\midrule
+\endhead
+\bottomrule\endfoot
+\textbf{1}&Aggregation and statistical weighting&Specify $T_\beta$; establish validity, optimization properties, and an oracle inequality\\
+\textbf{2}&Empirical oracle benchmark&Bound validation uncertainty and optimization tolerance; compare on independent test data\\
+\textbf{3}&Client-subset generators&Prove effective-weight identities; determine whether the chosen subset operation adds anything beyond mixtures\\
+\textbf{4}&Unconditional generation&Separate model error and finite sampling error; determine required synthetic sample sizes\\
+\textbf{5}&Trained conditional generation&Establish support conditions and joint-to-conditional transfer, including $Q_\phi$'s approximation error\\
+\textbf{6}&Trained income probability&Analyze approximation, estimation, bounded-risk transfer, prediction, and calibration diagnostics\\
+\textbf{7}&Joint-implied prediction&Derive the predictor and responsibilities; compare it with separately trained models\\
+\textbf{8}&Query-level fidelity&Give simultaneous finite-workload bounds and held-out reference uncertainty\\
+\textbf{9}&Consistency and ablations&Separate internal agreement from real-data fidelity; identify which components account for improvements\\
+\textbf{10}&Reconstruction-error analysis&Study local model error, weighting, aggregation, heterogeneity, and sample-size dependence\\
+\textbf{11}&Error transfer&Determine when joint accuracy yields conditional or predictive accuracy---and when the chosen metric is too weak\\
+\textbf{12}&Privacy and resource analysis&Prove the full-release privacy statement; characterize communication, runtime, and privacy--utility trade-offs\\
+\end{longtable}
+\normalsize
+The method-specific theory still needs four concrete choices:
+\begin{enumerate}
+\item \textbf{Which statistics are released, and why they identify useful weighting corrections.}
+\item \textbf{Which exact weighting rule we propose beyond the generic minimum-distance template.}
+\item \textbf{Which assumptions make its error certificate informative.}
+\item \textbf{Which aspects differ substantively from existing private statistical estimation and federated synthesis methods.}
+\end{enumerate}
+Those choices determine the paper's actual contribution. The framework above now tells us precisely what that contribution must construct, what it must prove, and what each of the 12 experiments must test.
+
+\begin{thebibliography}{9}
+\bibitem{ipm} B. K. Sriperumbudur, K. Fukumizu, A. Gretton, B. Sch\"olkopf, and G. R. G. Lanckriet.
+\textit{On the empirical estimation of integral probability metrics}.
+Electronic Journal of Statistics, 6:1550--1599, 2012.
+\url{https://www.gatsby.ucl.ac.uk/~gretton/papers/SriFukGreSchetal12.pdf}.
+\bibitem{privatepgm} R. McKenna, D. Sheldon, and G. Miklau.
+\textit{Graphical-model based estimation and inference for differential privacy}.
+Proceedings of the 36th International Conference on Machine Learning, PMLR 97:4435--4444, 2019.
+\url{https://proceedings.mlr.press/v97/mckenna19a.html}.
+\bibitem{flaim} S. Maddock, G. Cormode, and C. Maple.
+\textit{FLAIM: AIM-based Synthetic Data Generation in the Federated Setting}.
+arXiv:2310.03447.
+\url{https://arxiv.org/abs/2310.03447}.
+\bibitem{dp} C. Dwork and A. Roth.
+\textit{The Algorithmic Foundations of Differential Privacy}.
+Foundations and Trends in Theoretical Computer Science, 9(3--4), 2014.
+\url{https://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/run_adult_confirmation.py", line 257, in <module>
+    main()
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/run_adult_confirmation.py", line 220, in main
+    freeze = validate_freeze(args.freeze, ROOT, code_hash())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/research-director/btp-federated-statistics-20261024/btp_ec2_handoff/scripts/freeze_gate.py", line 35, in validate_freeze
+    raise ValueError("Campaign-wide SELECTION_FROZEN.json is missing")
+ValueError: Campaign-wide SELECTION_FROZEN.json is missing

@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "official_test_scored": false,
+  "original_zip_sha256": "6a1768af20e87be9b7be6548f153208a463d28bff7687890b912e4b9bb99f30e",
+  "adult_zip_sha256": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb",
+  "model_code_hash": "25c89ff4971fa79be992e93f4c92d2ce51ab7d3368a569389a3118bd07b47868",
+  "current_frozen_scoring_code_hash": "2d7a7598b43865d969dacbb8c91f06ac046b38670e9ef98169c3815dd8b2bb24",
+  "historical_checkpoint_replayed_under_later_source": true,
+  "cells": 57,
+  "core_cells": 54,
+  "independent_control_cells": 3,
+  "method_rows": 741,
+  "assessment_draw_rows": 3705,
+  "certified_fixed_pilot_lps": 57,
+  "workload_sha256": "c3afc3385c6b37cc61dd9b8b143513483e04949e963eb95c165ac33c74879a6c",
+  "matched_split_groups": 18,
+  "constrained_practical_gain_slices": 0,
+  "constrained_core_mean_delta": 0.0024279025866620666,
+  "exact_projection_spotcheck": {
+    "cell": "results/ec2_projected_v2_deterministic_20261024/chow_liu_age_education_k10_s101_270ac3bef1ca738d",
+    "rows": 12,
+    "preimages_per_row": 17,
+    "off_map_zero": true
+  }
+}
