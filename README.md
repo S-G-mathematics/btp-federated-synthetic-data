@@ -1,5 +1,14 @@
 # Weighted Federated Synthetic Data Generation
 
+**Start here:** [Results and statistical interpretation](docs/RESULTS_AND_STATISTICAL_INFERENCE.md) · [Twelve experiments](experiments/README.md) · [Theory and proof scope](theory/statements.md) · [Reproduce](REPRODUCIBILITY.md) · [Full artifact download](ARTIFACTS.md)
+
+The repository has two reading levels: the guides above provide the research story, while the dated source directories preserve the records behind it. [Repository guide](docs/REPOSITORY_GUIDE.md) explains which files to read and which are historical evidence.
+
+![Adult frozen holdout paired differences](figures/main/adult_frozen_confirmation.png)
+
+The plot shows seed-averaged slice differences, with negative values favouring constrained weighting. The dashed line is the registered practical-gain threshold; no independent-cohort confidence interval is implied.
+
+
 A reproducible study of representation-constrained aggregation of heterogeneous **non-neural** tabular generators. Each client fits a joint model over the same schema; the statistical server combines released models and permitted summaries to synthesize records. The measured question is whether weighting improves a fixed empirical target over properly tuned size weighting.
 
 ## Main answer

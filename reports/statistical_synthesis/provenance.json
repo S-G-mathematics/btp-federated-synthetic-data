@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "adult_development": {
+      "path": "reports/representation_constrained_projected_v2_deterministic_20261024/cell_method_means.csv",
+      "sha256": "10ce922e38dc0a0c23714e53f372f15985cc8294148075ea226c6ca1b1581621"
+    },
+    "adult_confirmation": {
+      "path": "reports/final_build/confirmation_paired_cells.csv",
+      "sha256": "43dfd1cc6e9a5ad5f64cc09d266ab835ece283c1778f9203b690a5a3fa21c850"
+    },
+    "bank_external": {
+      "path": "reports/external_replication/paired_differences.csv",
+      "sha256": "cbda1250418cce6614f97b80644d3d66502e7f38f54de9a8cceba327312ca2ad"
+    }
+  },
+  "analysis": "post-experiment descriptive analysis; no reselection",
+  "missing_values": "not applicable or unavailable; never imputed",
+  "uncertainty": "quantiles and ranges describe registered cells; no population confidence intervals"
+}
