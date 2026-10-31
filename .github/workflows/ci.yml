@@ -29,8 +29,11 @@ jobs:
         run: |
           python scripts/verify_data_sources.py
           python scripts/audit_repository.py
+          python scripts/check_theory_examples.py
+          python scripts/check_documentation_release.py
       - name: Rebuild saved tables and run scientific toy tests
         run: |
           python scripts/reproduce_repository.py --tables
           python scripts/reproduce_repository.py --figures
           python -m pytest -q
+

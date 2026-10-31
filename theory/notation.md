@@ -1,3 +1,11 @@
 # Notation
 
-`D_R` is an observed real reference; `D_S` is generated. `alpha_i=n_i/sum n_j` fixes the declared client-mass target. `w_i` is generator mass. For bounded queries `q_l`, `b_R,l=sum_i alpha_i mean_{D_R,i} q_l`, `b_S,l=mean_{D_S} q_l`, and the measured primary loss is `max_l |b_S,l-b_R,l|`. Unknown population TV is not measured. See the original LaTeX for formal domains.
+- `D_R`: observed real reference, partitioned into clients `D_R,i`; `D_S`: a generated finite table.
+- `alpha_i=n_i/sum_j n_j`: declared client-mass target; `w` is a simplex vector of generator weights; `W` is the declared feasible subset.
+- `Q_i`: fixed fitted generator for client i; `Q_w=sum_i w_i Q_i`: its mixture. `q_l` is a fixed [0,1]-valued query.
+- `B_li=mean_{D_R,i} q_l`, `b_R=B alpha`, and `H_li=E_{Q_i} q_l`. `b_S` contains the same query means on `D_S`.
+- `L_R(w)=||H w-b_R||_infinity` compares model expectations with the finite real reference. The measured finite-table loss is `||b_S-b_R||_infinity`; sampling and allocation add uncertainty between them.
+- `H_hat` is a finite pilot answer matrix, `b_hat` a permitted target summary, and `r_H,r_b` are simultaneous error radii. These need justification before use in a certificate.
+- `TV(A,B)=sup_E |A(E)-B(E)|`; finite-query discrepancy takes the maximum only over the declared workload. Unknown population TV is not measured.
+
+See [PROOFS.md](PROOFS.md) for all theorem-specific definitions and [the historical framework](BTP_Theoretical_Framework.tex) for its original notation.

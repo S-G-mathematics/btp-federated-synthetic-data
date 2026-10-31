@@ -1,30 +1,30 @@
 statement_id,proof_or_derivation,associated_experiments,status
 T01,theory/BTP_Theoretical_Framework.tex section 3-4,1;10,definition
 T02,theory/BTP_Theoretical_Framework.tex section 7 and docs/THEORY_CLARIFICATIONS.txt,1;8,empirical definition
-T03,theory/statements.md T03,1;9;10,elementary proved bound
-T04,theory/BTP_Theoretical_Framework.tex section 20 and docs/EXP10_MECHANISM_CLOSURE.md,10,algebraic decomposition
+T03,theory/PROOFS.md Statement 1; thm:representation,1;9;10,proved sharp conditional bound
+T04,theory/PROOFS.md Statement 2; thm:decomp,10,proved finite-reference decomposition
 T05,theory/BTP_Theoretical_Framework.tex section 10,2,finite convex-hull identity
-T06,theory/BTP_Theoretical_Framework.tex section 16,3,proved finite-sum identity
-T07,theory/BTP_Theoretical_Framework.tex sections 9 and 11,1;2,identifiability counterexample discussion
-T08,theory/BTP_Theoretical_Framework.tex section 11 Proposition 1,1,proved counterexample
-T09,theory/BTP_Theoretical_Framework.tex section 13,2,conditional deterministic inequality
-T10,theory/BTP_Theoretical_Framework.tex section 15,1;9,conditional derivation
-T11,theory/BTP_Theoretical_Framework.tex section 14 and docs/THEORY_CLARIFICATIONS.txt,2;8;12,conditional concentration programme
-T12,theory/BTP_Theoretical_Framework.tex section 8 and btp/evaluation.py,1;4,integer allocation construction
-T13,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2;12,open later proof target
-T14,docs/INTEGRITY_AND_PROJECTION_AUDIT.md,7;9,exact pushforward identity
+T06,theory/PROOFS.md Statement 3; thm:subsets,3,proved finite-sum identity
+T07,theory/PROOFS.md Statement 3; thm:subsets,1;2,proved injectivity condition
+T08,theory/PROOFS.md Statement 4; ex:ident,1,proved counterexample
+T09,theory/PROOFS.md Statement 5; thm:oracle,2,conditional deterministic inequality
+T10,theory/PROOFS.md Statement 6; thm:stability,1;9,conditional stability bound
+T11,theory/PROOFS.md Statements 11-12; thm:pilot; thm:summary,2;8;12,conditional concentration bounds
+T12,theory/PROOFS.md Statement 7; thm:sampling,1;4,conditional sampling and allocation bound
+T13,theory/PROOFS.md Statement 8; thm:fallback,1;2;12,conditional sufficient certificate; not empirically instantiated
+T14,theory/PROOFS.md Statement 14; thm:projection,7;9,proved pushforward identity
 T15,theory/BTP_Theoretical_Framework.tex section 18,5,conditional Bayes identity
-T16,docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md,11,proved later finite-query proposition
-T17,theory/BTP_Theoretical_Framework.tex sections 17-18,5,geometric expectation
-T18,docs/FINITE_QUERY_TRANSFER_PROPOSITION_20261025.md,5;11,proved later filtering/triangle bounds
+T16,theory/PROOFS.md Statement 9; thm:conditional,11,conditional finite-query proposition
+T17,theory/PROOFS.md Statement 15; thm:support,5,conditional support and rejection-cost result
+T18,theory/PROOFS.md Statement 16; thm:student,5;11,proved filtering and triangle bounds
 T19,theory/BTP_Theoretical_Framework.tex section 19 and docs/INTEGRITY_AND_PROJECTION_AUDIT.md,7,conditional normalized-mass route
-T20,theory/BTP_Theoretical_Framework.tex section 22,6;11,conditional transfer discussion
-T21,theory/BTP_Theoretical_Framework.tex sections 19 and 22,6;7,standard proper-score identity
+T20,theory/PROOFS.md Statement 18; thm:risk,6;11,conditional loss-class transfer
+T21,theory/PROOFS.md Statement 19; thm:brier,6;7,conditional Brier identity and transfer
 T22,docs/WEIGHT_METHODS.md,1;2,finite operator definitions
-T23,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2,open later proof target
-T24,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2,open later proof target
-T25,docs/FINAL_RELEASE_AND_PRIVACY_LEDGER.md and Dwork-Roth Theorem 3.16,12,standard conditional DP composition
-T26,theory/BTP_Theoretical_Framework.tex sections 4 and 10,1;10,exact-model mixture identity
-T27,theory/BTP_Theoretical_Framework.tex sections 10-11,1,imperfect-model counterexample logic
-T28,theory/BTP_Theoretical_Framework.tex sections 10 and 13,1;2,conditional framework without empirical certification
-T29,AUTHOR_READY/THEORY_ONLY_BACKLOG.md,1;2,open later proof target
+T23,theory/PROOFS.md Statement 21; thm:logpool,1;2,conditional finite positive-score perturbation bound
+T24,theory/PROOFS.md Statement 22; thm:ot,1;2,conditional finite entropic-objective bound
+T25,theory/PROOFS.md Statement 23; thm:privacy,12,standard conditional DP composition
+T26,theory/PROOFS.md Statement 24; thm:sizeexact,1;10,conditional exact-model size optimality
+T27,theory/PROOFS.md Statement 25; ex:sizefails,1,imperfect-model counterexample
+T28,theory/PROOFS.md Statement 26; thm:sizenear,1;2,conditional bounds; premises not empirically certified
+T29,theory/PROOFS.md Statements 27 and 8; thm:sizedual; thm:fallback,1;2,sufficient conditional certificates; not empirically instantiated

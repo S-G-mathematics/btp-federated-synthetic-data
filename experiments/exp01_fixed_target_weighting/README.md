@@ -1,36 +1,18 @@
-# Experiment 1: Fixed Target Weighting
+# Experiment 01: Fixed target weighting
 
-**Question.** Does weighting improve fixed-target empirical fidelity?
+**Research question.** Can constrained client weights improve fixed-alpha query fidelity over size weights by the registered practical margin?
 
-**Hypothesis/objective.** No registered practical constrained gain; retain size weighting
+**Setup and stage.** The corrected Adult development core crossed three generators (copula, Chow-Liu and mixed GMM), three partitions (age, age+education and label skew), K=5/10 and seeds 101/202/303: 54 matched fitting cells. Three independent-histogram controls are separate. Across 57 source cells there are 57 successful fixed-pilot LP records, 741 method rows and 3,705 method/cell/draw assessment rows. Frozen confirmation used the selected copula and seeds 404/505. The selected projected copula and weights were frozen before official-test scoring. The constrained rule uses an L1 budget of 0.25 and floor of 0.5 alpha; the primary metric is alpha-standardized Q_primary_v2 query maximum, with five m=10,000 draws. Bank is a separate registered external replication: copula and Chow-Liu, age+education and label-skew partitions, K=5, seeds 611/622/633, with duration excluded.
 
-**Type and status.** completed empirical comparison; `COMPLETE_BOUNDED_FINDING` in the dated twelve-package closure. The files linked below record historical execution. This guide is a packaging-time index, not a new experiment.
+**Observed result.** At the 0.005 practical improvement margin, Adult development reached it in 0/18 generator/partition/K slices (overall constrained-minus-size delta +0.002428); frozen Adult confirmation reached it in 0/6 partition/K slices (delta -0.000214907); Bank replication reached it in 0/4 generator/partition slices at K=5 (delta -0.001331749). Each cell averages five draws; development and Bank slices average three seeds, confirmation slices two. Negative differences favor constrained weights. Size weighting remains the fixed-target fallback.
 
-**Dataset and data roles.** Official UCI Adult is the primary dataset; Experiment 1 additionally includes UCI Bank Marketing `bank-additional-full.csv` as registered external replication. Adult official test was scored only after the campaign freeze. Local fitting uses train/local tune, weighting uses permitted calibration summaries, and a privileged evaluator scores held-out real references. Bank's `duration` is excluded. See [data protocol](../../docs/DATA_PROTOCOL.md), [Bank protocol](../../docs/EXTERNAL_BANK_PROTOCOL.md), [access contract](../../docs/RELEASE_CONTRACT.md) and [freeze](../../SELECTION_FROZEN.json).
+**Limits.** This is a failure to establish the registered practical gain, not proof of equivalence or a universal weighting result. Split seeds reuse people; Bank is one external dataset.
 
-**Models and methods.** copula, Chow-Liu, mixed GMM; independent controls; size, uniform and registered statistical challengers. All clients use the same schema. The final Adult generator is train/local-tune-selected projected copula; the main weight comparator uses the fixed alpha target, L1 budget 0.25 and floor 0.5 alpha. Other families or access levels in historical results are labelled separately.
+**Reproduction.** `python scripts/reproduce_repository.py --tables` rebuilds reports from saved results without fitting. For historical execution, prerequisites, and selecting a specific cell, see [REPRODUCE](../../REPRODUCE.md), [campaign settings](../../configs/campaign.yaml), [resource limits](../../configs/resources.yaml), [environment lock](../../environment/requirements_final_portable_20261025.txt), [source](../../btp/) and [runners](../../scripts/).
 
-**Partitions, clients and seeds.** The corrected core uses age, age+education and label-skew assignments, K=5/10, seeds 101/202/303. Frozen Adult confirmation uses 404/505; Bank replication uses its registered split and 611/622/633. Experiment-specific subsets, severity seeds, pilot and draw streams are recorded in the linked evidence and [configuration](../../configs/campaign.yaml). Do not infer that all combinations were run in this package.
-
-**Synthetic and pilot budgets.** The primary Adult/Bank comparison uses m=10,000 and five synthetic draws. Exp2 varies pilots 500/1,500/5,000/15,000; Exp4 varies m=2,500/10,000/40,000. Other conditional or private budgets are in their fixed protocols and run manifests.
-
-**Metric and aggregation.** alpha-standardized Q_primary_v2 query max; constrained minus size. Lower is better for query error and Brier; higher is better for AUROC/AUPRC. Primary paired contrast is challenger minus size; negative favours challenger. Draws are averaged within a cell before slice/overall summaries. The exact unit for this package is in the evidence tables; seeds and draws reuse people and are not independent cohorts.
-
-**Executable source/configuration.** [Package](../../btp/), [experiment runners](../../scripts/), [campaign settings](../../configs/campaign.yaml), [resource limits](../../configs/resources.yaml), [environment lock](../../environment/requirements_final_portable_20261025.txt). `python scripts/reproduce_repository.py --tables` rebuilds saved-result reports without fitting. Full historical execution commands and resource limits are in [REPRODUCE](../../REPRODUCE.md); a specific cell must be explicitly selected there. No default command launches a campaign.
-
-**Expected outputs.** Canonical files below, retained report tables in `reports/`, inspectable author tables in `AUTHOR_READY/PAPER_TABLES/`, and full checkpoints/draws in the verified v2 archive manifest. The latter are not silently duplicated in Git.
-
-**Recorded result.** 0/18 Adult development and 0/6 confirmation partition/K slices reached -0.005; overall confirmation delta -0.000215
-
-**Interpretation.** No registered practical constrained gain; retain size weighting
-
-**Limitations/exclusions.** Other populations, workloads and privacy-matched aggregation. Forbidden extension: A general weighting-improvement or equivalence claim
-
-**Evidence stage.** development and frozen confirmation. Historical source files are retained, and packaging-time checks appear separately in `logs/packaging/` when run. Missing in-Git evidence links: none.
-
-**Canonical evidence and provenance.**
+**Evidence.**
 - [docs/ADULT_WEIGHTING_DEVELOPMENT_CLOSURE.md](../../docs/ADULT_WEIGHTING_DEVELOPMENT_CLOSURE.md)
 - [docs/FROZEN_CONFIRMATION_FINDINGS.md](../../docs/FROZEN_CONFIRMATION_FINDINGS.md)
 - [reports/final_build/confirmation_slices.csv](../../reports/final_build/confirmation_slices.csv)
 
-See [closure register](../../EXPERIMENTS_01_TO_12_CLOSURE.json), [full archive manifest](../../artifacts/full_archive_manifest_v2.json), [claim map](../../results/summaries/claim_to_evidence.csv), and [source mapping](../../provenance/source_to_repository_map.csv).
+See the [data protocol](../../docs/DATA_PROTOCOL.md), [Bank protocol](../../docs/EXTERNAL_BANK_PROTOCOL.md), [access contract](../../docs/RELEASE_CONTRACT.md), [freeze](../../SELECTION_FROZEN.json), [closure register](../../EXPERIMENTS_01_TO_12_CLOSURE.json), [archive manifest](../../artifacts/full_archive_manifest_v2.json), [claim map](../../results/summaries/claim_to_evidence.csv), and [source mapping](../../provenance/source_to_repository_map.csv).

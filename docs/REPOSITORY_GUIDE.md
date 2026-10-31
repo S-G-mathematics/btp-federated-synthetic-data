@@ -6,6 +6,7 @@
 2. Read [the twelve acceptance rows](../AUTHOR_READY/TWELVE_PACKAGE_ACCEPTANCE.md) for exactly what closed.
 3. Use [the claim map](../results/summaries/claim_to_evidence.csv) to inspect the evidence behind a sentence.
 4. Read [the formal statement register](../theory/statements.md) to distinguish definitions, proofs, conditional derivations and open targets.
+5. Read the [complete proof supplement](../theory/PROOFS.md) or [typeset PDF](../theory/proofs.pdf), then inspect the [report and manuscript drafts](../paper/README.md). The later proofs are explicitly dated after the experiments.
 
 ## For reproduction
 
@@ -20,6 +21,9 @@ The original executable layout is `btp/`, `scripts/`, `configs/` and `tests/`. T
 | `figures/main/` | Rebuildable presentation gallery |
 | `AUTHOR_READY/PAPER_TABLES/` | Dated editable writing tables and captions |
 | `experiments/exp*/README.md` | Per-package questions, scope and evidence links |
+| `theory/proofs.tex`, `theory/proofs.pdf`, `theory/PROOFS.md` | Same post-experiment supplement in source, typeset and readable form; 27 labeled statements |
+| `theory/proof_to_experiment_map.csv` | Maps 29 original framework items to proof and experiment scope |
+| `paper/` | Draft report and IEEE manuscript with editable source archives and submission-status notes |
 | `reports/` and `results/` dated directories | Original saved analysis and cell records; historical/current roles remain separate |
 | `docs/` dated protocols and root progress reports | Chronology, original decisions and repairs; not the current landing page |
 | `provenance/` and `artifacts/` | Source mapping, hashes, software and large-file availability |
@@ -27,3 +31,4 @@ The original executable layout is `btp/`, `scripts/`, `configs/` and `tests/`. T
 Historical files are retained because removing them would break provenance and hide failed or superseded analyses. They are not additional independent evidence. Generated tables/figures are marked in `.gitattributes` to keep code review focused. Cache files, environments and temporary packaging files are excluded. Source archives remain unchanged.
 
 The main statistical release is nonprivate. Test people recur across configurations. No new result in the descriptive synthesis is a prospective confirmation or method-selection input.
+
