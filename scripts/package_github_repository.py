@@ -109,7 +109,7 @@ def main() -> None:
         if src.suffix.lower() in (".csv", ".json", ".txt", ".yaml", ".yml", ".md", ".log", ".svg") and src.stat().st_size <= 5_000_000:
             cp(src)
     for src in sorted(ROOT.iterdir()):
-        if src.is_file() and src.suffix.lower() in (".md", ".json", ".txt", ".toml", ".bib", ".pdf") and src.name not in ("ARTIFACT_SHA256_MANIFEST.json",):
+        if src.is_file() and src.suffix.lower() in (".md", ".json", ".txt", ".toml", ".bib", ".pdf", ".csv") and src.name not in ("ARTIFACT_SHA256_MANIFEST.json",):
             cp(src)
     (dest / "artifacts").mkdir(parents=True, exist_ok=True)
     shutil.copy2(manifest_path, dest / "artifacts" / "full_archive_manifest_v2.json")

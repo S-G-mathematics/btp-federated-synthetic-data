@@ -5,7 +5,7 @@
   "full_archive_sha256": "b184b0b07d3185ca7bd95322fd7bf432b28293b1041f5cae5cc9153ead25b2bf",
   "freeze_sha256": "2420f737b6af732925f9cce3fbb82c8a9a7a30e1988dde5e68900d1404bb3a23",
   "archive_file_count": 10687,
-  "repository_copied_file_count": 7591,
+  "repository_copied_file_count": 7592,
   "categories": {
     "present_directly_inspected": "EC2 project paths and executable layout",
     "present_integrity_verified": "full v2 archive hash, frozen selection, copied files with matches_v2_archive=true",
@@ -14,12 +14,6 @@
     "fresh_reproductions": "record packaging-time commands in logs/packaging/ after running them"
   },
   "archive_files_not_copied_to_git": [
-    {
-      "path": "ALL_RUNS_INDEX.csv",
-      "bytes": 219682,
-      "sha256": "7d11f1e7d084a99b952b68bd983579c07441d1dfb7ba9bacbf89b670c914215f",
-      "availability": "verified full v2 archive on EC2 and laptop; GitHub release pending"
-    },
     {
       "path": "EXTERNAL_PROTOCOL_FROZEN.json.sha256",
       "bytes": 65,
