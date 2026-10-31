@@ -2,9 +2,9 @@
 __pycache__/
 .pytest_cache/
 *.pyc
-*.pkl
-*.npz
-*.parquet
+results/**/*.pkl
+results/**/*.npz
+results/**/*.parquet
 *.tmp
 .env
 .env.*
@@ -12,6 +12,4 @@ __pycache__/
 *.key
 *.p12
 *.pfx
-*token*
-*secret*
 .DS_Store

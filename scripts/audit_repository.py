@@ -5,6 +5,7 @@ import csv
 import hashlib
 import json
 import re
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,10 +43,16 @@ def audit() -> dict:
             if not (ROOT / evidence).exists():
                 raise ValueError(f"Missing closure evidence: {evidence}")
     mapping = read_csv("provenance/source_to_repository_map.csv")
+    tracked: set[str] | None = None
+    if (ROOT / ".git").exists():
+        result = subprocess.run(["git", "ls-files", "-z"], cwd=ROOT, stdout=subprocess.PIPE, check=True)
+        tracked = {x.decode("utf-8") for x in result.stdout.split(b"\0") if x}
     for row in mapping:
         target = ROOT / row["repository_path"]
         if not target.is_file():
             raise ValueError(f"Copied source absent: {target}")
+        if tracked is not None and row["repository_path"] not in tracked:
+            raise ValueError(f"Copied source is not Git-tracked: {row['repository_path']}")
         if target.as_posix().endswith("/README.md") and row["repository_path"] == "README.md":
             continue  # the root landing page is deliberately rewritten for GitHub
         if sha(target) != row["sha256"]:
