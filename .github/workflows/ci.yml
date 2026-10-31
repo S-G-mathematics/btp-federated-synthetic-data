@@ -32,4 +32,5 @@ jobs:
       - name: Rebuild saved tables and run scientific toy tests
         run: |
           python scripts/reproduce_repository.py --tables
+          python scripts/reproduce_repository.py --figures
           python -m pytest -q

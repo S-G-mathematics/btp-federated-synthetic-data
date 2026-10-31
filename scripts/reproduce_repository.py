@@ -63,11 +63,56 @@ def summaries() -> None:
 
 
 def figures() -> None:
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    subprocess.run([sys.executable, str(ROOT / "scripts/build_final_reports.py"), "--build"], cwd=ROOT, check=True)
     target = ROOT / "figures/main"
     target.mkdir(parents=True, exist_ok=True)
-    for source in (ROOT / "AUTHOR_READY/PAPER_FIGURES").iterdir():
-        if source.suffix.lower() in {".png", ".pdf", ".svg"}:
+    for source in (ROOT / "reports/final_build").glob("*.png"):
             shutil.copy2(source, target / source.name)
+    plots = [
+        ("adult_18_slice_differences", "AUTHOR_READY/PAPER_TABLES/adult_development_slices.csv", "mean_paired_delta", "Adult corrected development; 18 slices"),
+        ("adult_frozen_confirmation", "AUTHOR_READY/PAPER_TABLES/adult_confirmation_slices.csv", "constrained_minus_size", "Adult frozen official holdout; 6 slices"),
+        ("bank_external_slice_differences", "AUTHOR_READY/PAPER_TABLES/bank_external_slices.csv", "mean_constrained_minus_size", "Bank external replication; 4 slices"),
+    ]
+    for name, relative, column, title in plots:
+        with (ROOT / relative).open(newline="", encoding="utf-8") as inp:
+            rows = list(csv.DictReader(inp))
+        if name.startswith("adult_18"):
+            rows = [r for r in rows if r["method"] == "constrained" and r["generator"] in {"copula", "chow_liu", "mixed_gmm"}]
+        if name.startswith("bank_"):
+            labels = [f"{r['generator']}\n{r['partition']}" for r in rows]
+        elif name.startswith("adult_18"):
+            labels = [f"{r['generator']} / {r['partition']} / K{r['k']}" for r in rows]
+        else:
+            labels = [f"{r['partition']} / K{r['k']}" for r in rows]
+        values = [float(r[column]) for r in rows]
+        fig, ax = plt.subplots(figsize=(9, max(3.2, len(rows) * 0.36 + 1.5)))
+        colors = ["#376B9B" if v < 0 else "#C95545" for v in values]
+        if name.startswith("bank_"):
+            ax.bar(range(len(rows)), values, color=colors)
+            ax.set_xticks(range(len(rows)), labels)
+            ax.set_ylabel("Query-max Δ (constrained − size)")
+            ax.axhline(-0.005, color="black", linestyle="--", linewidth=1, label="registered practical gain")
+            ax.axhline(0, color="gray", linewidth=0.7)
+        else:
+            ax.barh(range(len(rows)), values, color=colors)
+            ax.set_yticks(range(len(rows)), labels)
+            ax.invert_yaxis()
+            ax.set_xlabel("Constrained − size query maximum; lower favours constrained")
+            ax.axvline(-0.005, color="black", linestyle="--", linewidth=1, label="registered practical gain")
+            ax.axvline(0, color="gray", linewidth=0.7)
+        ax.set_title(title)
+        ax.legend(loc="best")
+        fig.tight_layout()
+        for suffix in ("png", "pdf", "svg"):
+            fig.savefig(target / f"{name}.{suffix}", dpi=180, bbox_inches="tight")
+            if suffix == "svg":
+                svg = target / f"{name}.svg"
+                svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
+        plt.close(fig)
     print(target)
 
 
