@@ -1,0 +1,309 @@
+{
+  "protocol_version": "completion_20261025_v1",
+  "opened_utc": "2026-10-25T04:17:52Z",
+  "overall_status": "EXPERIMENTAL_WORK_COMPLETE_WITH_EXPLICIT_SCOPE_LIMITS",
+  "official_test_accessed": true,
+  "confirmation_seeds_accessed": true,
+  "global_freeze_complete": true,
+  "global_freeze_sha256": "2420f737b6af732925f9cce3fbb82c8a9a7a30e1988dde5e68900d1404bb3a23",
+  "first_official_test_read_utc": "2026-10-25T05:40:33.072893+00:00",
+  "shared_compute_lease": "~/research-director/control/heavy-compute.lock",
+  "max_workers": 1,
+  "threads_per_worker": 1,
+  "minimum_available_ram_gib": 8,
+  "minimum_free_disk_gib": 5,
+  "cell_timeout_seconds": 3600,
+  "campaign_wall_seconds": 7200,
+  "incremental_worker_seconds_cap": 86400,
+  "incremental_worker_seconds_used": 3351.083724,
+  "worker_time_accounting": "Conservative upper: prior rounded phase estimates 2120 seconds plus first-test-read to secondary-log-mtime interval 1231.083724 seconds; includes idle/reporting. Exact primary marker sum 692.765565 seconds. No AWS rate inferred.",
+  "phase_seconds_caps": {
+    "integrity_selection": 3600,
+    "external": 28800,
+    "mechanisms": 14400,
+    "published_references": 14400,
+    "confirmation": 14400,
+    "release_resources": 3600,
+    "reporting_package": 7200
+  },
+  "phase_seconds_used": {
+    "integrity_selection": 340,
+    "external": 760,
+    "mechanisms": 300,
+    "published_references": 700,
+    "release_resources": 20,
+    "confirmation": 1231.083724
+  },
+  "tasks": {
+    "I1": {
+      "status": "COMPLETE",
+      "completed_cells": 57,
+      "failed_cells": 0,
+      "artifacts": [
+        "docs/INTEGRITY_AND_PROJECTION_AUDIT.md",
+        "reports/completion_integrity_20261025/integrity_summary.json"
+      ],
+      "blocked_reason": null
+    },
+    "I2": {
+      "status": "COMPLETE",
+      "completed_cells": 0,
+      "failed_cells": 0,
+      "artifacts": [
+        "scripts/freeze_gate.py",
+        "scripts/run_adult_confirmation.py",
+        "tests/test_freeze_gate.py",
+        "logs/completion_full_tests_prefreeze_20261025.log"
+      ],
+      "blocked_reason": null
+    },
+    "S1": {
+      "status": "COMPLETE",
+      "completed_cells": 54,
+      "failed_cells": 1,
+      "artifacts": [
+        "docs/GLOBAL_SELECTION_RULE.md",
+        "docs/GLOBAL_SELECTION_DECISION.md",
+        "reports/completion_selection_20261025/global_generator_validation_selection.csv",
+        "logs/completion_selection_20261025.log",
+        "logs/completion_selection_retry1_20261025.log"
+      ],
+      "blocked_reason": null
+    },
+    "E1": {
+      "status": "COMPLETE",
+      "completed_cells": 12,
+      "failed_cells": 0,
+      "artifacts": [
+        "docs/EXTERNAL_BANK_PROTOCOL.md",
+        "EXTERNAL_PROTOCOL_FROZEN.json",
+        "data/external_bank/data_manifest.json",
+        "reports/external_replication/summary.json",
+        "docs/EXTERNAL_REPLICATION_FINDINGS.md"
+      ],
+      "blocked_reason": null
+    },
+    "M1": {
+      "status": "COMPLETE",
+      "completed_cells": 24,
+      "failed_cells": 0,
+      "artifacts": [
+        "docs/EXP09_10_MECHANISM_PROTOCOL.md",
+        "reports/mechanisms/projection_cell_manifest.json",
+        "reports/mechanisms/summaries_cell_manifest.json",
+        "reports/mechanisms/severity_cell_manifest.json",
+        "docs/EXP09_ABLATION_CLOSURE.md",
+        "docs/EXP10_MECHANISM_CLOSURE.md"
+      ],
+      "blocked_reason": null
+    },
+    "P1": {
+      "status": "COMPLETE",
+      "completed_cells": 8,
+      "failed_cells": 0,
+      "artifacts": [
+        "docs/PUBLISHED_REFERENCE_PROTOCOL.md",
+        "docs/PUBLISHED_REFERENCE_FINDINGS.md",
+        "reports/published_references/pgm_cell_means.csv",
+        "reports/published_references/flaim_cell_means.csv"
+      ],
+      "blocked_reason": null
+    },
+    "R1": {
+      "status": "COMPLETE",
+      "completed_cells": 3,
+      "failed_cells": 0,
+      "artifacts": [
+        "docs/FINAL_RELEASE_AND_PRIVACY_LEDGER.md",
+        "reports/resources/matched_raw_vs_model_payloads.csv",
+        "reports/resources/application_messages.csv"
+      ],
+      "blocked_reason": null
+    },
+    "F1": {
+      "status": "COMPLETE",
+      "completed_cells": 1,
+      "failed_cells": 0,
+      "artifacts": [
+        "SELECTION_FROZEN.json",
+        "SELECTION_FROZEN.json.sha256",
+        "freezes/SELECTION_FROZEN_20261025.json",
+        "docs/GLOBAL_FREEZE_DECISION_MEMO.md"
+      ],
+      "blocked_reason": null
+    },
+    "C1": {
+      "status": "COMPLETE",
+      "completed_cells": 12,
+      "secondary_completed_cells": 12,
+      "failed_cells": 0,
+      "artifacts": [
+        "results/adult_confirmation_20261025/",
+        "reports/final_build/",
+        "docs/FROZEN_CONFIRMATION_FINDINGS.md",
+        "reports/confirmation/FIRST_OFFICIAL_TEST_READ.json"
+      ],
+      "blocked_reason": null
+    },
+    "D1": {
+      "status": "COMPLETE_DELIVERED_VERSION2",
+      "completed_cells": 12,
+      "failed_cells": 0,
+      "artifacts": [
+        "EXPERIMENTS_01_TO_12_CLOSURE.md",
+        "EXPERIMENTS_01_TO_12_CLOSURE.json",
+        "BTP_FINAL_EXPERIMENTAL_REPORT.md",
+        "EXECUTIVE_SUMMARY.md",
+        "REPRODUCE.md",
+        "reports/final_build/",
+        "logs/verify_final_package_terminal_20261025.log",
+        "BTP_FINAL_EXPERIMENTAL_REPORT.pdf",
+        "ARTIFACT_SHA256_MANIFEST.json",
+        "../BTP_FINAL_EXPERIMENTAL_PACKAGE_20261025.zip",
+        "docs/COMPLETION_REQUIREMENTS_AUDIT_20261025.md",
+        "docs/POSTDELIVERY_REPAIR_LINEAGE_20261025.md",
+        "scripts/verify_delivered_archive.py",
+        "scripts/bootstrap_final_package.sh"
+      ],
+      "blocked_reason": null
+    }
+  },
+  "runs": [
+    {
+      "task": "I1",
+      "status": "complete",
+      "log": "logs/completion_integrity_audit_20261025.log",
+      "result": "57 source cells/741 method rows/57 LPs; constrained mean +0.0024279025866620666; 0/18 practical slices"
+    },
+    {
+      "task": "S1",
+      "status": "failed_repaired",
+      "log": "logs/completion_selection_20261025.log",
+      "failure_class": "selector initially treated three pre-existing independent controls as unexpected core cells",
+      "counted_worker_seconds_upper": 111
+    },
+    {
+      "task": "S1",
+      "status": "complete",
+      "log": "logs/completion_selection_retry1_20261025.log",
+      "elapsed_seconds": 213.27044686797308,
+      "result": "copula selected, Chow-Liu runner-up; 270 validation draws"
+    },
+    {
+      "task": "I2",
+      "status": "partial",
+      "log": "logs/completion_gate_tests_20261025.log",
+      "result": "85 passed, legacy official route disabled"
+    },
+    {
+      "task": "E1",
+      "status": "complete",
+      "log": "logs/external_bank_batch1_20261025.log",
+      "freeze_sha256": "87514e14f0f7131d4e3b425db78133c4abd7164168424420278c556369fb6949",
+      "completed_cells": 12,
+      "failed_cells": 0,
+      "result": "zero of four practical-gain slices; mean constrained-minus-size -0.0013317491723437546"
+    },
+    {
+      "task": "M1",
+      "status": "complete",
+      "logs": [
+        "logs/exp09_projection_20261025.log",
+        "logs/exp09_summary_ablation_20261025.log",
+        "logs/exp10_severity_20261025.log"
+      ],
+      "completed_checkpoint_ablations": 18,
+      "completed_fitting_cells": 6
+    },
+    {
+      "task": "P1",
+      "status": "complete",
+      "logs": [
+        "logs/pgm_report_20261025.log",
+        "logs/flaim_report_20261025.log"
+      ],
+      "pgm_completed_cells": 4,
+      "flaim_completed_cells": 4,
+      "result": "same-summary PGM mixed; FLAIM adapted different-access utility reference mixed; no full-pipeline DP"
+    },
+    {
+      "task": "R1",
+      "status": "complete",
+      "log": "logs/release_payload_audit_20261025.log",
+      "result": "three copula model-plus-metadata payloads 1.915–2.866 times comparable raw tables"
+    },
+    {
+      "task": "F1",
+      "status": "complete",
+      "log": "logs/build_global_freeze_20261025.log",
+      "sha256": "2420f737b6af732925f9cce3fbb82c8a9a7a30e1988dde5e68900d1404bb3a23",
+      "tests": "91 passed before freeze"
+    },
+    {
+      "task": "C1",
+      "status": "running",
+      "log": "logs/adult_confirmation_primary_20261025.log",
+      "first_test_read_utc": "2026-10-25T05:40:33.072893+00:00"
+    },
+    {
+      "task": "C1",
+      "status": "complete",
+      "primary_cells": 12,
+      "secondary_cells": 12,
+      "first_test_read_utc": "2026-10-25T05:40:33.072893+00:00",
+      "logs": [
+        "logs/adult_confirmation_primary_20261025.log",
+        "logs/adult_confirmation_secondary_20261025.log"
+      ],
+      "result": "size overall 0.0222157202732753; constrained-minus-size -0.00021490707600188447; 0/6 practical-gain slices"
+    },
+    {
+      "task": "D1",
+      "status": "postdelivery_audit_progress",
+      "log": "logs/final_goal_continuation_tests_20261025.log",
+      "result": "91 current tests passed; freeze gate accepted; documentation/reproducibility defects identified and being repaired without scoring changes"
+    },
+    {
+      "task": "D1",
+      "status": "complete_delivered",
+      "archive_sha256": "b184b0b07d3185ca7bd95322fd7bf432b28293b1041f5cae5cc9153ead25b2bf",
+      "manifest_sha256": "bbcef0118796c560dae1bec7de211ddab4cbff1492f18e2691c3b29b07c8b0ea",
+      "cleanroom": "exact final ZIP; 91 tests, accepted freeze, byte-identical draw, 57-cell historical audit, deterministic 28-file report",
+      "local_full_member_verification": 10689
+    }
+  ],
+  "reused_artifacts": [
+    "results/ec2_projected_v2_deterministic_20261024/ 54 corrected core checkpoints",
+    "results/representation_constrained_projected_v2_deterministic_20261024/ matched constrained fits"
+  ],
+  "failure_classes": [
+    "Selector first attempt counted separate independent controls in a 54-cell selection grid; fixed without changing scientific rule or looking at assessment outcomes"
+  ],
+  "terminal_interpretation": "All retained empirical claims have terminal bounded evidence. Broader unmatched privacy, independent-cohort and theoretical ambitions are explicit scope limits; no necessary experimental blocker is hidden.",
+  "previous_delivery": {
+    "version": 1,
+    "archive_sha256": "a89a26c12e772d058b06a06a6ed4dcca605ae4bfb7df88dc6c0cd36e4cf7ec67",
+    "status": "preserved",
+    "reason_for_revision": "closure evidence path/stop specificity, portable bootstrap and first-scoring-access wording"
+  },
+  "delivery": {
+    "version": 2,
+    "delivered_at_utc": "2026-10-25T07:47:07.004257+00:00",
+    "laptop_path": "D:\\dot\\BTP_EC2_Complete_Handoff_20261024\\BTP_FINAL_EXPERIMENTAL_PACKAGE_20261025_v2.zip",
+    "ec2_path": "/home/ubuntu/research-director/btp-federated-statistics-20261024/BTP_FINAL_EXPERIMENTAL_PACKAGE_20261025_v2.zip",
+    "bytes": 537318039,
+    "sha256": "b184b0b07d3185ca7bd95322fd7bf432b28293b1041f5cae5cc9153ead25b2bf",
+    "manifest_sha256": "bbcef0118796c560dae1bec7de211ddab4cbff1492f18e2691c3b29b07c8b0ea",
+    "zip_members_verified": 10689,
+    "project_files_verified": 10687,
+    "version1_preserved": true,
+    "first_official_test_confirmation_scoring_at_utc": "2026-10-25T05:40:33.072893+00:00"
+  },
+  "resource_addendum": {
+    "pre_packaging_conservative_worker_upper_seconds": 3351.083724,
+    "postdelivery_reporting_and_transfer_upper_allowance_seconds": 3600,
+    "total_conservative_upper_seconds": 6951.083724,
+    "total_conservative_upper_hours": 1.930857,
+    "interpretation": "The one-hour postdelivery allowance conservatively covers archive building, transfer and clean-extraction checks; it is an upper accounting allowance, not measured CPU or cloud cost. The program remains below the 24-hour incremental cap and 2-hour reporting/package phase cap."
+  }
+}
